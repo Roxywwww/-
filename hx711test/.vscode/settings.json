@@ -1,0 +1,15 @@
+{
+  "VsCodeTaskButtons.showCounter": false,
+  "VsCodeTaskButtons.tasks": [
+    {
+      "label": "$(tools) Keil 编译",
+      "task": "Keil: 编译",
+      "tooltip": "编译当前 STM32F103 Keil 工程"
+    },
+    {
+      "label": "$(arrow-down) 编译并下载",
+      "task": "Keil: 编译并下载",
+      "tooltip": "编译成功后通过 ST-LINK 下载并运行"
+    }
+  ]
+}

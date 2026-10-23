@@ -1,0 +1,47 @@
+# ---- Keil 器件支持包（官方可重新下载，体积大）----
+*.pack
+
+# ---- Keil MDK 构建产物 ----
+hx711test/MDK-ARM/hx711test/
+hx711test/MDK-ARM/DebugConfig/
+hx711test/MDK-ARM/RTE/_*/
+hx711test/MDK-ARM/*.log
+hx711test/MDK-ARM/*.lst
+hx711test/MDK-ARM/*.uvguix.*
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.dep
+*.lnp
+*.htm
+*.map
+*.scvd
+
+# ---- IAR 构建产物 ----
+hx711test/EWARM/**/Obj/
+hx711test/EWARM/**/Exe/
+hx711test/EWARM/**/List/
+hx711test/EWARM/**/settings/
+
+# ---- 嵌套仓库备份 ----
+hx711test/.git_backup_nested/
+
+# ---- 临时文件 ----
+debug.log
+0819f05c4eef4c71ace90d822a990e87
+*.tmp
+*.bak
+*.Bak
+
+# ---- 系统文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 编辑器 ----
+.idea/
+*.swp
+*~
