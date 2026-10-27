@@ -30,6 +30,12 @@ hx711test/EWARM/**/settings/
 hx711test/.git_backup_nested/
 
 # ---- 临时文件 ----
+/本地工具/
+/.workbuddy/
+/tmp/
+~$*.docx
+__pycache__/
+*.pyc
 debug.log
 0819f05c4eef4c71ace90d822a990e87
 *.tmp

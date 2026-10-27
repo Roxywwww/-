@@ -1,0 +1,8 @@
+# Preserve captured data and tool logs byte-for-byte across Windows checkouts.
+实验数据/原始数据/** -text -whitespace
+实验数据/构建日志/** -text -whitespace
+
+*.docx binary
+*.eprj2 binary
+*.jpg binary
+*.png binary

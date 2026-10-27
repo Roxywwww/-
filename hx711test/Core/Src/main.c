@@ -37,6 +37,7 @@
 /* USER CODE BEGIN PD */
 #define HX711_TARE_SAMPLES 16U
 #define TARE_BUTTON_DEBOUNCE_MS 30U
+#define UNIT_BUTTON_DEBOUNCE_MS 30U
 #define RAW_REPORT_INTERVAL_MS 200U
 #define HX711_AVERAGE_SAMPLES 5U
 #define OLED_REPORT_INTERVAL_MS 500U
@@ -66,6 +67,7 @@ static uint8_t average_index;
 static uint32_t last_oled_tick;
 static uint32_t temperature_tick;
 static uint8_t temperature_converting;
+static uint8_t display_unit_kg;
 
 /* USER CODE END PV */
 
@@ -148,10 +150,23 @@ static void OLED_ShowWeightTenths(int32_t tenths)
   char display_line[17];
   uint32_t magnitude = (tenths < 0) ? (uint32_t)(-tenths) :
                                        (uint32_t)tenths;
-  int length = snprintf(display_line, sizeof(display_line),
-                        "G %s%lu.%01lu g", (tenths < 0) ? "-" : "",
-                        (unsigned long)(magnitude / 10U),
-                        (unsigned long)(magnitude % 10U));
+  int length;
+
+  if (display_unit_kg != 0U)
+  {
+    /* tenths of a gram are ten-thousandths of a kilogram. */
+    length = snprintf(display_line, sizeof(display_line),
+                      "K %s%lu.%04lu kg", (tenths < 0) ? "-" : "",
+                      (unsigned long)(magnitude / 10000U),
+                      (unsigned long)(magnitude % 10000U));
+  }
+  else
+  {
+    length = snprintf(display_line, sizeof(display_line),
+                      "G %s%lu.%01lu g", (tenths < 0) ? "-" : "",
+                      (unsigned long)(magnitude / 10U),
+                      (unsigned long)(magnitude % 10U));
+  }
 
   if (length < 0 || length > 16)
   {
@@ -243,6 +258,10 @@ int main(void)
   uint32_t button_change_tick;
   uint32_t last_report_tick;
   uint8_t button_armed;
+  GPIO_PinState unit_last_sample;
+  GPIO_PinState unit_stable_state;
+  uint32_t unit_change_tick;
+  uint8_t unit_armed;
 
   /* USER CODE END 1 */
 
@@ -272,7 +291,7 @@ int main(void)
   OLED_ShowString(1U, 1U, "WEIGHT (g)");
   OLED_ShowString(2U, 1U, "Waiting HX711...");
   OLED_ShowString(3U, 1U, "TEMP WAIT");
-  OLED_ShowString(4U, 1U, "PA5 TARE");
+  OLED_ShowString(4U, 1U, "PA5 TARE A3 UNIT");
   DS18B20_Init();
   temperature_converting = (DS18B20_StartConversion() == HAL_OK) ? 1U : 0U;
   temperature_tick = HAL_GetTick();
@@ -308,6 +327,10 @@ int main(void)
   button_stable_state = button_last_sample;
   button_change_tick = HAL_GetTick();
   button_armed = (button_stable_state == GPIO_PIN_SET) ? 1U : 0U;
+  unit_last_sample = HAL_GPIO_ReadPin(UNIT_BUTTON_GPIO_Port, UNIT_BUTTON_Pin);
+  unit_stable_state = unit_last_sample;
+  unit_change_tick = HAL_GetTick();
+  unit_armed = (unit_stable_state == GPIO_PIN_SET) ? 1U : 0U;
   last_report_tick = HAL_GetTick() - RAW_REPORT_INTERVAL_MS;
   last_oled_tick = HAL_GetTick() - OLED_REPORT_INTERVAL_MS;
 
@@ -364,6 +387,46 @@ int main(void)
         if (length > 0 && length < (int)sizeof(line))
         {
           HAL_UART_Transmit(&huart1, (uint8_t *)line, (uint16_t)length, 100U);
+        }
+      }
+    }
+
+    /* Change display units once per debounced press; tare/calibration stay intact. */
+    {
+      GPIO_PinState unit_sample = HAL_GPIO_ReadPin(UNIT_BUTTON_GPIO_Port,
+                                                   UNIT_BUTTON_Pin);
+      if (unit_sample != unit_last_sample)
+      {
+        unit_last_sample = unit_sample;
+        unit_change_tick = HAL_GetTick();
+      }
+      if (unit_last_sample != unit_stable_state &&
+          (HAL_GetTick() - unit_change_tick) >= UNIT_BUTTON_DEBOUNCE_MS)
+      {
+        unit_stable_state = unit_last_sample;
+        if (unit_stable_state == GPIO_PIN_SET)
+        {
+          unit_armed = 1U;
+        }
+        else if (unit_armed != 0U)
+        {
+          static const uint8_t unit_g_message[] = "display_unit=g\r\n";
+          static const uint8_t unit_kg_message[] = "display_unit=kg\r\n";
+          unit_armed = 0U;
+          display_unit_kg ^= 1U;
+          OLED_ShowString(1U, 1U,
+                          display_unit_kg != 0U ? "WEIGHT (kg)" : "WEIGHT (g) ");
+          last_oled_tick = HAL_GetTick() - OLED_REPORT_INTERVAL_MS;
+          if (display_unit_kg != 0U)
+          {
+            HAL_UART_Transmit(&huart1, (uint8_t *)unit_kg_message,
+                              sizeof(unit_kg_message) - 1U, 100U);
+          }
+          else
+          {
+            HAL_UART_Transmit(&huart1, (uint8_t *)unit_g_message,
+                              sizeof(unit_g_message) - 1U, 100U);
+          }
         }
       }
     }
@@ -542,6 +605,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(TARE_BUTTON_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : UNIT_BUTTON_Pin (pressed = low) */
+  GPIO_InitStruct.Pin = UNIT_BUTTON_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(UNIT_BUTTON_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 

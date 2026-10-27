@@ -67,6 +67,8 @@ void Error_Handler(void);
 #define OLED_SDA_GPIO_Port GPIOB
 #define TARE_BUTTON_Pin GPIO_PIN_5
 #define TARE_BUTTON_GPIO_Port GPIOA
+#define UNIT_BUTTON_Pin GPIO_PIN_3
+#define UNIT_BUTTON_GPIO_Port GPIOA
 #define DS18B20_DQ_Pin GPIO_PIN_12
 #define DS18B20_DQ_GPIO_Port GPIOA
 
