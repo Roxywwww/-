@@ -1,0 +1,26 @@
+{
+  "port": "COM4",
+  "baud": 115200,
+  "serial_format": "8N1",
+  "label": "",
+  "note": "",
+  "port_details": {
+    "description": "USB-SERIAL CH340 (COM4)",
+    "hwid": "USB VID:PID=1A86:7523 SER= LOCATION=1-9.2",
+    "serial_number": ""
+  },
+  "duration_limit_s": null,
+  "pyserial_version": "3.5",
+  "started_local": "2026-11-09T16:53:14.710+08:00",
+  "status": "stopped",
+  "timestamp_meaning": "电脑收到整行或不完整片段时的本地时间，含时区；不是ADC采样时刻",
+  "temperature_alignment": "latest_temp为此前最近有效温度；并非同步采样，年龄与状态单独记录",
+  "decoding": "utf-8",
+  "script_sha256": "0b53066bf5c217da5d84b3ff1cf283024122c251baf20fd3150c081944d3dba0",
+  "records": 66,
+  "received_bytes": 2372,
+  "updated_local": "2026-11-09T16:53:25.940+08:00",
+  "elapsed_s": 11.235,
+  "stopped_local": "2026-11-09T16:53:25.939+08:00",
+  "stop_reason": "用户按Ctrl+C停止"
+}

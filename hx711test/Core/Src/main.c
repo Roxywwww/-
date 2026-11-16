@@ -36,15 +36,20 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define HX711_TARE_SAMPLES 16U
+#define HX711_STARTUP_SETTLE_MS 2000U
 #define TARE_BUTTON_DEBOUNCE_MS 30U
 #define UNIT_BUTTON_DEBOUNCE_MS 30U
 #define RAW_REPORT_INTERVAL_MS 200U
 #define HX711_AVERAGE_SAMPLES 5U
+#define HX711_IIR_DIVISOR 3LL
+#define HX711_IIR_COUNT_SCALE 256LL
 #define OLED_REPORT_INTERVAL_MS 500U
+/* Display-only zero band, in tenths of a gram. */
+#define OLED_ZERO_BAND_TENTHS 3
 #define DS18B20_CONVERSION_MS 800U
 #define DS18B20_RETRY_MS 1000U
-/* 500 g calibration on 2026-10-15: 177.6184 ADC counts per gram. */
-#define HX711_COUNTS_PER_GRAM_X10000 1776184LL
+/* Desktop calibration on 2026-11-13, checked at 200 g and 500 g. */
+#define HX711_COUNTS_PER_GRAM_X10000 1782000LL
 
 /* USER CODE END PD */
 
@@ -64,6 +69,8 @@ static int32_t average_samples[HX711_AVERAGE_SAMPLES];
 static int64_t average_sum;
 static uint8_t average_count;
 static uint8_t average_index;
+static int64_t iir_state;
+static uint8_t iir_valid;
 static uint32_t last_oled_tick;
 static uint32_t temperature_tick;
 static uint8_t temperature_converting;
@@ -118,11 +125,12 @@ static int32_t HX711_NetToTenthsOfGram(int32_t net)
   return (net < 0) ? -tenths : tenths;
 }
 
-static void HX711_AverageReset(void)
+static void HX711_FiltersReset(void)
 {
   average_sum = 0;
   average_count = 0U;
   average_index = 0U;
+  iir_valid = 0U;
 }
 
 /* Average the newest five net readings, or all available readings at start. */
@@ -144,11 +152,40 @@ static int32_t HX711_AverageAdd(int32_t net)
   return (int32_t)(average_sum / average_count);
 }
 
+/* One-pole low-pass, with fractional counts retained between samples. */
+static int32_t HX711_IirAdd(int32_t net)
+{
+  int64_t input = (int64_t)net * HX711_IIR_COUNT_SCALE;
+  int64_t magnitude;
+  int32_t counts;
+
+  if (iir_valid == 0U)
+  {
+    iir_state = input;
+    iir_valid = 1U;
+  }
+  else
+  {
+    iir_state += (input - iir_state) / HX711_IIR_DIVISOR;
+  }
+
+  magnitude = (iir_state < 0) ? -iir_state : iir_state;
+  counts = (int32_t)((magnitude + HX711_IIR_COUNT_SCALE / 2LL) /
+                     HX711_IIR_COUNT_SCALE);
+  return (iir_state < 0) ? -counts : counts;
+}
+
 /* Keep the whole display row 16 characters long so old digits are erased. */
 static void OLED_ShowWeightTenths(int32_t tenths)
 {
   char display_line[17];
-  uint32_t magnitude = (tenths < 0) ? (uint32_t)(-tenths) :
+  uint32_t magnitude;
+
+  if (tenths >= -OLED_ZERO_BAND_TENTHS && tenths <= OLED_ZERO_BAND_TENTHS)
+  {
+    tenths = 0;
+  }
+  magnitude = (tenths < 0) ? (uint32_t)(-tenths) :
                                        (uint32_t)tenths;
   int length;
 
@@ -295,7 +332,7 @@ int main(void)
   DS18B20_Init();
   temperature_converting = (DS18B20_StartConversion() == HAL_OK) ? 1U : 0U;
   temperature_tick = HAL_GetTick();
-  HAL_Delay(500U);
+  HAL_Delay(HX711_STARTUP_SETTLE_MS);
 
   /* The pan must be empty at startup. Average several conversions for zero. */
   {
@@ -307,7 +344,7 @@ int main(void)
     {
       tare_offset = new_offset;
       tare_valid = 1U;
-      HX711_AverageReset();
+      HX711_FiltersReset();
       length = snprintf(line, sizeof(line), "tare_offset=%ld samples=%u\r\n",
                         (long)tare_offset, (unsigned int)HX711_TARE_SAMPLES);
     }
@@ -344,7 +381,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     int32_t raw;
-    char line[64];
+    char line[96];
     int length;
     uint32_t now = HAL_GetTick();
     GPIO_PinState button_sample = HAL_GPIO_ReadPin(TARE_BUTTON_GPIO_Port,
@@ -374,7 +411,7 @@ int main(void)
         {
           tare_offset = new_offset;
           tare_valid = 1U;
-          HX711_AverageReset();
+          HX711_FiltersReset();
           length = snprintf(line, sizeof(line), "tare_button_offset=%ld\r\n",
                             (long)tare_offset);
         }
@@ -438,7 +475,14 @@ int main(void)
       last_report_tick = HAL_GetTick();
       status = HX711_Read(&raw, 200U);
 
-      if (status == HAL_OK)
+      if (status == HAL_OK && (raw == -8388608L || raw == 8388607L))
+      {
+        HX711_FiltersReset();
+        OLED_ShowString(2U, 1U, "HX711 SATURATED ");
+        length = snprintf(line, sizeof(line), "raw=%ld HX711 saturated\r\n",
+                          (long)raw);
+      }
+      else if (status == HAL_OK)
       {
         if (tare_valid != 0U)
         {
@@ -446,11 +490,14 @@ int main(void)
           int32_t tenths = HX711_NetToTenthsOfGram(net);
           int32_t average_net = HX711_AverageAdd(net);
           int32_t average_tenths = HX711_NetToTenthsOfGram(average_net);
+          int32_t iir_tenths = HX711_NetToTenthsOfGram(HX711_IirAdd(net));
           uint32_t magnitude = (tenths < 0) ? (uint32_t)(-tenths) :
                                                (uint32_t)tenths;
           uint32_t average_magnitude = (average_tenths < 0) ?
                                        (uint32_t)(-average_tenths) :
                                        (uint32_t)average_tenths;
+          uint32_t iir_magnitude = (iir_tenths < 0) ? (uint32_t)(-iir_tenths) :
+                                                     (uint32_t)iir_tenths;
 
           if ((HAL_GetTick() - last_oled_tick) >= OLED_REPORT_INTERVAL_MS)
           {
@@ -459,14 +506,18 @@ int main(void)
           }
 
           length = snprintf(line, sizeof(line),
-                            "raw=%ld net=%ld g=%s%lu.%01lu g_avg=%s%lu.%01lu\r\n",
+                            "raw=%ld net=%ld g=%s%lu.%01lu g_avg=%s%lu.%01lu "
+                            "g_iir=%s%lu.%01lu\r\n",
                             (long)raw, (long)net,
                             (tenths < 0) ? "-" : "",
                             (unsigned long)(magnitude / 10U),
                             (unsigned long)(magnitude % 10U),
                             (average_tenths < 0) ? "-" : "",
                             (unsigned long)(average_magnitude / 10U),
-                            (unsigned long)(average_magnitude % 10U));
+                            (unsigned long)(average_magnitude % 10U),
+                            (iir_tenths < 0) ? "-" : "",
+                            (unsigned long)(iir_magnitude / 10U),
+                            (unsigned long)(iir_magnitude % 10U));
         }
         else
         {

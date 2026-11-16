@@ -1,0 +1,66 @@
+{
+  "rows": 344,
+  "record_types": {
+    "weight": 275,
+    "temperature": 69
+  },
+  "elapsed_first": "0.125000",
+  "elapsed_last": "60.109000",
+  "raw": {
+    "n": 275,
+    "mean": 33515.92727272727,
+    "std_sample": 82.39198957977892,
+    "min": 33353.0,
+    "max": 33749.0,
+    "range": 396.0
+  },
+  "net": {
+    "n": 275,
+    "mean": 10.927272727272728,
+    "std_sample": 82.39198957977892,
+    "min": -152.0,
+    "max": 244.0,
+    "range": 396.0
+  },
+  "g": {
+    "n": 275,
+    "mean": 0.059272727272727276,
+    "std_sample": 0.4673416611731531,
+    "min": -0.9,
+    "max": 1.4,
+    "range": 2.3
+  },
+  "g_avg": {
+    "n": 275,
+    "mean": 0.06218181818181817,
+    "std_sample": 0.4265234220945226,
+    "min": -0.7,
+    "max": 1.1,
+    "range": 1.8
+  },
+  "temp_c": {
+    "n": 69,
+    "mean": 26.49,
+    "std_sample": 0.03601470287992674,
+    "min": 26.43,
+    "max": 26.56,
+    "range": 0.129999999999999
+  },
+  "latest_temp_c": 26.5,
+  "temp_age_s": {
+    "n": 341,
+    "mean": 0.3208826979472141,
+    "std_sample": 0.26103309068976793,
+    "min": 0.0,
+    "max": 0.75,
+    "range": 0.75
+  },
+  "temp_state_values": [
+    "ok",
+    "unknown"
+  ],
+  "tare_invalid_rows": 0,
+  "line_complete_values": [
+    "1"
+  ]
+}

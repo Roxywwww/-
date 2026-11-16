@@ -1,0 +1,198 @@
+{
+  "source_records": "records.csv",
+  "analysis_scope": "10min room-temperature tabletop empty-load diagnostic only",
+  "weight_rows": 2745,
+  "temperature_rows": 687,
+  "raw": {
+    "n": 2745,
+    "mean": 33150.27795992714,
+    "std_sample": 80.97003665237365,
+    "min": 32835.0,
+    "max": 33542.0,
+    "range": 707.0
+  },
+  "g": {
+    "n": 2745,
+    "mean": -1.9975956284153005,
+    "std_sample": 0.45639452906628963,
+    "min": -3.8,
+    "max": 0.2,
+    "range": 4.0
+  },
+  "g_avg": {
+    "n": 2745,
+    "mean": -1.9929690346083788,
+    "std_sample": 0.4232812537939636,
+    "min": -3.0,
+    "max": -0.5,
+    "range": 2.5
+  },
+  "temp_c": {
+    "n": 687,
+    "mean": 26.482139737991265,
+    "std_sample": 0.043316493824512414,
+    "min": 26.37,
+    "max": 26.56,
+    "range": 0.18999999999999773
+  },
+  "first_60s_raw": {
+    "n": 274,
+    "mean": 33309.67883211679,
+    "std_sample": 61.86484551600339,
+    "min": 32936.0,
+    "max": 33434.0,
+    "range": 498.0
+  },
+  "last_60s_raw": {
+    "n": 274,
+    "mean": 33086.653284671534,
+    "std_sample": 35.032693367139615,
+    "min": 32959.0,
+    "max": 33229.0,
+    "range": 270.0
+  },
+  "last_minus_first60_mean_counts": -223.02554744525696,
+  "last_minus_first60_mean_g_using_177.6184": -1.2556443895748242,
+  "raw_vs_time_regression": {
+    "slope_per_s": -0.3543188093244669,
+    "intercept": 33256.58412012007,
+    "r2": 0.574486489155285
+  },
+  "temp_vs_time_regression": {
+    "slope_per_s": 0.00013116406441147867,
+    "intercept": 26.442796508111584,
+    "r2": 0.27598449404933345
+  },
+  "raw_vs_latest_temp_correlation": -0.43918135654078383,
+  "minute_windows": [
+    {
+      "minute_index": 0,
+      "weight_n": 274,
+      "temp_n": 69,
+      "raw_mean": 33309.67883211679,
+      "raw_std_sample": 61.86484551600339,
+      "g_mean": -1.1014598540145986,
+      "g_avg_mean": -1.0930656934306568,
+      "temp_mean": 26.445217391304347,
+      "temp_min": 26.43,
+      "temp_max": 26.5
+    },
+    {
+      "minute_index": 1,
+      "weight_n": 275,
+      "temp_n": 69,
+      "raw_mean": 33224.88,
+      "raw_std_sample": 53.62804582744064,
+      "g_mean": -1.5778181818181818,
+      "g_avg_mean": -1.5705454545454545,
+      "temp_mean": 26.430289855072466,
+      "temp_min": 26.37,
+      "temp_max": 26.5
+    },
+    {
+      "minute_index": 2,
+      "weight_n": 274,
+      "temp_n": 68,
+      "raw_mean": 33168.33941605839,
+      "raw_std_sample": 46.38821035275044,
+      "g_mean": -1.8956204379562043,
+      "g_avg_mean": -1.88978102189781,
+      "temp_mean": 26.456764705882353,
+      "temp_min": 26.43,
+      "temp_max": 26.5
+    },
+    {
+      "minute_index": 3,
+      "weight_n": 275,
+      "temp_n": 69,
+      "raw_mean": 33150.37090909091,
+      "raw_std_sample": 38.715515254653546,
+      "g_mean": -1.994181818181818,
+      "g_avg_mean": -1.996,
+      "temp_mean": 26.46550724637681,
+      "temp_min": 26.43,
+      "temp_max": 26.5
+    },
+    {
+      "minute_index": 4,
+      "weight_n": 274,
+      "temp_n": 69,
+      "raw_mean": 33138.22627737226,
+      "raw_std_sample": 35.77718852926141,
+      "g_mean": -2.064963503649635,
+      "g_avg_mean": -2.064963503649635,
+      "temp_mean": 26.486666666666665,
+      "temp_min": 26.43,
+      "temp_max": 26.56
+    },
+    {
+      "minute_index": 5,
+      "weight_n": 275,
+      "temp_n": 68,
+      "raw_mean": 33135.08,
+      "raw_std_sample": 56.006394316895296,
+      "g_mean": -2.082181818181818,
+      "g_avg_mean": -2.071636363636364,
+      "temp_mean": 26.543235294117643,
+      "temp_min": 26.5,
+      "temp_max": 26.56
+    },
+    {
+      "minute_index": 6,
+      "weight_n": 274,
+      "temp_n": 69,
+      "raw_mean": 33106.857664233576,
+      "raw_std_sample": 36.52604314035732,
+      "g_mean": -2.2423357664233574,
+      "g_avg_mean": -2.239051094890511,
+      "temp_mean": 26.508695652173913,
+      "temp_min": 26.5,
+      "temp_max": 26.56
+    },
+    {
+      "minute_index": 7,
+      "weight_n": 275,
+      "temp_n": 68,
+      "raw_mean": 33096.189090909094,
+      "raw_std_sample": 42.52084792539567,
+      "g_mean": -2.3021818181818183,
+      "g_avg_mean": -2.2945454545454544,
+      "temp_mean": 26.5,
+      "temp_min": 26.5,
+      "temp_max": 26.5
+    },
+    {
+      "minute_index": 8,
+      "weight_n": 275,
+      "temp_n": 69,
+      "raw_mean": 33086.71636363636,
+      "raw_std_sample": 43.93882095287264,
+      "g_mean": -2.357090909090909,
+      "g_avg_mean": -2.355272727272727,
+      "temp_mean": 26.476666666666667,
+      "temp_min": 26.43,
+      "temp_max": 26.5
+    },
+    {
+      "minute_index": 9,
+      "weight_n": 274,
+      "temp_n": 69,
+      "raw_mean": 33086.653284671534,
+      "raw_std_sample": 35.032693367139615,
+      "g_mean": -2.356934306569343,
+      "g_avg_mean": -2.353649635036496,
+      "temp_mean": 26.509130434782605,
+      "temp_min": 26.43,
+      "temp_max": 26.56
+    }
+  ],
+  "temperature_age_s": {
+    "n": 2745,
+    "mean": 0.4030276867030965,
+    "std_sample": 0.22914204276775435,
+    "min": 0.062,
+    "max": 0.75,
+    "range": 0.688
+  },
+  "not_a_compensation_result": true
+}

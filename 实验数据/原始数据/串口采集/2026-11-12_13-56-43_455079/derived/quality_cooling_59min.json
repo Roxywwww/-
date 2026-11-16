@@ -1,0 +1,231 @@
+{
+  "records": 20133,
+  "weight_rows": 16106,
+  "temp_rows": 4021,
+  "first_local": "2026-11-12T13:56:43.599+08:00",
+  "last_local": "2026-11-12T14:55:21.408+08:00",
+  "first_temp": 26.18,
+  "last_temp": 21.37,
+  "temp_min": 21.37,
+  "temp_max": 26.18,
+  "last_10min_temp_start": 21.62,
+  "last_10min_temp_end": 21.37,
+  "last_10min_temp_mean": 21.50107744107744,
+  "last_20min_temp_linear": {
+    "slope_per_s": -0.00045140354847174243,
+    "slope_per_min": -0.027084212908304546,
+    "r2": 0.9815396518142464
+  },
+  "last_10min_temp_linear": {
+    "slope_per_s": -0.0004279881572946948,
+    "slope_per_min": -0.02567928943768169,
+    "r2": 0.9140521215213471
+  },
+  "last_10min_raw_linear": {
+    "slope_per_s": 0.1007305380524289,
+    "slope_per_min": 6.0438322831457345,
+    "r2": 0.22987821578325462
+  },
+  "last_20min_raw_linear": {
+    "slope_per_s": 0.10661627642997407,
+    "slope_per_min": 6.396976585798444,
+    "r2": 0.6112100914613132
+  },
+  "last_10min_temp_minmax": [
+    21.37,
+    21.62
+  ],
+  "raw_minus_net_mean": 33019.0,
+  "raw_minus_net_min": 33019.0,
+  "raw_minus_net_max": 33019.0,
+  "errors": [
+    {
+      "elapsed_s": "52.907000",
+      "received_local": "2026-11-12T13:57:36.360+08:00",
+      "type": "temperature_error",
+      "line": "temp_error=read_or_crc"
+    },
+    {
+      "elapsed_s": "1177.782000",
+      "received_local": "2026-11-12T14:16:21.232+08:00",
+      "type": "temperature_error",
+      "line": "temp_error=read_or_crc"
+    },
+    {
+      "elapsed_s": "1354.329000",
+      "received_local": "2026-11-12T14:19:17.783+08:00",
+      "type": "temperature_error",
+      "line": "temp_error=read_or_crc"
+    },
+    {
+      "elapsed_s": "1383.157000",
+      "received_local": "2026-11-12T14:19:46.610+08:00",
+      "type": "temperature_error",
+      "line": "temp_error=read_or_crc"
+    },
+    {
+      "elapsed_s": "2014.204000",
+      "received_local": "2026-11-12T14:30:17.651+08:00",
+      "type": "temperature_error",
+      "line": "temp_error=read_or_crc"
+    },
+    {
+      "elapsed_s": "2381.266000",
+      "received_local": "2026-11-12T14:36:24.714+08:00",
+      "type": "temperature_error",
+      "line": "temp_error=read_or_crc"
+    }
+  ],
+  "minute_tail": [
+    {
+      "minute": 44,
+      "raw_mean": 32997.39781021898,
+      "gavg_mean": -0.11934306569343067,
+      "temp_mean": 21.75176470588235,
+      "temp_min": 21.75,
+      "temp_max": 21.81,
+      "weight_n": 274,
+      "temp_n": 68
+    },
+    {
+      "minute": 45,
+      "raw_mean": 33015.796363636364,
+      "gavg_mean": -0.01890909090909091,
+      "temp_mean": 21.744927536231884,
+      "temp_min": 21.68,
+      "temp_max": 21.75,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 46,
+      "raw_mean": 33011.42909090909,
+      "gavg_mean": -0.04581818181818182,
+      "temp_mean": 21.69014492753623,
+      "temp_min": 21.68,
+      "temp_max": 21.75,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 47,
+      "raw_mean": 33023.192727272726,
+      "gavg_mean": 0.02472727272727273,
+      "temp_mean": 21.68,
+      "temp_min": 21.68,
+      "temp_max": 21.68,
+      "weight_n": 275,
+      "temp_n": 68
+    },
+    {
+      "minute": 48,
+      "raw_mean": 33035.6,
+      "gavg_mean": 0.09127272727272728,
+      "temp_mean": 21.661739130434785,
+      "temp_min": 21.62,
+      "temp_max": 21.68,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 49,
+      "raw_mean": 33043.69454545454,
+      "gavg_mean": 0.13490909090909092,
+      "temp_mean": 21.62,
+      "temp_min": 21.62,
+      "temp_max": 21.62,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 50,
+      "raw_mean": 33041.35636363636,
+      "gavg_mean": 0.12472727272727274,
+      "temp_mean": 21.608695652173914,
+      "temp_min": 21.56,
+      "temp_max": 21.62,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 51,
+      "raw_mean": 33050.86181818182,
+      "gavg_mean": 0.1749090909090909,
+      "temp_mean": 21.56176470588235,
+      "temp_min": 21.56,
+      "temp_max": 21.62,
+      "weight_n": 275,
+      "temp_n": 68
+    },
+    {
+      "minute": 52,
+      "raw_mean": 33051.02909090909,
+      "gavg_mean": 0.1810909090909091,
+      "temp_mean": 21.56,
+      "temp_min": 21.56,
+      "temp_max": 21.56,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 53,
+      "raw_mean": 33049.68,
+      "gavg_mean": 0.1709090909090909,
+      "temp_mean": 21.510434782608694,
+      "temp_min": 21.5,
+      "temp_max": 21.56,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 54,
+      "raw_mean": 33054.28,
+      "gavg_mean": 0.19490909090909092,
+      "temp_mean": 21.5,
+      "temp_min": 21.5,
+      "temp_max": 21.5,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 55,
+      "raw_mean": 33054.785454545454,
+      "gavg_mean": 0.19672727272727272,
+      "temp_mean": 21.469117647058823,
+      "temp_min": 21.43,
+      "temp_max": 21.5,
+      "weight_n": 275,
+      "temp_n": 68
+    },
+    {
+      "minute": 56,
+      "raw_mean": 33080.170909090906,
+      "gavg_mean": 0.3385454545454546,
+      "temp_mean": 21.43,
+      "temp_min": 21.43,
+      "temp_max": 21.43,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 57,
+      "raw_mean": 33083.774545454544,
+      "gavg_mean": 0.36363636363636365,
+      "temp_mean": 21.43,
+      "temp_min": 21.43,
+      "temp_max": 21.43,
+      "weight_n": 275,
+      "temp_n": 69
+    },
+    {
+      "minute": 58,
+      "raw_mean": 33095.03448275862,
+      "gavg_mean": 0.4281609195402299,
+      "temp_mean": 21.405454545454546,
+      "temp_min": 21.37,
+      "temp_max": 21.43,
+      "weight_n": 174,
+      "temp_n": 44
+    }
+  ]
+}

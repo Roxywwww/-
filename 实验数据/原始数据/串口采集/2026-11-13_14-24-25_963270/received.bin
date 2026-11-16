@@ -1,0 +1,286 @@
+raw=32549 net=-152 g=-0.9 g_avg=-0.8
+temp_c=26.43
+raw=32454 net=-247 g=-1.4 g_avg=-0.9
+raw=32526 net=-175 g=-1.0 g_avg=-0.9
+raw=32530 net=-171 g=-1.0 g_avg=-1.0
+raw=32541 net=-160 g=-0.9 g_avg=-1.0
+temp_c=26.43
+raw=32510 net=-191 g=-1.1 g_avg=-1.1
+raw=32389 net=-312 g=-1.8 g_avg=-1.1
+raw=32407 net=-294 g=-1.7 g_avg=-1.3
+raw=32493 net=-208 g=-1.2 g_avg=-1.3
+temp_c=26.43
+raw=32407 net=-294 g=-1.7 g_avg=-1.5
+raw=32390 net=-311 g=-1.8 g_avg=-1.6
+raw=32452 net=-249 g=-1.4 g_avg=-1.5
+raw=32466 net=-235 g=-1.3 g_avg=-1.5
+temp_c=26.43
+raw=32435 net=-266 g=-1.5 g_avg=-1.5
+raw=32544 net=-157 g=-0.9 g_avg=-1.4
+raw=32385 net=-316 g=-1.8 g_avg=-1.4
+raw=32477 net=-224 g=-1.3 g_avg=-1.3
+temp_c=26.43
+raw=32490 net=-211 g=-1.2 g_avg=-1.3
+raw=32449 net=-252 g=-1.4 g_avg=-1.3
+raw=32547 net=-154 g=-0.9 g_avg=-1.3
+USART1 OK, 115200 8N1
+tare_offset=32558 samples=16
+raw=32556 net=-2 g=0.0 g_avg=0.0
+temp_c=26.43
+raw=32581 net=23 g=0.1 g_avg=0.1
+raw=32591 net=33 g=0.2 g_avg=0.1
+raw=32616 net=58 g=0.3 g_avg=0.2
+raw=32611 net=53 g=0.3 g_avg=0.2
+temp_c=26.43
+raw=32584 net=26 g=0.1 g_avg=0.2
+raw=32623 net=65 g=0.4 g_avg=0.3
+raw=32569 net=11 g=0.1 g_avg=0.2
+raw=32577 net=19 g=0.1 g_avg=0.2
+temp_c=26.43
+raw=32589 net=31 g=0.2 g_avg=0.2
+raw=32585 net=27 g=0.2 g_avg=0.2
+raw=32598 net=40 g=0.2 g_avg=0.1
+raw=32606 net=48 g=0.3 g_avg=0.2
+temp_c=26.43
+raw=32587 net=29 g=0.2 g_avg=0.2
+raw=32548 net=-10 g=-0.1 g_avg=0.1
+raw=32565 net=7 g=0.0 g_avg=0.1
+raw=32623 net=65 g=0.4 g_avg=0.2
+temp_c=26.43
+raw=32576 net=18 g=0.1 g_avg=0.1
+raw=32631 net=73 g=0.4 g_avg=0.2
+raw=32594 net=36 g=0.2 g_avg=0.2
+raw=32617 net=59 g=0.3 g_avg=0.3
+temp_c=26.43
+raw=32609 net=51 g=0.3 g_avg=0.3
+raw=32612 net=54 g=0.3 g_avg=0.3
+raw=32602 net=44 g=0.2 g_avg=0.3
+raw=32568 net=10 g=0.1 g_avg=0.2
+temp_c=26.43
+raw=32614 net=56 g=0.3 g_avg=0.2
+raw=32591 net=33 g=0.2 g_avg=0.2
+raw=32684 net=126 g=0.7 g_avg=0.3
+raw=32627 net=69 g=0.4 g_avg=0.3
+temp_c=26.43
+raw=32594 net=36 g=0.2 g_avg=0.4
+raw=32590 net=32 g=0.2 g_avg=0.3
+raw=32641 net=83 g=0.5 g_avg=0.4
+raw=32655 net=97 g=0.5 g_avg=0.4
+temp_c=26.43
+raw=32629 net=71 g=0.4 g_avg=0.4
+raw=32642 net=84 g=0.5 g_avg=0.4
+raw=32589 net=31 g=0.2 g_avg=0.4
+raw=32604 net=46 g=0.3 g_avg=0.4
+temp_c=26.43
+raw=32610 net=52 g=0.3 g_avg=0.3
+raw=32592 net=34 g=0.2 g_avg=0.3
+raw=32619 net=61 g=0.3 g_avg=0.2
+raw=32621 net=63 g=0.4 g_avg=0.3
+temp_c=26.43
+raw=32614 net=56 g=0.3 g_avg=0.3
+raw=32615 net=57 g=0.3 g_avg=0.3
+raw=32647 net=89 g=0.5 g_avg=0.4
+raw=32611 net=53 g=0.3 g_avg=0.4
+temp_c=26.43
+raw=32531 net=-27 g=-0.2 g_avg=0.3
+raw=32590 net=32 g=0.2 g_avg=0.2
+raw=32613 net=55 g=0.3 g_avg=0.2
+raw=32560 net=2 g=0.0 g_avg=0.1
+temp_c=26.43
+raw=32636 net=78 g=0.4 g_avg=0.2
+raw=32656 net=98 g=0.6 g_avg=0.3
+raw=32582 net=24 g=0.1 g_avg=0.3
+raw=32621 net=63 g=0.4 g_avg=0.3
+temp_c=26.43
+raw=32606 net=48 g=0.3 g_avg=0.3
+raw=32615 net=57 g=0.3 g_avg=0.3
+raw=32642 net=84 g=0.5 g_avg=0.3
+raw=32630 net=72 g=0.4 g_avg=0.4
+temp_c=26.43
+raw=32614 net=56 g=0.3 g_avg=0.4
+raw=32633 net=75 g=0.4 g_avg=0.4
+raw=32589 net=31 g=0.2 g_avg=0.4
+raw=32591 net=33 g=0.2 g_avg=0.3
+temp_c=26.43
+raw=32582 net=24 g=0.1 g_avg=0.2
+raw=32507 net=-51 g=-0.3 g_avg=0.1
+raw=32491 net=-67 g=-0.4 g_avg=0.0
+raw=32429 net=-129 g=-0.7 g_avg=-0.2
+temp_c=26.43
+raw=32584 net=26 g=0.1 g_avg=-0.2
+raw=32511 net=-47 g=-0.3 g_avg=-0.3
+raw=32443 net=-115 g=-0.6 g_avg=-0.4
+raw=32589 net=31 g=0.2 g_avg=-0.3
+temp_c=26.43
+raw=32587 net=29 g=0.2 g_avg=-0.1
+raw=32554 net=-4 g=0.0 g_avg=-0.1
+raw=32360 net=-198 g=-1.1 g_avg=-0.3
+raw=32542 net=-16 g=-0.1 g_avg=-0.2
+temp_c=26.43
+raw=32444 net=-114 g=-0.6 g_avg=-0.3
+raw=32482 net=-76 g=-0.4 g_avg=-0.5
+raw=32570 net=12 g=0.1 g_avg=-0.4
+raw=32509 net=-49 g=-0.3 g_avg=-0.3
+temp_c=26.43
+raw=32526 net=-32 g=-0.2 g_avg=-0.3
+raw=32462 net=-96 g=-0.5 g_avg=-0.3
+raw=32418 net=-140 g=-0.8 g_avg=-0.3
+raw=32518 net=-40 g=-0.2 g_avg=-0.4
+temp_c=26.50
+raw=32513 net=-45 g=-0.3 g_avg=-0.4
+raw=32541 net=-17 g=-0.1 g_avg=-0.4
+raw=32555 net=-3 g=0.0 g_avg=-0.3
+raw=32535 net=-23 g=-0.1 g_avg=-0.1
+temp_c=26.43
+raw=32546 net=-12 g=-0.1 g_avg=-0.1
+raw=32573 net=15 g=0.1 g_avg=0.0
+raw=32498 net=-60 g=-0.3 g_avg=-0.1
+raw=32539 net=-19 g=-0.1 g_avg=-0.1
+temp_c=26.43
+raw=32523 net=-35 g=-0.2 g_avg=-0.1
+raw=32554 net=-4 g=0.0 g_avg=-0.1
+raw=32559 net=1 g=0.0 g_avg=-0.1
+raw=32524 net=-34 g=-0.2 g_avg=-0.1
+temp_c=26.50
+raw=32557 net=-1 g=0.0 g_avg=-0.1
+raw=32593 net=35 g=0.2 g_avg=0.0
+raw=32573 net=15 g=0.1 g_avg=0.0
+raw=32576 net=18 g=0.1 g_avg=0.0
+temp_c=26.50
+raw=32535 net=-23 g=-0.1 g_avg=0.0
+raw=32514 net=-44 g=-0.2 g_avg=0.0
+raw=32584 net=26 g=0.1 g_avg=0.0
+raw=32627 net=69 g=0.4 g_avg=0.1
+temp_c=26.43
+raw=32616 net=58 g=0.3 g_avg=0.1
+raw=32595 net=37 g=0.2 g_avg=0.2
+raw=32621 net=63 g=0.4 g_avg=0.3
+raw=32627 net=69 g=0.4 g_avg=0.3
+temp_c=26.43
+raw=32594 net=36 g=0.2 g_avg=0.3
+raw=32617 net=59 g=0.3 g_avg=0.3
+raw=32611 net=53 g=0.3 g_avg=0.3
+raw=32636 net=78 g=0.4 g_avg=0.3
+temp_c=26.43
+raw=32647 net=89 g=0.5 g_avg=0.4
+raw=32607 net=49 g=0.3 g_avg=0.4
+raw=32567 net=9 g=0.1 g_avg=0.3
+raw=32579 net=21 g=0.1 g_avg=0.3
+temp_c=26.50
+raw=32583 net=25 g=0.1 g_avg=0.2
+raw=32583 net=25 g=0.1 g_avg=0.1
+raw=32583 net=25 g=0.1 g_avg=0.1
+raw=32607 net=49 g=0.3 g_avg=0.2
+temp_c=26.50
+raw=32602 net=44 g=0.2 g_avg=0.2
+raw=32573 net=15 g=0.1 g_avg=0.2
+raw=32617 net=59 g=0.3 g_avg=0.2
+raw=32667 net=109 g=0.6 g_avg=0.3
+temp_c=26.43
+raw=32643 net=85 g=0.5 g_avg=0.3
+raw=32624 net=66 g=0.4 g_avg=0.4
+raw=32586 net=28 g=0.2 g_avg=0.4
+raw=32563 net=5 g=0.0 g_avg=0.3
+temp_c=26.43
+raw=32608 net=50 g=0.3 g_avg=0.3
+raw=32593 net=35 g=0.2 g_avg=0.2
+raw=32622 net=64 g=0.4 g_avg=0.2
+raw=32637 net=79 g=0.4 g_avg=0.3
+temp_c=26.50
+raw=32601 net=43 g=0.2 g_avg=0.3
+raw=32659 net=101 g=0.6 g_avg=0.4
+raw=32654 net=96 g=0.5 g_avg=0.4
+raw=32609 net=51 g=0.3 g_avg=0.4
+temp_c=26.50
+raw=32641 net=83 g=0.5 g_avg=0.4
+raw=32606 net=48 g=0.3 g_avg=0.4
+raw=32630 net=72 g=0.4 g_avg=0.4
+raw=32631 net=73 g=0.4 g_avg=0.4
+temp_c=26.43
+raw=32595 net=37 g=0.2 g_avg=0.3
+raw=32667 net=109 g=0.6 g_avg=0.4
+raw=32618 net=60 g=0.3 g_avg=0.4
+raw=32617 net=59 g=0.3 g_avg=0.4
+temp_c=26.50
+raw=32634 net=76 g=0.4 g_avg=0.4
+raw=32627 net=69 g=0.4 g_avg=0.4
+raw=32644 net=86 g=0.5 g_avg=0.4
+raw=32610 net=52 g=0.3 g_avg=0.4
+temp_c=26.50
+raw=32661 net=103 g=0.6 g_avg=0.4
+raw=32618 net=60 g=0.3 g_avg=0.4
+raw=32662 net=104 g=0.6 g_avg=0.5
+raw=32617 net=59 g=0.3 g_avg=0.4
+temp_c=26.43
+raw=32611 net=53 g=0.3 g_avg=0.4
+raw=32626 net=68 g=0.4 g_avg=0.4
+raw=32647 net=89 g=0.5 g_avg=0.4
+raw=32679 net=121 g=0.7 g_avg=0.4
+temp_c=26.50
+raw=32652 net=94 g=0.5 g_avg=0.5
+raw=32657 net=99 g=0.6 g_avg=0.5
+raw=32625 net=67 g=0.4 g_avg=0.5
+raw=32598 net=40 g=0.2 g_avg=0.5
+temp_c=26.50
+raw=32673 net=115 g=0.6 g_avg=0.5
+raw=32650 net=92 g=0.5 g_avg=0.5
+raw=32641 net=83 g=0.5 g_avg=0.4
+raw=32644 net=86 g=0.5 g_avg=0.5
+temp_c=26.50
+raw=32624 net=66 g=0.4 g_avg=0.5
+raw=32574 net=16 g=0.1 g_avg=0.4
+raw=32638 net=80 g=0.5 g_avg=0.4
+raw=32611 net=53 g=0.3 g_avg=0.3
+temp_c=26.50
+raw=32608 net=50 g=0.3 g_avg=0.3
+raw=32614 net=56 g=0.3 g_avg=0.3
+raw=32646 net=88 g=0.5 g_avg=0.4
+raw=32598 net=40 g=0.2 g_avg=0.3
+temp_c=26.50
+raw=32624 net=66 g=0.4 g_avg=0.3
+raw=32625 net=67 g=0.4 g_avg=0.4
+raw=32625 net=67 g=0.4 g_avg=0.4
+raw=32537 net=-21 g=-0.1 g_avg=0.2
+temp_c=26.50
+raw=32590 net=32 g=0.2 g_avg=0.2
+raw=32634 net=76 g=0.4 g_avg=0.2
+raw=32683 net=125 g=0.7 g_avg=0.3
+raw=32721 net=163 g=0.9 g_avg=0.4
+temp_c=26.50
+raw=32619 net=61 g=0.3 g_avg=0.5
+raw=32563 net=5 g=0.0 g_avg=0.5
+raw=32611 net=53 g=0.3 g_avg=0.5
+raw=32624 net=66 g=0.4 g_avg=0.4
+temp_c=26.50
+raw=32619 net=61 g=0.3 g_avg=0.3
+raw=32527 net=-31 g=-0.2 g_avg=0.2
+raw=32561 net=3 g=0.0 g_avg=0.2
+raw=32547 net=-11 g=-0.1 g_avg=0.1
+temp_c=26.50
+raw=32537 net=-21 g=-0.1 g_avg=0.0
+raw=32501 net=-57 g=-0.3 g_avg=-0.1
+raw=32507 net=-51 g=-0.3 g_avg=-0.2
+raw=32528 net=-30 g=-0.2 g_avg=-0.2
+temp_c=26.50
+raw=32458 net=-100 g=-0.6 g_avg=-0.3
+raw=32617 net=59 g=0.3 g_avg=-0.2
+raw=32484 net=-74 g=-0.4 g_avg=-0.2
+raw=32451 net=-107 g=-0.6 g_avg=-0.3
+temp_c=26.50
+raw=32554 net=-4 g=0.0 g_avg=-0.3
+raw=32514 net=-44 g=-0.2 g_avg=-0.2
+raw=32482 net=-76 g=-0.4 g_avg=-0.3
+raw=32502 net=-56 g=-0.3 g_avg=-0.3
+temp_c=26.50
+raw=32526 net=-32 g=-0.2 g_avg=-0.2
+raw=32561 net=3 g=0.0 g_avg=-0.2
+raw=32468 net=-90 g=-0.5 g_avg=-0.3
+raw=32536 net=-22 g=-0.1 g_avg=-0.2
+temp_c=26.50
+raw=32514 net=-44 g=-0.2 g_avg=-0.2
+raw=32439 net=-119 g=-0.7 g_avg=-0.3
+raw=32467 net=-91 g=-0.5 g_avg=-0.4
+raw=32515 net=-43 g=-0.2 g_avg=-0.4
+temp_c=26.50
+raw=32522 net=-36 g=-0.2 g_avg=-0.4
+raw=32554 net=-4 g=0.0 g_avg=-0.

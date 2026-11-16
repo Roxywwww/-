@@ -1,0 +1,66 @@
+﻿seq,received_local,elapsed_s,record_type,line_complete,raw,net,g,g_avg,temp_c,temp_error,tare_offset,tare_button_offset,display_unit,latest_temp_c,latest_temp_received_local,latest_temp_seq,temp_age_s,temp_state,original_line
+1,2026-11-01T14:22:52.209+08:00,0.143237,device_error,1,,,,,,,,,,,,,,unknown,HX711 timeout
+2,2026-11-01T14:22:52.420+08:00,0.354530,device_error,1,,,,,,,,,,,,,,unknown,HX711 timeout
+3,2026-11-01T14:22:52.633+08:00,0.567095,device_error,1,,,,,,,,,,,,,,unknown,HX711 timeout
+4,2026-11-01T14:22:52.634+08:00,0.568961,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+5,2026-11-01T14:22:52.905+08:00,0.839993,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+6,2026-11-01T14:22:53.117+08:00,1.051211,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+7,2026-11-01T14:22:53.328+08:00,1.262711,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+8,2026-11-01T14:22:53.539+08:00,1.473996,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+9,2026-11-01T14:22:53.752+08:00,1.686417,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+10,2026-11-01T14:22:53.754+08:00,1.688183,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+11,2026-11-01T14:22:54.025+08:00,1.959228,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+12,2026-11-01T14:22:54.236+08:00,2.170697,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+13,2026-11-01T14:22:54.447+08:00,2.381909,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+14,2026-11-01T14:22:54.659+08:00,2.593160,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+15,2026-11-01T14:22:54.871+08:00,2.805700,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+16,2026-11-01T14:22:54.873+08:00,2.807440,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+17,2026-11-01T14:22:55.144+08:00,3.078810,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+18,2026-11-01T14:22:55.355+08:00,3.289918,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+19,2026-11-01T14:22:55.567+08:00,3.501275,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+20,2026-11-01T14:22:55.778+08:00,3.712601,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+21,2026-11-01T14:22:55.990+08:00,3.925002,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+22,2026-11-01T14:22:55.992+08:00,3.926844,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+23,2026-11-01T14:22:56.263+08:00,4.197903,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+24,2026-11-01T14:22:56.475+08:00,4.409177,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+25,2026-11-01T14:22:56.686+08:00,4.620424,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+26,2026-11-01T14:22:56.897+08:00,4.831846,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+27,2026-11-01T14:22:57.110+08:00,5.044295,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+28,2026-11-01T14:22:57.112+08:00,5.046138,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+29,2026-11-01T14:22:57.383+08:00,5.317267,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+30,2026-11-01T14:22:57.594+08:00,5.528440,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+31,2026-11-01T14:22:57.805+08:00,5.739851,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+32,2026-11-01T14:22:58.017+08:00,5.951103,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+33,2026-11-01T14:22:58.229+08:00,6.163619,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+34,2026-11-01T14:22:58.231+08:00,6.165358,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+35,2026-11-01T14:22:58.502+08:00,6.436594,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+36,2026-11-01T14:22:58.713+08:00,6.647868,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+37,2026-11-01T14:22:58.925+08:00,6.859112,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+38,2026-11-01T14:22:59.136+08:00,7.070405,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+39,2026-11-01T14:22:59.348+08:00,7.282928,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+40,2026-11-01T14:22:59.350+08:00,7.284804,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+41,2026-11-01T14:22:59.621+08:00,7.555837,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+42,2026-11-01T14:22:59.833+08:00,7.767251,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+43,2026-11-01T14:23:00.044+08:00,7.978508,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+44,2026-11-01T14:23:00.255+08:00,8.189771,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+45,2026-11-01T14:23:00.468+08:00,8.402319,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+46,2026-11-01T14:23:00.470+08:00,8.404121,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+47,2026-11-01T14:23:00.741+08:00,8.675247,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+48,2026-11-01T14:23:00.952+08:00,8.886568,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+49,2026-11-01T14:23:01.163+08:00,9.097796,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+50,2026-11-01T14:23:01.375+08:00,9.309209,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+51,2026-11-01T14:23:01.587+08:00,9.521764,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+52,2026-11-01T14:23:01.589+08:00,9.523481,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+53,2026-11-01T14:23:01.860+08:00,9.794696,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+54,2026-11-01T14:23:02.071+08:00,10.005949,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+55,2026-11-01T14:23:02.283+08:00,10.217205,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+56,2026-11-01T14:23:02.494+08:00,10.428542,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+57,2026-11-01T14:23:02.707+08:00,10.641163,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+58,2026-11-01T14:23:02.708+08:00,10.642884,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+59,2026-11-01T14:23:02.979+08:00,10.913935,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+60,2026-11-01T14:23:03.191+08:00,11.125217,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+61,2026-11-01T14:23:03.402+08:00,11.336732,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+62,2026-11-01T14:23:03.613+08:00,11.547903,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+63,2026-11-01T14:23:03.826+08:00,11.760440,device_error,1,,,,,,,,,,,,,,error,HX711 timeout
+64,2026-11-01T14:23:03.828+08:00,11.762236,temperature_error,1,,,,,,no_presence,,,,,,,,error,temp_error=no_presence
+65,2026-11-01T14:23:04.099+08:00,12.033375,device_error,1,,,,,,,,,,,,,,error,HX711 timeout

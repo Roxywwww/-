@@ -1,0 +1,26 @@
+{
+  "port": "COM10",
+  "baud": 115200,
+  "serial_format": "8N1",
+  "label": "HX711故障排查_冒烟后",
+  "note": "只读诊断；OLED停在Waiting HX711；当前模块是否为冒烟件待用户确认；数据不得用于正常性能评价",
+  "port_details": {
+    "description": "USB-SERIAL CH340 (COM10)",
+    "hwid": "USB VID:PID=1A86:7523 SER= LOCATION=1-12.1.2",
+    "serial_number": ""
+  },
+  "duration_limit_s": 12.0,
+  "pyserial_version": "3.5",
+  "started_local": "2026-11-01T14:22:52.065+08:00",
+  "status": "completed",
+  "timestamp_meaning": "电脑收到整行或不完整片段时的本地时间，含时区；不是ADC采样时刻",
+  "temperature_alignment": "latest_temp为此前最近有效温度；并非同步采样，年龄与状态单独记录",
+  "decoding": "utf-8",
+  "script_sha256": "0b53066bf5c217da5d84b3ff1cf283024122c251baf20fd3150c081944d3dba0",
+  "records": 65,
+  "received_bytes": 1074,
+  "updated_local": "2026-11-01T14:23:04.100+08:00",
+  "elapsed_s": 12.034194,
+  "stopped_local": "2026-11-01T14:23:04.099+08:00",
+  "stop_reason": "到达设定时长"
+}
