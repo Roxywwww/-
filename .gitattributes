@@ -6,3 +6,6 @@
 *.eprj2 binary
 *.jpg binary
 *.png binary
+
+# Keep Windows launchers usable regardless of a laptop's autocrlf setting.
+工具/串口采集/*.cmd text eol=crlf

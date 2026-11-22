@@ -1,0 +1,107 @@
+[
+  {
+    "number": 1,
+    "reference": "吴莹妃. 基于单片机与蓝牙传输的电子秤设计[J]. 现代信息科技, 2022, 6(12): 181-185.",
+    "year": 2022,
+    "url": "https://xdxk.cbpt.cnki.net/portal/journal/portal/client/paper/84cf0864ccf6d69e5bcb443bbeca9291",
+    "verification": "CNKI期刊公开摘要、引文及DOI；未获取付费全文"
+  },
+  {
+    "number": 2,
+    "reference": "Avia Semiconductor. HX711 24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales: V2.0[EB/OL]. [2026-10-31]. https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/73/HX711.pdf.",
+    "year": null,
+    "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/73/HX711.pdf",
+    "verification": "前轮已核验的原厂数据手册；无发布日期不计近五年"
+  },
+  {
+    "number": 3,
+    "reference": "STMicroelectronics. STM32F103x8 STM32F103xB: DS5319, Rev 20[EB/OL]. 2025[2026-10-31]. https://www.st.com/resource/en/datasheet/stm32f103t8.pdf.",
+    "year": 2025,
+    "url": "https://www.st.com/resource/en/datasheet/stm32f103t8.pdf",
+    "verification": "前轮已核验的原厂数据手册"
+  },
+  {
+    "number": 4,
+    "reference": "刘九卿. 称重传感器用电阻应变计的自补偿技术[J]. 衡器, 2023, 52(2): 5-13.",
+    "year": 2023,
+    "url": "https://www.weighment.com/discourse/paper2023/230208.pdf",
+    "verification": "中国衡器协会公开原文；卷号由同刊引用交叉核对"
+  },
+  {
+    "number": 5,
+    "reference": "刘九卿. 应变式称重传感器电路补偿与调整的理论基础[J]. 衡器, 2023, 52(4): 5-15, 52.",
+    "year": 2023,
+    "url": "https://www.weighment.com/discourse/paper2023/230411.pdf",
+    "verification": "协会公开原稿，发表页码经期刊引文检索交叉核对，含转页52"
+  },
+  {
+    "number": 6,
+    "reference": "杨阳, 崔学. 数字称重传感器温度零点自动补偿系统设计[J]. 衡器, 2024(3): 9-11.",
+    "year": 2024,
+    "url": "https://www.weighment.com/discourse/paper2024/240310.pdf",
+    "verification": "协会公开原文；文章编号03-0009-03"
+  },
+  {
+    "number": 7,
+    "reference": "刘九卿. 称重传感器灵敏系数的自补偿技术[J]. 衡器, 2025, 54(8): 35-41.",
+    "year": 2025,
+    "url": "https://www.weighment.com/discourse/paper2025/250805.pdf",
+    "verification": "协会原文检索摘要及目录；卷期页码交叉核对，同刊2026年第1期文献表"
+  },
+  {
+    "number": 8,
+    "reference": "ZHUANG S, YANG W, ZHOU Y, et al. Temperature field analysis and compensation improvement of load cell[J]. Scientific Reports, 2024, 14: 26213.",
+    "year": 2024,
+    "url": "https://www.nature.com/articles/s41598-024-76688-0",
+    "verification": "出版社开放全文与元数据；DOI 10.1038/s41598-024-76688-0"
+  },
+  {
+    "number": 9,
+    "reference": "JIN Z, LI Y, FAN D, et al. Calibration experiment and temperature compensation method for the thermal output of electrical resistance strain gauges in health monitoring of structures[J]. Symmetry, 2023, 15(5): 1066.",
+    "year": 2023,
+    "url": "https://www.mdpi.com/2073-8994/15/5/1066",
+    "verification": "出版社公开摘要及元数据；DOI 10.3390/sym15051066；未将其视为本称重梁实测结果"
+  },
+  {
+    "number": 10,
+    "reference": "唐惠玲, 刘志军, 唐振宇, 等. 基于双光栅修正测力传感器温感量的研究[J]. 机床与液压, 2023, 51(15): 113-116.",
+    "year": 2023,
+    "url": "https://qikan.cmes.org/jcyyy/CN/10.3969/j.issn.1001-3881.2023.15.018",
+    "verification": "期刊官网标题作者卷期页码；仅作方案路径说明，不推断全文定量结果"
+  },
+  {
+    "number": 11,
+    "reference": "Maxim Integrated. DS18B20 Programmable Resolution 1-Wire Digital Thermometer: Rev 6[EB/OL]. 2019[2026-10-31]. https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf.",
+    "year": 2019,
+    "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf",
+    "verification": "前轮已核验原厂手册"
+  },
+  {
+    "number": 12,
+    "reference": "OIML. Metrological regulation for load cells Part 1: Metrological and technical requirements: OIML R 60-1:2021[S/OL]. 2021[2026-10-31]. https://www.oiml.org/en/files/pdf_r/r060-1-e21.pdf.",
+    "year": 2021,
+    "url": "https://www.oiml.org/en/files/pdf_r/r060-1-e21.pdf",
+    "verification": "前轮已核验国际建议；保守以2022—2026统计近期文献，不将2021计入"
+  },
+  {
+    "number": 13,
+    "reference": "国家质量监督检验检疫总局. 数字指示秤检定规程: JJG 539—2016[S]. 2016.",
+    "year": 2016,
+    "url": "https://jjg.spc.org.cn/",
+    "verification": "前轮已核验规程题名编号；研究参考，不宣称样机通过法定检定"
+  },
+  {
+    "number": 14,
+    "reference": "邱实, 杨茂水, 孙嫣, 等. 称重式降水传感器测量误差变化研究[J]. 山东科学, 2023, 36(1): 124-130.",
+    "year": 2023,
+    "url": "https://www.sdkx.net/CN/10.3976/j.issn.1002-4026.2023.01.016",
+    "verification": "期刊官网摘要与引用信息；DOI 10.3976/j.issn.1002-4026.2023.01.016"
+  },
+  {
+    "number": 15,
+    "reference": "GU T. Research on dynamic calibration and compensation method of strain-gauge type force sensor[J]. Sensor Review, 2024, 44(1): 68-80.",
+    "year": 2024,
+    "url": "https://www.emerald.com/sr/article-abstract/44/1/68/1227577/Research-on-dynamic-calibration-and-compensation?redirectedFrom=fulltext",
+    "verification": "出版社公开摘要及元数据；DOI 10.1108/SR-08-2023-0330；不宣称已读付费全文"
+  }
+]

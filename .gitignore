@@ -14,6 +14,7 @@ hx711test/MDK-ARM/*.uvguix.*
 *.axf
 *.hex
 *.bin
+!实验数据/原始数据/串口采集/**/received.bin
 *.dep
 *.lnp
 *.htm

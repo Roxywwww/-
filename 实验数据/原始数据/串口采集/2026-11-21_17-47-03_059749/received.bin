@@ -1,0 +1,201 @@
+raw=33231 net=-118 g=-0.7 g_avg=-0.5 g_iir=-0.6
+raw=33321 net=-28 g=-0.2 g_avg=-0.5 g_iir=-0.4
+temp_c=22.62
+raw=33244 net=-105 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33287 net=-62 g=-0.3 g_avg=-0.5 g_iir=-0.4
+raw=33270 net=-79 g=-0.4 g_avg=-0.4 g_iir=-0.4
+raw=33315 net=-34 g=-0.2 g_avg=-0.3 g_iir=-0.4
+temp_c=22.62
+raw=33233 net=-116 g=-0.7 g_avg=-0.4 g_iir=-0.5
+raw=33251 net=-98 g=-0.5 g_avg=-0.4 g_iir=-0.5
+raw=33290 net=-59 g=-0.3 g_avg=-0.4 g_iir=-0.4
+raw=33280 net=-69 g=-0.4 g_avg=-0.4 g_iir=-0.4
+temp_c=22.62
+raw=33252 net=-97 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33261 net=-88 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33274 net=-75 g=-0.4 g_avg=-0.4 g_iir=-0.5
+raw=33276 net=-73 g=-0.4 g_avg=-0.4 g_iir=-0.4
+temp_c=22.62
+raw=33257 net=-92 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33271 net=-78 g=-0.4 g_avg=-0.5 g_iir=-0.5
+raw=33247 net=-102 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33300 net=-49 g=-0.3 g_avg=-0.4 g_iir=-0.4
+temp_c=22.62
+raw=33278 net=-71 g=-0.4 g_avg=-0.4 g_iir=-0.4
+raw=33265 net=-84 g=-0.5 g_avg=-0.4 g_iir=-0.4
+raw=33268 net=-81 g=-0.5 g_avg=-0.4 g_iir=-0.4
+raw=33269 net=-80 g=-0.4 g_avg=-0.4 g_iir=-0.4
+temp_c=22.62
+raw=33262 net=-87 g=-0.5 g_avg=-0.4 g_iir=-0.5
+raw=33251 net=-98 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33237 net=-112 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33278 net=-71 g=-0.4 g_avg=-0.5 g_iir=-0.5
+temp_c=22.62
+raw=33265 net=-84 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33266 net=-83 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33221 net=-128 g=-0.7 g_avg=-0.5 g_iir=-0.6
+raw=33209 net=-140 g=-0.8 g_avg=-0.6 g_iir=-0.6
+temp_c=22.62
+raw=33236 net=-113 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33252 net=-97 g=-0.5 g_avg=-0.6 g_iir=-0.6
+raw=33257 net=-92 g=-0.5 g_avg=-0.6 g_iir=-0.6
+raw=33265 net=-84 g=-0.5 g_avg=-0.6 g_iir=-0.5
+temp_c=22.62
+raw=33265 net=-84 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33277 net=-72 g=-0.4 g_avg=-0.5 g_iir=-0.5
+raw=33238 net=-111 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33218 net=-131 g=-0.7 g_avg=-0.5 g_iir=-0.6
+temp_c=22.62
+raw=33244 net=-105 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33230 net=-119 g=-0.7 g_avg=-0.6 g_iir=-0.6
+raw=33248 net=-101 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33216 net=-133 g=-0.7 g_avg=-0.7 g_iir=-0.7
+temp_c=22.62
+raw=33228 net=-121 g=-0.7 g_avg=-0.6 g_iir=-0.7
+raw=33207 net=-142 g=-0.8 g_avg=-0.7 g_iir=-0.7
+raw=33237 net=-112 g=-0.6 g_avg=-0.7 g_iir=-0.7
+raw=33207 net=-142 g=-0.8 g_avg=-0.7 g_iir=-0.7
+temp_c=22.62
+raw=33203 net=-146 g=-0.8 g_avg=-0.7 g_iir=-0.8
+raw=33209 net=-140 g=-0.8 g_avg=-0.8 g_iir=-0.8
+raw=33187 net=-162 g=-0.9 g_avg=-0.8 g_iir=-0.8
+raw=33211 net=-138 g=-0.8 g_avg=-0.8 g_iir=-0.8
+temp_c=22.62
+raw=33216 net=-133 g=-0.7 g_avg=-0.8 g_iir=-0.8
+raw=33241 net=-108 g=-0.6 g_avg=-0.8 g_iir=-0.7
+raw=33182 net=-167 g=-0.9 g_avg=-0.8 g_iir=-0.8
+raw=33200 net=-149 g=-0.8 g_avg=-0.8 g_iir=-0.8
+temp_c=22.62
+raw=33228 net=-121 g=-0.7 g_avg=-0.8 g_iir=-0.8
+raw=33203 net=-146 g=-0.8 g_avg=-0.8 g_iir=-0.8
+raw=33180 net=-169 g=-0.9 g_avg=-0.8 g_iir=-0.8
+raw=33214 net=-135 g=-0.8 g_avg=-0.8 g_iir=-0.8
+temp_c=22.62
+raw=33241 net=-108 g=-0.6 g_avg=-0.8 g_iir=-0.7
+raw=33220 net=-129 g=-0.7 g_avg=-0.8 g_iir=-0.7
+raw=33225 net=-124 g=-0.7 g_avg=-0.7 g_iir=-0.7
+raw=33194 net=-155 g=-0.9 g_avg=-0.7 g_iir=-0.8
+temp_c=22.62
+raw=33191 net=-158 g=-0.9 g_avg=-0.8 g_iir=-0.8
+raw=33217 net=-132 g=-0.7 g_avg=-0.8 g_iir=-0.8
+raw=33222 net=-127 g=-0.7 g_avg=-0.8 g_iir=-0.8
+raw=33223 net=-126 g=-0.7 g_avg=-0.8 g_iir=-0.7
+temp_c=22.62
+raw=33206 net=-143 g=-0.8 g_avg=-0.8 g_iir=-0.8
+raw=33161 net=-188 g=-1.1 g_avg=-0.8 g_iir=-0.9
+raw=33159 net=-190 g=-1.1 g_avg=-0.9 g_iir=-0.9
+raw=33226 net=-123 g=-0.7 g_avg=-0.9 g_iir=-0.8
+temp_c=22.62
+raw=33198 net=-151 g=-0.8 g_avg=-0.9 g_iir=-0.8
+raw=33243 net=-106 g=-0.6 g_avg=-0.8 g_iir=-0.8
+raw=33157 net=-192 g=-1.1 g_avg=-0.9 g_iir=-0.9
+raw=33229 net=-120 g=-0.7 g_avg=-0.8 g_iir=-0.8
+temp_c=22.62
+raw=33199 net=-150 g=-0.8 g_avg=-0.8 g_iir=-0.8
+raw=33236 net=-113 g=-0.6 g_avg=-0.8 g_iir=-0.8
+raw=33224 net=-125 g=-0.7 g_avg=-0.8 g_iir=-0.7
+raw=33191 net=-158 g=-0.9 g_avg=-0.7 g_iir=-0.8
+temp_c=22.62
+raw=33222 net=-127 g=-0.7 g_avg=-0.8 g_iir=-0.8
+raw=33201 net=-148 g=-0.8 g_avg=-0.8 g_iir=-0.8
+raw=33203 net=-146 g=-0.8 g_avg=-0.8 g_iir=-0.8
+raw=33231 net=-118 g=-0.7 g_avg=-0.8 g_iir=-0.8
+temp_c=22.62
+raw=33216 net=-133 g=-0.7 g_avg=-0.8 g_iir=-0.8
+raw=33241 net=-108 g=-0.6 g_avg=-0.7 g_iir=-0.7
+raw=33220 net=-129 g=-0.7 g_avg=-0.7 g_iir=-0.7
+raw=33214 net=-135 g=-0.8 g_avg=-0.7 g_iir=-0.7
+temp_c=22.62
+raw=33264 net=-85 g=-0.5 g_avg=-0.7 g_iir=-0.6
+raw=33202 net=-147 g=-0.8 g_avg=-0.7 g_iir=-0.7
+raw=33229 net=-120 g=-0.7 g_avg=-0.7 g_iir=-0.7
+raw=33241 net=-108 g=-0.6 g_avg=-0.7 g_iir=-0.7
+temp_c=22.62
+raw=33230 net=-119 g=-0.7 g_avg=-0.6 g_iir=-0.7
+raw=33279 net=-70 g=-0.4 g_avg=-0.6 g_iir=-0.6
+raw=33254 net=-95 g=-0.5 g_avg=-0.6 g_iir=-0.6
+raw=33241 net=-108 g=-0.6 g_avg=-0.6 g_iir=-0.6
+temp_c=22.62
+raw=33231 net=-118 g=-0.7 g_avg=-0.6 g_iir=-0.6
+raw=33241 net=-108 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33218 net=-131 g=-0.7 g_avg=-0.6 g_iir=-0.7
+raw=33233 net=-116 g=-0.7 g_avg=-0.7 g_iir=-0.7
+temp_c=22.62
+raw=33223 net=-126 g=-0.7 g_avg=-0.7 g_iir=-0.7
+raw=33277 net=-72 g=-0.4 g_avg=-0.6 g_iir=-0.6
+raw=33239 net=-110 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33209 net=-140 g=-0.8 g_avg=-0.6 g_iir=-0.7
+temp_c=22.62
+raw=33245 net=-104 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33272 net=-77 g=-0.4 g_avg=-0.6 g_iir=-0.6
+raw=33281 net=-68 g=-0.4 g_avg=-0.6 g_iir=-0.5
+raw=33281 net=-68 g=-0.4 g_avg=-0.5 g_iir=-0.5
+temp_c=22.62
+raw=33268 net=-81 g=-0.5 g_avg=-0.4 g_iir=-0.5
+raw=33261 net=-88 g=-0.5 g_avg=-0.4 g_iir=-0.5
+raw=33217 net=-132 g=-0.7 g_avg=-0.5 g_iir=-0.6
+raw=33255 net=-94 g=-0.5 g_avg=-0.5 g_iir=-0.5
+temp_c=22.62
+raw=33294 net=-55 g=-0.3 g_avg=-0.5 g_iir=-0.5
+raw=33274 net=-75 g=-0.4 g_avg=-0.5 g_iir=-0.5
+raw=33245 net=-104 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33222 net=-127 g=-0.7 g_avg=-0.5 g_iir=-0.6
+temp_c=22.62
+raw=33255 net=-94 g=-0.5 g_avg=-0.5 g_iir=-0.6
+raw=33263 net=-86 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33241 net=-108 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33297 net=-52 g=-0.3 g_avg=-0.5 g_iir=-0.5
+temp_c=22.62
+raw=33258 net=-91 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33244 net=-105 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33238 net=-111 g=-0.6 g_avg=-0.5 g_iir=-0.6
+raw=33241 net=-108 g=-0.6 g_avg=-0.5 g_iir=-0.6
+temp_c=22.56
+raw=33251 net=-98 g=-0.5 g_avg=-0.6 g_iir=-0.6
+raw=33272 net=-77 g=-0.4 g_avg=-0.6 g_iir=-0.5
+raw=33275 net=-74 g=-0.4 g_avg=-0.5 g_iir=-0.5
+raw=33276 net=-73 g=-0.4 g_avg=-0.5 g_iir=-0.5
+temp_c=22.62
+raw=33280 net=-69 g=-0.4 g_avg=-0.4 g_iir=-0.4
+raw=33267 net=-82 g=-0.5 g_avg=-0.4 g_iir=-0.4
+raw=33309 net=-40 g=-0.2 g_avg=-0.4 g_iir=-0.4
+raw=33270 net=-79 g=-0.4 g_avg=-0.4 g_iir=-0.4
+temp_c=22.62
+raw=33273 net=-76 g=-0.4 g_avg=-0.4 g_iir=-0.4
+raw=33232 net=-117 g=-0.7 g_avg=-0.4 g_iir=-0.5
+raw=33249 net=-100 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33290 net=-59 g=-0.3 g_avg=-0.5 g_iir=-0.5
+temp_c=22.56
+raw=33286 net=-63 g=-0.4 g_avg=-0.5 g_iir=-0.4
+raw=33278 net=-71 g=-0.4 g_avg=-0.5 g_iir=-0.4
+raw=33207 net=-142 g=-0.8 g_avg=-0.5 g_iir=-0.5
+raw=33305 net=-44 g=-0.2 g_avg=-0.4 g_iir=-0.4
+temp_c=22.56
+raw=33259 net=-90 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33259 net=-90 g=-0.5 g_avg=-0.5 g_iir=-0.5
+raw=33240 net=-109 g=-0.6 g_avg=-0.5 g_iir=-0.5
+raw=33276 net=-73 g=-0.4 g_avg=-0.5 g_iir=-0.5
+temp_c=22.62
+raw=33325 net=-24 g=-0.1 g_avg=-0.4 g_iir=-0.4
+raw=33280 net=-69 g=-0.4 g_avg=-0.4 g_iir=-0.4
+raw=33249 net=-100 g=-0.6 g_avg=-0.4 g_iir=-0.4
+raw=33222 net=-127 g=-0.7 g_avg=-0.4 g_iir=-0.5
+temp_c=22.62
+raw=33270 net=-79 g=-0.4 g_avg=-0.4 g_iir=-0.5
+raw=33211 net=-138 g=-0.8 g_avg=-0.6 g_iir=-0.6
+raw=33227 net=-122 g=-0.7 g_avg=-0.6 g_iir=-0.6
+raw=33208 net=-141 g=-0.8 g_avg=-0.7 g_iir=-0.7
+temp_c=22.62
+raw=33266 net=-83 g=-0.5 g_avg=-0.6 g_iir=-0.6
+raw=33262 net=-87 g=-0.5 g_avg=-0.6 g_iir=-0.6
+raw=33243 net=-106 g=-0.6 g_avg=-0.6 g_iir=-0.6
+raw=33243 net=-106 g=-0.6 g_avg=-0.6 g_iir=-0.6
+temp_c=22.62
+raw=33221 net=-128 g=-0.7 g_avg=-0.6 g_iir=-0.6
+raw=33187 net=-162 g=-0.9 g_avg=-0.7 g_iir=-0.7
+raw=33171 net=-178 g=-1.0 g_avg=-0.8 g_iir=-0.8
+raw=33170 net=-179 g=-1.0 g_avg=-0.8 g_iir=-0.9
+temp_c=22.62
+raw=33167 net=-182 g=-1.0 g_avg=-0.9 g_iir=-0.9
+raw=33193 net=-156 g=-0.9 g_avg=-1.0 g_iir=-0.9
+raw=33164 net=-185 g=-1.0 g_avg=-1.0 g_iir=-1.0

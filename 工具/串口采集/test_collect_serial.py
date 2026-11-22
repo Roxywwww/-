@@ -10,6 +10,7 @@ from unittest.mock import patch
 
 import serial
 import collect_serial as capture
+from terminal_ui import TerminalPanel, clipped, columns
 
 
 def rows(folder):
@@ -18,6 +19,164 @@ def rows(folder):
 
 
 class CaptureTests(unittest.TestCase):
+    def test_command_file_incremental_unicode_and_exactly_once(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'commands.txt'
+            reader=capture.CommandFile(path)
+            self.assertEqual(reader.poll(),[])
+            payload='上500\n下\n'.encode('utf-8')
+            path.write_bytes(payload[:2])  # 半个UTF-8字符不提前解析。
+            self.assertEqual(reader.poll(),[])
+            with path.open('ab') as file:
+                file.write(payload[2:])
+            self.assertEqual(reader.poll(),['上500','下'])
+            self.assertEqual(reader.poll(),[])
+            with path.open('ab') as file:
+                file.write(b'q\n')
+            self.assertEqual(reader.poll(),['q'])
+
+    def test_long_capture_releases_temporary_awake_request(self):
+        import long_capture
+        with patch.object(long_capture,'main',return_value=0), \
+                patch.object(long_capture.os,'name','nt'), \
+                patch.object(long_capture.ctypes.windll.kernel32,'SetThreadExecutionState') as request, \
+                redirect_stdout(io.StringIO()):
+            request.return_value=1
+            self.assertEqual(long_capture.run(['--no-events']),0)
+            self.assertEqual([x.args[0] for x in request.call_args_list],
+                             [0x80000001,0x80000000])
+
+    def test_short_load_commands_and_rejections(self):
+        for command in ('500', '上500', '上 500', '500g', '上500克', 'c load 500'):
+            with self.subTest(command=command):
+                self.assertEqual(capture.parse_event_command(command),
+                                 {'event_type': 'load', 'reference_mass_g': '500', 'note': ''})
+        for command in ('下', '0', '卸载', 'c unload'):
+            self.assertEqual(capture.parse_event_command(command)['event_type'], 'unload')
+            self.assertEqual(capture.parse_event_command(command)['reference_mass_g'], '0')
+        self.assertEqual(capture.parse_event_command('上200 中心')['note'], '中心')
+        self.assertEqual(capture.parse_event_command('下500')['reference_mass_g'], '0')
+        self.assertEqual(capture.parse_event_command('100')['reference_mass_g'], '100')
+        self.assertEqual(capture.parse_event_command('1')['reference_mass_g'], '1')
+        self.assertEqual(capture.parse_event_command('n 移到室外')['note'], '移到室外')
+        self.assertEqual(capture.parse_event_command('q'), 'stop')
+        for command in ('上', 'load', '-500', 'nan', 'inf', '上500错字'):
+            with self.subTest(command=command), self.assertRaises(ValueError):
+                capture.parse_event_command(command)
+
+    def test_manual_load_snapshots_do_not_add_masses(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            log = capture.SessionLog(tmp, {'label': 'TEST ONLY'})
+            log.line(b'raw=1 g_avg=-0.2\n')
+            for command in ('上500', '200', 'n TEST ONLY', '下'):
+                log.record_event(**capture.parse_event_command(command))
+                log.line(b'raw=1 g_avg=-0.2\n')
+            log.close('stopped', 'TEST ONLY')
+            recorded = rows(log.path)
+            self.assertEqual([r['reference_mass_g'] for r in recorded],
+                             ['', '500', '200', '200', '0'])
+            self.assertEqual([r['manual_load_state'] for r in recorded],
+                             ['unknown', 'loaded', 'loaded', 'loaded', 'unloaded'])
+            self.assertEqual(recorded[-1]['last_event_id'], '4')
+            self.assertEqual(log.latest_weight, '-0.2')
+            self.assertEqual(log.metadata['reference_mass_g'], '0')
+
+    def test_panel_editing_refresh_and_width(self):
+        stream = io.StringIO()
+        panel = TerminalPanel(enabled=False, stream=stream)
+        commands = []
+        for char in '上500\b\b00\r\n':
+            command = panel.feed_key(char)
+            if command is not None:
+                commands.append(command)
+        self.assertEqual(commands, ['上500'])
+        for char in 'n 中文备注':
+            panel.feed_key(char)
+        with tempfile.TemporaryDirectory() as tmp:
+            log = capture.SessionLog(tmp, {'port': 'COM_TEST'})
+            panel.active = True
+            with patch('terminal_ui.shutil.get_terminal_size', return_value=(48, 24)):
+                panel.render(log, force=True)
+                length = len(stream.getvalue())
+                panel.render(log)  # 静止输入+未到刷新时刻，不重复输出
+                self.assertEqual(len(stream.getvalue()), length)
+                panel.notify('TEST提示')
+                panel.render(log)
+            rendered = stream.getvalue()
+            self.assertIn('载荷未标记', rendered)
+            self.assertIn('输入 > n 中文备注', rendered)
+            self.assertIn('TEST提示', rendered)
+            self.assertNotIn('上500\n', rendered)
+            panel.close()
+            log.close('completed', 'TEST ONLY')
+        for width in (8, 20, 60):
+            self.assertLessEqual(columns(clipped('很长的中文路径abc' * 10, width)), width)
+        self.assertNotIn('\x1b', clipped('\x1b[31m错误', 80))
+
+    def test_health_distinguishes_negative_weight_from_failure(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            log = capture.SessionLog(tmp, {})
+            log.line(b'temp_c=20.0\n')
+            log.line(b'raw=12 g_avg=-2.0\n')
+            now = capture.time.monotonic()
+            self.assertEqual(capture.capture_warnings(log, now, 30, 5, 3), {})
+            log.line(b'raw=8388607 g_avg=999.0\n')
+            self.assertIn('饱和', capture.capture_warnings(log, now, 30, 5, 3)['weight'])
+            log.line(b'raw=12 g_avg=-2.0\n')
+            log.last_weight_tick = now - 10
+            self.assertIn('没有有效称重', capture.capture_warnings(log, now, 30, 5, 3)['weight'])
+            log.close('completed', 'TEST ONLY')
+
+    def test_panel_capture_load_unload_and_q_save_session(self):
+        class FakePanel:
+            enabled = True
+            active = False
+            def __init__(self, **kwargs):
+                self.commands = iter([['上500'], [], ['下'], [], ['q']])
+            def start(self):
+                self.active = True
+            def close(self):
+                self.active = False
+            def notify(self, message):
+                pass
+            def poll(self):
+                return next(self.commands, [])
+            def render(self, *args, **kwargs):
+                pass
+
+        class FakeSerial:
+            def __init__(self):
+                self.closed = False
+                self.input = iter([b'temp_c=20.0\nraw=100 g_avg=500.0\n',
+                                   b'raw=10 g_avg=-0.1\n'])
+            def open(self):
+                pass
+            def close(self):
+                self.closed = True
+            def read(self, size):
+                return next(self.input, b'')
+            @property
+            def in_waiting(self):
+                return 0
+
+        port = FakeSerial()
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch('serial.Serial', return_value=port), \
+                    patch('serial.tools.list_ports.comports', return_value=[]), \
+                    patch.object(capture, 'TerminalPanel', FakePanel), \
+                    patch.object(capture.sys.stdin, 'isatty', return_value=True), \
+                    redirect_stdout(io.StringIO()):
+                result = capture.main(['--port', 'COM_TEST', '--output', tmp])
+            folder = next(Path(tmp).iterdir())
+            recorded = rows(folder)
+            self.assertEqual([r['reference_mass_g'] for r in recorded], ['500', '500', '0'])
+            metadata = json.loads((folder / 'session.json').read_text(encoding='utf-8'))
+            self.assertEqual(metadata['status'], 'stopped')
+            self.assertEqual(metadata['stop_reason'], '用户输入q结束采集')
+            self.assertTrue((folder / 'summary.md').exists())
+            self.assertTrue(port.closed)
+            self.assertEqual(result, 0)
+
     def test_fragmented_input_and_bounded_memory(self):
         b = capture.LineBuffer()
         self.assertEqual(list(b.feed(b'raw=12\r')), [])

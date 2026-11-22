@@ -44,8 +44,6 @@
 #define HX711_IIR_DIVISOR 3LL
 #define HX711_IIR_COUNT_SCALE 256LL
 #define OLED_REPORT_INTERVAL_MS 500U
-/* Display-only zero band, in tenths of a gram. */
-#define OLED_ZERO_BAND_TENTHS 3
 #define DS18B20_CONVERSION_MS 800U
 #define DS18B20_RETRY_MS 1000U
 /* Desktop calibration on 2026-11-13, checked at 200 g and 500 g. */
@@ -181,10 +179,7 @@ static void OLED_ShowWeightTenths(int32_t tenths)
   char display_line[17];
   uint32_t magnitude;
 
-  if (tenths >= -OLED_ZERO_BAND_TENTHS && tenths <= OLED_ZERO_BAND_TENTHS)
-  {
-    tenths = 0;
-  }
+  /* Show signed filtered weight without a display-only zero band. */
   magnitude = (tenths < 0) ? (uint32_t)(-tenths) :
                                        (uint32_t)tenths;
   int length;

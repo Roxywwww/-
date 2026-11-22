@@ -400,11 +400,11 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/hx711.c</FilePath>
             </File>
-              <File>
-                <FileName>ds18b20.c</FileName>
-                <FileType>1</FileType>
-                <FilePath>../Core/Src/ds18b20.c</FilePath>
-              </File>
+            <File>
+              <FileName>ds18b20.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/ds18b20.c</FilePath>
+            </File>
             <File>
               <FileName>oled.c</FileName>
               <FileType>1</FileType>

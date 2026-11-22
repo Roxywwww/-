@@ -15,12 +15,20 @@ import sys
 import threading
 import time
 
-DEFAULT_OUTPUT = Path(__file__).resolve().parents[2] / '实验数据' / '原始数据' / '串口采集'
+from terminal_ui import TerminalPanel
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parents[1]
+DEFAULT_OUTPUT = (PROJECT_ROOT / '实验数据' / '原始数据' / '串口采集'
+                  if (PROJECT_ROOT / 'AGENTS.md').exists()
+                  and (PROJECT_ROOT / 'hx711test').is_dir()
+                  else SCRIPT_DIR / '采集数据')
 FIELDS = ['seq', 'received_local', 'elapsed_s', 'record_type', 'line_complete',
           'raw', 'net', 'g', 'g_avg', 'temp_c', 'temp_error', 'tare_offset',
           'tare_button_offset', 'display_unit', 'latest_temp_c',
           'latest_temp_received_local', 'latest_temp_seq', 'temp_age_s',
-          'temp_state', 'original_line', 'g_iir']
+          'temp_state', 'original_line', 'g_iir',
+          'manual_load_state', 'reference_mass_g', 'last_event_id']
 EVENT_FIELDS = ['event_id', 'session_id', 'marked_local', 'elapsed_s',
                 'latest_seq', 'event_type', 'reference_mass_g', 'note',
                 'source']
@@ -35,28 +43,25 @@ EVENT_ALIASES = {
     'remove': 'cold_remove', 'cold_remove': 'cold_remove', '移除冷源': 'cold_remove',
     'open': 'cover_open', 'cover_open': 'cover_open', '开盖': 'cover_open',
     'close': 'cover_close', 'cover_close': 'cover_close', '关盖': 'cover_close',
-    'load': 'load', '放载荷': 'load',
-    'unload': 'unload', '卸载': 'unload',
-    'stable': 'stable_start', 'stable_start': 'stable_start', '稳定段开始': 'stable_start',
-    'tare': 'tare', '去皮': 'tare',
-    'reset': 'reset', '复位': 'reset',
+    'load': 'load', '放载荷': 'load', '上': 'load',
+    'unload': 'unload', '卸载': 'unload', '下': 'unload',
+    'stable': 'stable_start', 'stable_start': 'stable_start', '稳定段开始': 'stable_start', 's': 'stable_start',
+    'tare': 'tare', '去皮': 'tare', 't': 'tare',
+    'reset': 'reset', '复位': 'reset', 'r': 'reset',
     'touch': 'accidental_touch', 'accidental_touch': 'accidental_touch', '意外碰触': 'accidental_touch',
     'fault': 'abnormal', 'abnormal': 'abnormal', '异常': 'abnormal',
-    'note': 'note', '备注': 'note',
+    'note': 'note', '备注': 'note', 'n': 'note',
 }
 
-EVENT_HELP = """可输入的事件命令（输入后可继续采集）：
-  c base [备注]            开始基线
-  c cold [备注]            加入冷源
-  c remove [备注]          移除冷源
-  c open/close [备注]      开盖/关盖
-  c load 500 [备注]        放置已知标称载荷，单位g
-  c unload [备注]          卸载
-  c stable [备注]          稳定观察段开始
-  c tare/reset [备注]      去皮/复位
-  c touch/fault [备注]     意外碰触/异常
-  c note [文字]            其他备注
-输入 h 再看帮助。中文事件名也可使用，例如“c 加入冷源”。"""
+EVENT_HELP = """输入后回车；全程持续保存串口数据：
+  500 / 上500 / 上200 / 上100   标记当前标称总载荷（g），不做累加
+  下 / 0 / 卸载                标记已卸下砝码、空载
+  s                            标记稳定段开始
+  n 文字                       记录备注，例如 n 碰了一下袋子
+  t / r                        记录已手动去皮 / 已复位，不操作板子
+  h                            查看帮助
+  q                            结束并保存
+旧版 c load 500、c unload、c note 等命令仍可使用。"""
 
 
 def stamp():
@@ -91,8 +96,22 @@ def parse_event_command(text):
         raise ValueError('事件不能为空')
     if original.lower() in ('h', 'help', '?'):
         return 'help'
+    if original.lower() in ('q', 'quit', 'exit', '结束'):
+        return 'stop'
     if original.lower().startswith('c '):
         original = original[2:].strip()
+    # 数字是当前总载荷；“下500”也表示卸载，不是负500g。
+    shorthand = re.fullmatch(r'(上|下)?\s*(\d+(?:\.\d+)?)(?:\s*[gG克])?(?:\s+(.+))?', original)
+    if shorthand:
+        action, value, note = shorthand.groups()
+        if action == '下' or float(value) == 0:
+            return {'event_type': 'unload', 'reference_mass_g': '0',
+                    'note': note or (f'卸下标称{value}g' if action == '下' else '')}
+        mass = parse_mass(value)
+        if not mass:
+            raise ValueError('载荷必须是有限的正数')
+        return {'event_type': 'load', 'reference_mass_g': mass,
+                'note': note or ''}
     parts = original.split()
     if not parts:
         raise ValueError('事件不能为空')
@@ -102,11 +121,15 @@ def parse_event_command(text):
         raise ValueError(f'未知事件类别：{parts[0]}')
     rest = parts[1:]
     mass = ''
-    if event_type == 'load' and rest:
+    if event_type == 'load':
+        if not rest:
+            raise ValueError('请写明当前总载荷，例如 500 或 上500')
         mass = parse_mass(rest[0])
         if not mass:
             raise ValueError('load 后的第一个参数应为大于0的标称载荷，例如 c load 500 中心')
         rest = rest[1:]
+    if event_type == 'unload':
+        mass = '0'
     return {
         'event_type': event_type,
         'reference_mass_g': mass,
@@ -183,8 +206,41 @@ class LineBuffer:
         return None
 
 
+class CommandFile:
+    """可选的本机追加式指令文件；让独立窗口也能由本机代理打标记。"""
+    def __init__(self, path, notifier=print):
+        self.path = Path(path) if path is not None else None
+        self.offset = 0
+        self.buffer = LineBuffer()
+        self.notifier = notifier
+        self.failed = False
+
+    def poll(self):
+        if self.path is None:
+            return []
+        try:
+            with self.path.open('rb') as file:
+                if file.seek(0, 2) < self.offset:
+                    raise OSError('指令文件被截断，请在原文件末尾追加；窗口输入仍可使用')
+                file.seek(self.offset)
+                chunk = file.read(16384)
+                self.offset = file.tell()
+        except FileNotFoundError:
+            return []
+        except OSError as exc:
+            if not self.failed:
+                self.notifier(f'本机指令读取异常，串口继续保存：{exc}')
+                self.failed = True
+            return []
+        if self.failed:
+            self.notifier('本机指令读取已恢复。')
+            self.failed = False
+        return [data.decode('utf-8-sig', errors='replace').strip()
+                for data, complete in self.buffer.feed(chunk) if complete]
+
+
 class SessionLog:
-    def __init__(self, parent, metadata, encoding='utf-8'):
+    def __init__(self, parent, metadata, encoding='utf-8', notifier=None):
         parent = Path(parent)
         parent.mkdir(parents=True, exist_ok=True)
         self.path = parent / datetime.now().astimezone().strftime('%Y-%m-%d_%H-%M-%S_%f')
@@ -195,6 +251,12 @@ class SessionLog:
         self.byte_count = 0
         self.temp = None
         self.temp_state = 'unknown'
+        self.manual_load_state = 'unknown'
+        self.reference_mass_g = ''
+        self.latest_weight = None
+        self.last_weight_tick = None
+        self.last_weight_kind = None
+        self.notifier = notifier or print
         self.last_line = ''
         self.last_line_tick = None
         self.metadata_write_error = ''
@@ -265,6 +327,12 @@ class SessionLog:
 
     def record_event(self, event_type, reference_mass_g='', note='', source='console'):
         now = time.monotonic()
+        if event_type == 'load':
+            self.manual_load_state = 'loaded' if reference_mass_g else 'unknown'
+            self.reference_mass_g = reference_mass_g
+        elif event_type == 'unload':
+            self.manual_load_state = 'unloaded'
+            self.reference_mass_g = '0'
         self.event_count += 1
         row = {
             'event_id': self.event_count,
@@ -401,7 +469,14 @@ class SessionLog:
         row.update(seq=self.seq, received_local=received,
                    elapsed_s=f'{now - self.started:.6f}', record_type=kind,
                    line_complete=int(complete), temp_state=self.temp_state,
-                   original_line=text)
+                   original_line=text, manual_load_state=self.manual_load_state,
+                   reference_mass_g=self.reference_mass_g,
+                   last_event_id=self.event_count)
+        if kind.startswith('weight') or kind == 'device_error':
+            self.last_weight_kind = kind
+        if kind == 'weight':
+            self.last_weight_tick = now
+            self.latest_weight = pairs.get('g_avg', pairs.get('g', ''))
         if self.temp is not None:
             value, ts, seq, tick = self.temp
             row.update(latest_temp_c=value, latest_temp_received_local=ts,
@@ -469,6 +544,8 @@ class SessionLog:
                              event_count=self.event_count,
                              counters=dict(self.stats),
                              current_temperature_state=self.temp_state,
+                             manual_load_state=self.manual_load_state,
+                             reference_mass_g=self.reference_mass_g,
                              metadata_write_failure_count=self.metadata_write_failure_count,
                              metadata_write_last_error=self.metadata_write_error)
         pending = self.path / 'session.pending'
@@ -486,11 +563,12 @@ class SessionLog:
                 message = (
                     f'会话元数据暂无法写入，原始串口数据继续采集：{exc}')
                 self.event(message)
-                print(f'\n警告：{message}')
+                self.notifier(f'警告：{message}')
                 self.metadata_warning_active = True
             return False
         if self.metadata_warning_active:
             self.event('会话元数据写入已恢复。')
+            self.notifier('会话元数据写入已恢复。')
             self.metadata_warning_active = False
         self.metadata_write_error = ''
         return True
@@ -615,6 +693,31 @@ def positive(value):
     return result
 
 
+def capture_warnings(log, last_received, data_stale_seconds,
+                     temp_stale_seconds, weight_stale_seconds):
+    """稳定的告警类别用于去重；数值变化不反复弹同一告警。"""
+    now = time.monotonic()
+    warnings = {}
+    if now - last_received >= data_stale_seconds:
+        warnings['data_gap'] = f'串口已{now - last_received:.0f}秒无数据'
+    temp_key = log.health_warning_key(temp_stale_seconds)
+    if temp_key:
+        warnings['temperature'] = log.health_warnings(temp_stale_seconds)[0]
+    if log.last_weight_kind not in (None, 'weight'):
+        names = {'weight_saturated': '称重计数饱和',
+                 'weight_tare_invalid': '板子尚未取得有效去皮基准',
+                 'weight_invalid': '称重数据格式无效',
+                 'device_error': 'HX711超时或设备错误'}
+        warnings['weight'] = names.get(log.last_weight_kind, '称重数据异常')
+    elif ((log.last_weight_tick is None and now - log.started >= weight_stale_seconds)
+          or (log.last_weight_tick is not None
+              and now - log.last_weight_tick >= weight_stale_seconds)):
+        warnings['weight'] = f'超过{weight_stale_seconds:g}秒没有有效称重数据'
+    if log.metadata_warning_active:
+        warnings['metadata'] = '会话说明保存异常，原始数据仍在采集'
+    return warnings
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--port', help='例如 COM3；省略则列出端口供选择')
@@ -643,8 +746,14 @@ def main(argv=None):
                    help='温度年龄提示阈值，默认5秒')
     p.add_argument('--data-stale-seconds', type=positive, default=30.0,
                    help='无新串口数据提示阈值，默认30秒')
-    p.add_argument('--status-seconds', type=positive, default=5.0,
-                   help='状态刷新间隔，默认5秒')
+    p.add_argument('--weight-stale-seconds', type=positive, default=3.0,
+                   help='无有效称重数据提示阈值，默认3秒')
+    p.add_argument('--status-seconds', type=positive, default=1.0,
+                   help='固定面板状态刷新间隔，默认1秒，不追加打印')
+    p.add_argument('--plain', action='store_true',
+                   help='安静文本模式，用于不支持固定面板的终端')
+    p.add_argument('--control-file', type=Path,
+                   help='可选：读取本机UTF-8追加式指令文件，和窗口输入使用相同命令')
     p.add_argument('--no-events', action='store_true',
                    help='禁用控制台事件输入；文件记录仍照常运行')
     args = p.parse_args(argv)
@@ -705,12 +814,13 @@ def main(argv=None):
         p.error('请选择实际串口，例如COM3')
     device = None
     log = None
+    panel = TerminalPanel(enabled=not args.plain and not args.no_events)
     buffer = LineBuffer()
     status, reason, code = 'completed', '到达设定时长', 0
     limit = args.seconds or (args.hours * 3600 if args.hours else None)
     try:
         device = serial.Serial(port=None, baudrate=args.baud, bytesize=8, parity='N',
-                               stopbits=1, timeout=0.5, xonxoff=False, rtscts=False, dsrdtr=False)
+                               stopbits=1, timeout=0.1, xonxoff=False, rtscts=False, dsrdtr=False)
         device.dtr = False
         device.rts = False
         device.port = args.port
@@ -725,52 +835,76 @@ def main(argv=None):
                          settings={
                              'temperature_stale_seconds': args.temp_stale_seconds,
                              'data_stale_seconds': args.data_stale_seconds,
+                             'weight_stale_seconds': args.weight_stale_seconds,
                              'status_seconds': args.status_seconds,
+                             'console_mode': 'panel' if panel.enabled else 'quiet_text',
+                             'control_file': str(args.control_file.resolve()) if args.control_file else '',
                              'console_events_enabled': (
                                  not args.no_events and sys.stdin.isatty()),
-                         }))
+                         }), notifier=panel.notify)
         print(f'正在采集 {args.port}，{args.baud} 8N1。\n保存位置：{log.path}\n按Ctrl+C停止；请保持电脑不休眠。')
+        panel.start()
         event_queue = None
         if not args.no_events and sys.stdin.isatty():
-            print(EVENT_HELP)
-            event_queue = start_event_reader()
+            if not panel.active:
+                print(EVENT_HELP)
+                event_queue = start_event_reader()
         else:
             print('控制台事件输入不可用或已禁用；串口采集仍正常进行。')
         active_health_warning = None
+        active_other_warnings = {}
+        stop_requested = False
+        control = CommandFile(args.control_file, notifier=panel.notify)
 
         def consume_events():
-            nonlocal active_health_warning
-            if event_queue is None:
-                return
-            while True:
-                try:
-                    line = event_queue.get_nowait()
-                except queue.Empty:
-                    return
+            nonlocal stop_requested, status, reason
+            commands = [('console', line) for line in panel.poll()]
+            if event_queue is not None:
+                while True:
+                    try:
+                        commands.append(('console', event_queue.get_nowait()))
+                    except queue.Empty:
+                        break
+            commands.extend(('control_file', line) for line in control.poll())
+            for source, line in commands:
                 if line is None:
-                    return
+                    continue
                 if not line.strip():
                     continue
                 try:
                     parsed = parse_event_command(line)
                 except ValueError as exc:
-                    print(f'事件未记录：{exc}。输入 h 查看格式。')
+                    panel.notify(f'事件未记录：{exc}。输入 h 查看格式。')
                     continue
                 if parsed == 'help':
-                    print(EVENT_HELP)
+                    if panel.active:
+                        panel.notify('例：上500 / 200 / 100（总载荷），下（卸载）；s 稳定，n 备注，t/r 记录去皮/复位，q 结束。')
+                    else:
+                        print(EVENT_HELP)
                     continue
+                if parsed == 'stop':
+                    stop_requested = True
+                    status, reason = 'stopped', '用户输入q结束采集'
+                    return
                 marker = log.record_event(parsed['event_type'],
                                           parsed['reference_mass_g'],
-                                          parsed['note'], source='console')
-                print(f"已标记 {marker['event_type']}；事件号{marker['event_id']}，"
-                      f"当时最近串口seq={marker['latest_seq']}。")
+                                          parsed['note'], source=source)
+                names = {'load': f'上载：标称总载荷 {marker["reference_mass_g"]} g',
+                         'unload': '已卸载，空载', 'stable_start': '稳定段开始',
+                         'tare': '已手动去皮', 'reset': '已手动复位', 'note': '备注'}
+                label = names.get(marker['event_type'], marker['event_type'])
+                panel.notify(f'{marker["marked_local"][11:19]} {label}' +
+                             (f'；{marker["note"]}' if marker['note'] else ''))
+                log.checkpoint(durable=True)
 
         deadline = time.monotonic() + limit if limit else None
-        saved, shown, last_received = time.monotonic(), time.monotonic(), time.monotonic()
+        saved, last_received = time.monotonic(), time.monotonic()
         warned = False
         gap_started = None
         while deadline is None or time.monotonic() < deadline:
             consume_events()
+            if stop_requested:
+                break
             # 先等待1字节，再读当前已到达的字节，避免固定大块读取造成长延迟。
             chunk = device.read(1)
             if chunk:
@@ -778,6 +912,7 @@ def main(argv=None):
                     note = (f'无数据提示结束后收到数据；'
                             f'中断约{time.monotonic() - gap_started:.3f}秒')
                     log.record_event('data_resumed', note=note, source='capture')
+                    panel.notify('串口数据接收已恢复。')
                 log.chunk(chunk)
                 for data, complete in buffer.feed(chunk):
                     log.line(data, complete)
@@ -802,35 +937,48 @@ def main(argv=None):
                     'data_gap',
                     note=f'连续{args.data_stale_seconds:g}秒未收到任何字节',
                     source='capture')
-                print(message)
+                panel.notify(message)
                 warned = True
                 gap_started = last_received
             if now - saved >= 1:
                 log.checkpoint(durable=True)
                 saved = now
-            if now - shown >= args.status_seconds:
-                print(log.status_text())
-                warnings = log.health_warnings(args.temp_stale_seconds)
-                warning_key = log.health_warning_key(args.temp_stale_seconds)
-                if warning_key and warning_key != active_health_warning:
-                    for warning in warnings:
-                        print(f'健康提示：{warning}')
-                    log.record_event(
-                        'temperature_stale', note='；'.join(warnings),
-                        source='capture')
-                    active_health_warning = warning_key
-                elif not warning_key and active_health_warning is not None:
-                    log.record_event(
-                        'temperature_resumed',
-                        note='称重已有有效且新鲜的温度配对', source='capture')
-                    active_health_warning = None
-                shown = now
+            warnings = capture_warnings(log, last_received, args.data_stale_seconds,
+                                        args.temp_stale_seconds, args.weight_stale_seconds)
+            warning_key = log.health_warning_key(args.temp_stale_seconds)
+            if warning_key and warning_key != active_health_warning:
+                panel.notify(f'提示：{warnings["temperature"]}')
+                log.record_event('temperature_stale', note=warnings['temperature'],
+                                 source='capture')
+                active_health_warning = warning_key
+            elif not warning_key and active_health_warning is not None:
+                log.record_event('temperature_resumed',
+                                 note='称重已有有效且新鲜的温度配对', source='capture')
+                panel.notify('有效温度已恢复。')
+                active_health_warning = None
+            for key in ('weight',):
+                warning = warnings.get(key)
+                previous = active_other_warnings.get(key)
+                if warning and warning != previous:
+                    panel.notify(f'提示：{warning}')
+                    log.record_event('weight_warning', note=warning, source='capture')
+                elif not warning and previous:
+                    panel.notify('有效称重数据已恢复。')
+                    log.record_event('weight_resumed', source='capture')
+                active_other_warnings[key] = warning
+            panel.render(log, list(warnings.values()), interval=args.status_seconds,
+                         temp_stale_seconds=args.temp_stale_seconds,
+                         weight_stale_seconds=args.weight_stale_seconds)
+            if stop_requested:
+                break
     except KeyboardInterrupt:
         status, reason = 'stopped', '用户按Ctrl+C停止'
     except (serial.SerialException, OSError) as exc:
         status, reason, code = 'error', f'串口或文件异常：{exc}', 1
+        panel.close()
         print(f'{reason}\n若端口被占用，请关闭串口助手的端口后重试；已有文件会保留。', file=sys.stderr)
     finally:
+        panel.close()
         try:
             if log is not None:
                 tail = buffer.finish()
