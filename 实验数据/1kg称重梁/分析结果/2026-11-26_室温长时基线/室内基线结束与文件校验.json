@@ -1,0 +1,73 @@
+{
+  "session_id": "2026-11-26_13-27-51_112491",
+  "summary": {
+    "session_id": "2026-11-26_13-27-51_112491",
+    "started_local": "2026-11-26T13:27:51.112+08:00",
+    "stopped_local": "2026-11-26T15:03:37.842+08:00",
+    "duration_s": 5746.729575,
+    "records": 32867,
+    "received_bytes": 1299465,
+    "weight_valid_rows": 26294,
+    "weight_invalid_rows": 0,
+    "temperature_valid_rows": 6573,
+    "temperature_min_c": 21.75,
+    "temperature_max_c": 23.06,
+    "temperature_error_rows": 0,
+    "temperature_error_episodes": 0,
+    "temperature_error_seconds": 0.0,
+    "device_error_rows": 0,
+    "partial_rows": 0,
+    "tare_rows": 0,
+    "unit_rows": 0,
+    "mean_receive_interval_s": 0.174847,
+    "max_receive_interval_s": 0.264822,
+    "data_gap_events": 0,
+    "reset_markers": 0,
+    "event_count": 5,
+    "latest_temperature_c": "23.00",
+    "latest_temperature_state": "ok",
+    "effective_temperature_window_note": "最小值/最大值来自本次有效temp_c行，不代表温度已稳定，也不把错误段计入。",
+    "timestamp_note": "动作由人在电脑输入，电脑标记时刻通常晚于真实动作；分析以原始数据和备注共同判读",
+    "files": [
+      "serial.txt",
+      "records.csv",
+      "received.bin",
+      "events.csv",
+      "session.json",
+      "summary.json",
+      "summary.md"
+    ],
+    "next_analysis": "先检查summary.json、events.csv和serial.txt，再按事件区间划分records.csv；不得把异常段或旧温度当成当前有效样本。"
+  },
+  "files": {
+    "events.csv": {
+      "bytes": 1046,
+      "sha256": "51f45649a8c7af1cb3702f3516900ce7b16a0164545ddc312edfc452f8655507"
+    },
+    "received.bin": {
+      "bytes": 1299465,
+      "sha256": "07aea2f641d72c4d122c91697668b94614d2c8471eb837e177a1f3a91c8cc709"
+    },
+    "records.csv": {
+      "bytes": 6212220,
+      "sha256": "62c17439e9dadf05c13e148cdf9fd8812d4c5e0783af67ca3b24ebf0e5236af1"
+    },
+    "serial.txt": {
+      "bytes": 2571500,
+      "sha256": "ba36f7232ea09825bfb36bbd16df9b2dd93b25d13343545793873cef1700d7d6"
+    },
+    "session.json": {
+      "bytes": 5033,
+      "sha256": "daf118700745dd50030fa8c2e2b5b6dcd3398cf1900f17947fb30338d06ace2b"
+    },
+    "summary.json": {
+      "bytes": 1424,
+      "sha256": "12fc95f2747bb08d9db0443e7e6d3aeb40517aacf08e935b35f1a6a9edd8bff7"
+    },
+    "summary.md": {
+      "bytes": 992,
+      "sha256": "66c46cd447d21ba5a53fc6b5954aba900ae57c0a474e31549574eb962f59bb22"
+    }
+  },
+  "next_plan": "操作者决定后续使用1kg梁，停采后断电搬到室外，在笔记本上用1kg入口新开记录；本机未启动室外采集。"
+}
