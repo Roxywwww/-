@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-25",
+  "sensor_capacity_kg": 20,
+  "counts_per_g": 178.2,
+  "git_commit": "14cef64e726d15738c70c1a0f36d1312c16ea9c5",
+  "board_state_source": "11月22日操作者确认取消OLED归零版本已烧录；本次未连接目标读取固件",
+  "base_main_sha256_crlf": "6564c32d98e0dda1e3792e6e8f6ce5b43deac1bcd584601078033dadfce4f369",
+  "working_snapshot_files": 1023,
+  "base_archive_entries": 1085,
+  "working_main_sha256": "40f033a1ca38b6fba8ab241d514581c4b051ef75265856a284239bcf7001a70b",
+  "archives": {
+    "20kg_已确认烧录对应源码_14cef64.zip": {
+      "sha256": "32d99a9a7038af6b317ef2e77faf38a353fb3b277cb63ecdcf224005270fa547",
+      "bytes": 18126204
+    },
+    "20kg_长按取零待实测_工作区完整快照.zip": {
+      "sha256": "fcd610169ca7b8e12c041f67efa0b642804c169846b521e3057e024facfa9588",
+      "bytes": 23768727
+    }
+  },
+  "working_state": "含PA5长按3秒与OLED进度条，已编译，未烧录/实物验证；不等于历史实验所运行版本",
+  "calibration_for_1kg": "必须重新标定；从归档解压到独立工作副本，不在归档上修改",
+  "base_main_sha256_archived_bytes": "6564c32d98e0dda1e3792e6e8f6ce5b43deac1bcd584601078033dadfce4f369"
+}

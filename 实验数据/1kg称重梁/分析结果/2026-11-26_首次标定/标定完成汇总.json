@@ -1,0 +1,403 @@
+{
+  "date": "2026-11-26",
+  "sensor_capacity_kg": 1,
+  "counts_per_g": 736.8698,
+  "firmware_id": "scale1kg_20261126",
+  "calibration": {
+    "session_id": "2026-11-26_12-31-44_518120",
+    "sensor_capacity_kg": 1,
+    "counts_per_g": 736.8698,
+    "coefficient_frozen_before_validation": true,
+    "comparisons": [
+      {
+        "tag": "02_200g标定加载",
+        "mass_g": 200.0,
+        "role": "标定",
+        "average_temperature_c": 21.25,
+        "before_tag": "01_空载基线",
+        "after_tag": "03_200g卸载空载",
+        "baseline_raw_interpolated": 311391.10312192916,
+        "delta_raw": 147372.26644328824,
+        "local_counts_per_g": 736.8613322164413,
+        "raw_sd_counts": 34.261995307298164,
+        "mass_fitted_k_g": 199.99770168798915,
+        "error_fitted_k_g": -0.0022983120108506228,
+        "raw_sd_g": 0.04649667459203534
+      },
+      {
+        "tag": "04_500g标定加载",
+        "mass_g": 500.0,
+        "role": "标定",
+        "average_temperature_c": 21.28253623188406,
+        "before_tag": "03_200g卸载空载",
+        "after_tag": "05_500g卸载空载",
+        "baseline_raw_interpolated": 311398.83048922534,
+        "delta_raw": 368435.56081512244,
+        "local_counts_per_g": 736.8711216302449,
+        "raw_sd_counts": 37.26222618787073,
+        "mass_fitted_k_g": 500.0008967868169,
+        "error_fitted_k_g": 0.0008967868168952009,
+        "raw_sd_g": 0.05056826346780765
+      },
+      {
+        "tag": "06_100g独立核验加载",
+        "mass_g": 100.0,
+        "role": "独立核验",
+        "average_temperature_c": 21.405036496350366,
+        "before_tag": "05_500g卸载空载",
+        "after_tag": "07_100g卸载空载",
+        "baseline_raw_interpolated": 311390.3452584879,
+        "delta_raw": 73635.31167581864,
+        "local_counts_per_g": 736.3531167581864,
+        "raw_sd_counts": 35.21309874017563,
+        "mass_fitted_k_g": 99.9298813383567,
+        "error_fitted_k_g": -0.07011866164330627,
+        "raw_sd_g": 0.047787409309182745
+      },
+      {
+        "tag": "08_50g独立核验加载",
+        "mass_g": 50.0,
+        "role": "独立核验",
+        "average_temperature_c": 21.391739130434782,
+        "before_tag": "07_100g卸载空载",
+        "after_tag": "09_50g卸载空载",
+        "baseline_raw_interpolated": 311358.7514190668,
+        "delta_raw": 36884.48046499118,
+        "local_counts_per_g": 737.6896092998236,
+        "raw_sd_counts": 35.519767264122216,
+        "mass_fitted_k_g": 50.05562782596217,
+        "error_fitted_k_g": 0.0556278259621692,
+        "raw_sd_g": 0.04820358666364426
+      },
+      {
+        "tag": "10_20g独立核验加载",
+        "mass_g": 20.0,
+        "role": "独立核验",
+        "average_temperature_c": 21.31,
+        "before_tag": "09_50g卸载空载",
+        "after_tag": "11_20g卸载空载",
+        "baseline_raw_interpolated": 311397.8621503931,
+        "delta_raw": 14711.884226418508,
+        "local_counts_per_g": 735.5942113209254,
+        "raw_sd_counts": 39.474108967112706,
+        "mass_fitted_k_g": 19.965378179996666,
+        "error_fitted_k_g": -0.034621820003334136,
+        "raw_sd_g": 0.05356999156039873
+      }
+    ],
+    "zero_return_counts": [
+      {
+        "before": "01_空载基线",
+        "after": "03_200g卸载空载",
+        "delta_raw": -69.09044747700682,
+        "delta_g": -0.09376208317535448
+      },
+      {
+        "before": "03_200g卸载空载",
+        "after": "05_500g卸载空载",
+        "delta_raw": 76.0434782608645,
+        "delta_g": 0.10319798458406695
+      },
+      {
+        "before": "05_500g卸载空载",
+        "after": "07_100g卸载空载",
+        "delta_raw": -88.83333333331393,
+        "delta_g": -0.12055499266398749
+      },
+      {
+        "before": "07_100g卸载空载",
+        "after": "09_50g卸载空载",
+        "delta_raw": 16.23913043475477,
+        "delta_g": 0.02203799156208433
+      },
+      {
+        "before": "09_50g卸载空载",
+        "after": "11_20g卸载空载",
+        "delta_raw": 95.92753623187309,
+        "delta_g": 0.13018247759899115
+      }
+    ],
+    "warning": "相邻空载扣基线的离线加载增量，不等于固定开机零点下的在线显示准确度；质量以标称砝码为参考"
+  },
+  "post_flash": {
+    "counts_per_g": 736.8698,
+    "windows": [
+      {
+        "tag": "01_新固件空载基线",
+        "mass_g": 0.0,
+        "role": "烧录后空载参考",
+        "session_id": "2026-11-26_12-50-44_025410",
+        "source_file": "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/records.csv",
+        "window_first_time": "2026-11-26T12:52:04.486+08:00",
+        "window_last_time": "2026-11-26T12:52:32.973+08:00",
+        "seq_first": 441,
+        "seq_last": 604,
+        "time_center_s": 94.69252671755726,
+        "raw_mean": 311488.8473282443,
+        "raw_sd": 46.17999455016171,
+        "raw_min": 311369,
+        "raw_max": 311623,
+        "n": 131,
+        "average_temperature_c": 22.108091603053435,
+        "current_board_scale_counts_per_g": 736.8698,
+        "tare_base_counts": 311458,
+        "event_id": "7",
+        "event_marked_local": "2026-11-26T12:51:54.431+08:00",
+        "rule": "动作确认后至少10秒，在下一动作前冻结末30秒完整配温重量；按时间选择，不依据误差挑点",
+        "window_csv": "实验数据/1kg称重梁/分析结果/2026-11-26_烧录后核对/01_新固件空载基线.csv",
+        "window_sha256": "9d16307dd314726c92addff24e1484d6cdfcebb8643b245003214ad25176500c",
+        "g_mean": 0.04122137404580153,
+        "g_sd": 0.06664513255656478,
+        "g_min": -0.1,
+        "g_max": 0.2,
+        "g_avg_mean": 0.03740458015267176,
+        "g_avg_sd": 0.0501319456919521,
+        "g_avg_min": 0.0,
+        "g_avg_max": 0.2,
+        "g_iir_mean": 0.03816793893129771,
+        "g_iir_sd": 0.053288785466442654,
+        "g_iir_min": 0.0,
+        "g_iir_max": 0.2
+      },
+      {
+        "tag": "02_新固件100g加载",
+        "mass_g": 100.0,
+        "role": "烧录后独立核验",
+        "session_id": "2026-11-26_12-50-44_025410",
+        "source_file": "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/records.csv",
+        "window_first_time": "2026-11-26T12:53:29.391+08:00",
+        "window_last_time": "2026-11-26T12:53:59.397+08:00",
+        "seq_first": 926,
+        "seq_last": 1098,
+        "time_center_s": 180.35097101449276,
+        "raw_mean": 385200.5144927536,
+        "raw_sd": 34.90178827686778,
+        "raw_min": 385103,
+        "raw_max": 385280,
+        "n": 138,
+        "average_temperature_c": 21.93565217391304,
+        "current_board_scale_counts_per_g": 736.8698,
+        "tare_base_counts": 311458,
+        "event_id": "8",
+        "event_marked_local": "2026-11-26T12:53:17.059+08:00",
+        "rule": "动作确认后至少10秒，在下一动作前冻结末30秒完整配温重量；按时间选择，不依据误差挑点",
+        "window_csv": "实验数据/1kg称重梁/分析结果/2026-11-26_烧录后核对/02_新固件100g加载.csv",
+        "window_sha256": "b6a157af6d5250f908f9b7d85bc164f42762470c74a1c5947584f064d1b63cd5",
+        "g_mean": 100.07391304347826,
+        "g_sd": 0.0557684836644453,
+        "g_min": 99.9,
+        "g_max": 100.2,
+        "g_avg_mean": 100.09130434782608,
+        "g_avg_sd": 0.0282797827492574,
+        "g_avg_min": 100.0,
+        "g_avg_max": 100.1,
+        "g_iir_mean": 100.09202898550724,
+        "g_iir_sd": 0.027183062037543355,
+        "g_iir_min": 100.0,
+        "g_iir_max": 100.1
+      },
+      {
+        "tag": "03_新固件100g卸载回零",
+        "mass_g": 0.0,
+        "role": "烧录后空载参考",
+        "session_id": "2026-11-26_12-50-44_025410",
+        "source_file": "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/records.csv",
+        "window_first_time": "2026-11-26T12:55:11.898+08:00",
+        "window_last_time": "2026-11-26T12:55:41.826+08:00",
+        "seq_first": 1511,
+        "seq_last": 1683,
+        "time_center_s": 282.81958695652173,
+        "raw_mean": 311583.94202898553,
+        "raw_sd": 37.4765655469686,
+        "raw_min": 311486,
+        "raw_max": 311669,
+        "n": 138,
+        "average_temperature_c": 21.78217391304348,
+        "current_board_scale_counts_per_g": 736.8698,
+        "tare_base_counts": 311458,
+        "event_id": "9",
+        "event_marked_local": "2026-11-26T12:54:57.161+08:00",
+        "rule": "动作确认后至少10秒，在下一动作前冻结末30秒完整配温重量；按时间选择，不依据误差挑点",
+        "window_csv": "实验数据/1kg称重梁/分析结果/2026-11-26_烧录后核对/03_新固件100g卸载回零.csv",
+        "window_sha256": "325efc1c3c8bbb2747bf41ae335dc241dff40841faa6c6ea394cafeddfa4b2ee",
+        "g_mean": 0.1673913043478261,
+        "g_sd": 0.059392353065574194,
+        "g_min": 0.0,
+        "g_max": 0.3,
+        "g_avg_mean": 0.16666666666666669,
+        "g_avg_sd": 0.04731218471371226,
+        "g_avg_min": 0.1,
+        "g_avg_max": 0.2,
+        "g_iir_mean": 0.16666666666666669,
+        "g_iir_sd": 0.04731218471371226,
+        "g_iir_min": 0.1,
+        "g_iir_max": 0.2
+      }
+    ],
+    "paired_load": [
+      {
+        "tag": "02_新固件100g加载",
+        "mass_g": 100.0,
+        "role": "烧录后独立核验",
+        "average_temperature_c": 21.93565217391304,
+        "before_tag": "01_新固件空载基线",
+        "after_tag": "03_新固件100g卸载回零",
+        "baseline_raw_interpolated": 311532.14606536395,
+        "delta_raw": 73668.36842738965,
+        "local_counts_per_g": 736.6836842738965,
+        "raw_sd_counts": 34.90178827686778,
+        "mass_fitted_k_g": 99.97474238649711,
+        "error_fitted_k_g": -0.025257613502887466,
+        "raw_sd_g": 0.04736493241664643
+      }
+    ],
+    "loaded_display_error_g": 0.09130434782608177,
+    "zero_return_change_g": 0.12926208651399493,
+    "notes": "板上5点平均示值直接统计；相邻空载扣基线加载增量另列，不混用。复位瞬态不在冻结窗口内。"
+  },
+  "capture_summaries": [
+    {
+      "session_id": "2026-11-26_12-31-44_518120",
+      "started_local": "2026-11-26T12:31:44.522+08:00",
+      "stopped_local": "2026-11-26T12:50:12.657+08:00",
+      "duration_s": 1108.141,
+      "records": 6334,
+      "received_bytes": 279350,
+      "weight_valid_rows": 5067,
+      "weight_invalid_rows": 0,
+      "temperature_valid_rows": 1267,
+      "temperature_min_c": 21.0,
+      "temperature_max_c": 21.93,
+      "temperature_error_rows": 0,
+      "temperature_error_episodes": 0,
+      "temperature_error_seconds": 0.0,
+      "device_error_rows": 0,
+      "partial_rows": 0,
+      "tare_rows": 0,
+      "unit_rows": 0,
+      "mean_receive_interval_s": 0.174947,
+      "max_receive_interval_s": 0.282,
+      "data_gap_events": 0,
+      "reset_markers": 0,
+      "event_count": 15,
+      "latest_temperature_c": "21.93",
+      "latest_temperature_state": "ok",
+      "effective_temperature_window_note": "最小值/最大值来自本次有效temp_c行，不代表温度已稳定，也不把错误段计入。",
+      "timestamp_note": "动作由人在电脑输入，电脑标记时刻通常晚于真实动作；分析以原始数据和备注共同判读",
+      "files": [
+        "serial.txt",
+        "records.csv",
+        "received.bin",
+        "events.csv",
+        "session.json",
+        "summary.json",
+        "summary.md"
+      ],
+      "next_analysis": "先检查summary.json、events.csv和serial.txt，再按事件区间划分records.csv；不得把异常段或旧温度当成当前有效样本。"
+    },
+    {
+      "session_id": "2026-11-26_12-50-44_025410",
+      "started_local": "2026-11-26T12:50:44.025+08:00",
+      "stopped_local": "2026-11-26T12:56:02.519+08:00",
+      "duration_s": 318.484,
+      "records": 1800,
+      "received_bytes": 74957,
+      "weight_valid_rows": 1439,
+      "weight_invalid_rows": 0,
+      "temperature_valid_rows": 359,
+      "temperature_min_c": 21.75,
+      "temperature_max_c": 22.12,
+      "temperature_error_rows": 0,
+      "temperature_error_episodes": 0,
+      "temperature_error_seconds": 0.0,
+      "device_error_rows": 0,
+      "partial_rows": 0,
+      "tare_rows": 1,
+      "unit_rows": 0,
+      "mean_receive_interval_s": 0.176887,
+      "max_receive_interval_s": 3.766,
+      "data_gap_events": 0,
+      "reset_markers": 1,
+      "event_count": 10,
+      "latest_temperature_c": "21.75",
+      "latest_temperature_state": "ok",
+      "effective_temperature_window_note": "最小值/最大值来自本次有效temp_c行，不代表温度已稳定，也不把错误段计入。",
+      "timestamp_note": "动作由人在电脑输入，电脑标记时刻通常晚于真实动作；分析以原始数据和备注共同判读",
+      "files": [
+        "serial.txt",
+        "records.csv",
+        "received.bin",
+        "events.csv",
+        "session.json",
+        "summary.json",
+        "summary.md"
+      ],
+      "next_analysis": "先检查summary.json、events.csv和serial.txt，再按事件区间划分records.csv；不得把异常段或旧温度当成当前有效样本。"
+    }
+  ],
+  "original_files": {
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-31-44_518120/events.csv": {
+      "sha256": "4c0cb38c4f302190fd29e913d6f9d2f74a603a3e8ab1420904bf3289507b5f0f",
+      "bytes": 2711
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-31-44_518120/received.bin": {
+      "sha256": "5e88942619342c90499b06f4537c35c89c628ddc55247d07fc7403f2f54faa90",
+      "bytes": 279350
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-31-44_518120/records.csv": {
+      "sha256": "c5acffb87f27d2de0e7cccb94981e5db535244a48292adf39650c71ff9efe023",
+      "bytes": 1241129
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-31-44_518120/serial.txt": {
+      "sha256": "3961a3d02f4952a87ab51e704cfc42d5f12db67827e0a20ce5daafee36bb193f",
+      "bytes": 522336
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-31-44_518120/session.json": {
+      "sha256": "44f847c84a88154744963470a66b8b267bf40d8d6c024fcf63d4741f7349f9dd",
+      "bytes": 4568
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-31-44_518120/summary.json": {
+      "sha256": "2ebd162181360c6cdab53120cb6675aab8ddec5e43fa0064e14d8582b7e6c6d8",
+      "bytes": 1415
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-31-44_518120/summary.md": {
+      "sha256": "c352ec07c414d5b6815fd53f59341159a2319442b647aa68e52fa13ba56b5db1",
+      "bytes": 983
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/events.csv": {
+      "sha256": "81f30a3e0c6645638aade49a2b4d3cd857251753f0642454c0a635a41e12538a",
+      "bytes": 1715
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/received.bin": {
+      "sha256": "2907e41b58e884f2be897d4138fa7d6f81c2679874669bef1968842072c2c3fc",
+      "bytes": 74957
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/records.csv": {
+      "sha256": "2aec6031be97973aecdd3390187d1cc538071172e91ff243d43cfab86c28240f",
+      "bytes": 341213
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/serial.txt": {
+      "sha256": "f794986e011c66e0127b02dfa14230ca8fbc87acaf3dc1d5cca3b0e86a2141ca",
+      "bytes": 144425
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/session.json": {
+      "sha256": "1462cfae2210583a45b5f8a43696b4587b38dc7dbb6aba5af446de82b997092c",
+      "bytes": 4700
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/summary.json": {
+      "sha256": "85746e509ea548388c016aaa0020f7499ac0cf7ec9e1e68f9aceafa3d61400e9",
+      "bytes": 1413
+    },
+    "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410/summary.md": {
+      "sha256": "91fa4c8492e3a9c953a0e440bd8454adeedc8d22ea460c177710770a3515bbf3",
+      "bytes": 980
+    }
+  },
+  "temperature_compensation_enabled": false,
+  "limitations": [
+    "参考质量为标称砝码，等级和溯源尚未核实",
+    "仅单轮室温加载及短时板上验证，未完成长时稳定性和温度补偿",
+    "载板具体版号及探头贴法未补充，不将结果归因新增电容",
+    "20 kg与1 kg结果分别归档"
+  ]
+}

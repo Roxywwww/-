@@ -7,6 +7,9 @@ from collect_serial import main
 
 
 def run(argv=None):
+    args = list(sys.argv[1:] if argv is None else argv)
+    if any(arg in ('--list', '--help', '-h') for arg in args):
+        return main(args)
     release = None
     if os.name == 'nt':
         execution_state = ctypes.windll.kernel32.SetThreadExecutionState
@@ -19,16 +22,11 @@ def run(argv=None):
             print('未能启用临时防休眠，请自行保持电脑唤醒。')
     print('不要关闭采集窗口、手动休眠或合盖；显示器可以自行熄屏。')
     try:
-        return main(argv)
+        return main(args)
     finally:
         if release is not None:
             release()
 
 
 if __name__ == '__main__':
-    exit_code=run(sys.argv[1:])
-    try:
-        input('\n采集已结束，按回车关闭此窗口。')
-    except (EOFError, KeyboardInterrupt):
-        pass
-    raise SystemExit(exit_code)
+    raise SystemExit(run(sys.argv[1:]))

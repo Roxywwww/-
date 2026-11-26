@@ -412,6 +412,47 @@ class SessionLog:
             return 'stale_temperature'
         return None
 
+    def check_firmware_profile(self, pairs):
+        """Compare received identity fields; never infer the physical load cell."""
+        config = self.metadata['experiment'].get('user_metadata') or {}
+        if config.get('capture_profile') not in ('1kg', '20kg'):
+            return
+        fields = {k: pairs[k] for k in ('fw', 'scale_capacity_kg', 'counts_per_g_x10000') if k in pairs}
+        if not fields:
+            return
+        previous = self.metadata.get('firmware_profile_check') or {}
+        observed = dict(previous.get('observed', {}))
+        observed.update(fields)
+        reasons = []
+        for name, expected in [('scale_capacity_kg', config.get('sensor_capacity_kg')),
+                               ('counts_per_g_x10000', config.get('expected_counts_per_g'))]:
+            if name not in observed or not expected:
+                continue
+            try:
+                actual, target = float(observed[name]), float(expected)
+                if name == 'counts_per_g_x10000':
+                    target = round(target * 10000)
+                if not math.isfinite(actual) or actual != target:
+                    reasons.append(f'{name}收到{observed[name]}，期望{target:g}')
+            except (ValueError, TypeError, OverflowError):
+                reasons.append(f'{name}参数无法核对')
+        expected_fw = config.get('expected_firmware_id')
+        if expected_fw and 'fw' in observed and observed['fw'] != expected_fw:
+            reasons.append(f'固件标识收到{observed["fw"]}，期望{expected_fw}')
+        warning = ('所选采集版本与收到的固件参数不一致：' + '；'.join(reasons) +
+                   '。原始数据仍在保存，请核对后结束并选择正确入口。') if reasons else ''
+        self.metadata['firmware_profile_check'] = {
+            'status': 'mismatch' if warning else 'matched_received_fields',
+            'observed': observed, 'last_seq': self.seq, 'warning': warning,
+            'note': '仅核对已收到的固件字段，不代表自动识别实际称重梁；未收到的字段未验证',
+        }
+        if warning and warning != previous.get('warning'):
+            self.notifier(warning)
+            self.record_event('profile_mismatch', note=warning, source='capture')
+        elif not warning and previous.get('warning'):
+            self.notifier('已收到与所选版本一致的固件参数，版本不一致提示解除。')
+            self.record_event('profile_match_restored', source='capture')
+
     def line(self, data, complete=True):
         now = time.monotonic()
         received = stamp()
@@ -422,6 +463,7 @@ class SessionLog:
         text = payload.decode(self.encoding, errors='backslashreplace')
         pairs = dict(KV.findall(text)) if complete else {}
         self.seq += 1
+        self.check_firmware_profile(pairs)
         kind = 'message'
         if not complete:
             kind = 'partial'
@@ -715,6 +757,9 @@ def capture_warnings(log, last_received, data_stale_seconds,
         warnings['weight'] = f'超过{weight_stale_seconds:g}秒没有有效称重数据'
     if log.metadata_warning_active:
         warnings['metadata'] = '会话说明保存异常，原始数据仍在采集'
+    mismatch = (log.metadata.get('firmware_profile_check') or {}).get('warning')
+    if mismatch:
+        warnings['profile'] = mismatch
     return warnings
 
 

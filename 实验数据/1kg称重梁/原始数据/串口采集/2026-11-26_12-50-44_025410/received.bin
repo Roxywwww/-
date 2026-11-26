@@ -1,0 +1,1800 @@
+raw=311608 net=49 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311557 net=-2 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311562 net=3 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=21.93
+raw=311504 net=-55 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311561 net=2 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311527 net=-32 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311546 net=-13 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=21.93
+raw=311555 net=-4 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311515 net=-44 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311489 net=-70 g=-0.1 g_avg=0.0 g_iir=-0.1
+raw=311581 net=22 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=21.93
+raw=311545 net=-14 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311576 net=17 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311560 net=1 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311473 net=-86 g=-0.1 g_avg=0.0 g_iir=0.0
+temp_c=21.93
+raw=311546 net=-13 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311517 net=-42 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311490 net=-69 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311578 net=19 g=0.0 g_avg=-0.1 g_iir=0.0
+temp_c=21.93
+raw=311568 net=9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311521 net=-38 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311518 net=-41 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311595 net=36 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=21.93
+raw=311520 net=-39 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311531 net=-28 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311541 net=-18 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311522 net=-37 g=-0.1 g_avg=0.0 g_iir=0.0
+temp_c=21.93
+raw=311475 net=-84 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311532 net=-27 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311552 net=-7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311470 net=-89 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311505 net=-54 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311537 net=-22 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311531 net=-28 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311486 net=-73 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311522 net=-37 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311502 net=-57 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311524 net=-35 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311554 net=-5 g=0.0 g_avg=-0.1 g_iir=0.0
+temp_c=21.93
+raw=311496 net=-63 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311475 net=-84 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311515 net=-44 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311514 net=-45 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311567 net=8 g=0.0 g_avg=-0.1 g_iir=0.0
+raw=311486 net=-73 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311511 net=-48 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311496 net=-63 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311466 net=-93 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311485 net=-74 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311461 net=-98 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311475 net=-84 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311457 net=-102 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311515 net=-44 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311430 net=-129 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311521 net=-38 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311473 net=-86 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311494 net=-65 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311506 net=-53 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311483 net=-76 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311440 net=-119 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311496 net=-63 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311461 net=-98 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311470 net=-89 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311470 net=-89 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311475 net=-84 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311483 net=-76 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311471 net=-88 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311481 net=-78 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311444 net=-115 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311453 net=-106 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311534 net=-25 g=0.0 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311474 net=-85 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311509 net=-50 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311548 net=-11 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311471 net=-88 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.00
+raw=311478 net=-81 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311491 net=-68 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311499 net=-60 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311507 net=-52 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=21.93
+raw=311494 net=-65 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311478 net=-81 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311438 net=-121 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311448 net=-111 g=-0.2 g_avg=-0.1 g_iir=-0.1
+temp_c=22.00
+raw=311523 net=-36 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311486 net=-73 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311472 net=-87 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311501 net=-58 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.00
+raw=311483 net=-76 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311523 net=-36 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311436 net=-123 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311490 net=-69 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.00
+raw=311474 net=-85 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311471 net=-88 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311567 net=8 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311470 net=-89 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.00
+raw=311536 net=-23 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311498 net=-61 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311454 net=-105 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311454 net=-105 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.00
+raw=311429 net=-130 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311413 net=-146 g=-0.2 g_avg=-0.1 g_iir=-0.2
+raw=311446 net=-113 g=-0.2 g_avg=-0.2 g_iir=-0.2
+raw=311418 net=-141 g=-0.2 g_avg=-0.2 g_iir=-0.2
+temp_c=22.00
+raw=311490 net=-69 g=-0.1 g_avg=-0.2 g_iir=-0.1
+raw=311451 net=-108 g=-0.1 g_avg=-0.2 g_iir=-0.1
+raw=311466 net=-93 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311428 net=-131 g=-0.2 g_avg=-0.1 g_iir=-0.2
+temp_c=22.00
+raw=311504 net=-55 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311534 net=-25 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311466 net=-93 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311530 net=-29 g=0.0 g_avg=-0.1 g_iir=-0.1
+temp_c=22.00
+raw=311483 net=-76 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311495 net=-64 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311417 net=-142 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311401 net=-158 g=-0.2 g_avg=-0.1 g_iir=-0.2
+temp_c=22.00
+raw=311453 net=-106 g=-0.1 g_avg=-0.1 g_iir=-0.2
+raw=311499 net=-60 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311480 net=-79 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311416 net=-143 g=-0.2 g_avg=-0.1 g_iir=-0.1
+temp_c=22.06
+raw=311423 net=-136 g=-0.2 g_avg=-0.1 g_iir=-0.2
+raw=311478 net=-81 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311443 net=-116 g=-0.2 g_avg=-0.2 g_iir=-0.1
+raw=311456 net=-103 g=-0.1 g_avg=-0.2 g_iir=-0.1
+temp_c=22.00
+raw=311513 net=-46 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311468 net=-91 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311462 net=-97 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311455 net=-104 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.06
+raw=311524 net=-35 g=0.0 g_avg=-0.1 g_iir=-0.1
+raw=311445 net=-114 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311459 net=-100 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311466 net=-93 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.06
+raw=311486 net=-73 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311471 net=-88 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311453 net=-106 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311427 net=-132 g=-0.2 g_avg=-0.1 g_iir=-0.1
+temp_c=22.06
+raw=311502 net=-57 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311458 net=-101 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311435 net=-124 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311401 net=-158 g=-0.2 g_avg=-0.2 g_iir=-0.2
+temp_c=22.06
+raw=311457 net=-102 g=-0.1 g_avg=-0.1 g_iir=-0.2
+raw=311462 net=-97 g=-0.1 g_avg=-0.2 g_iir=-0.1
+raw=311484 net=-75 g=-0.1 g_avg=-0.2 g_iir=-0.1
+raw=311461 net=-98 g=-0.1 g_avg=-0.1 g_iir=-0.1
+temp_c=22.06
+raw=311472 net=-87 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311419 net=-140 g=-0.2 g_avg=-0.1 g_iir=-0.1
+raw=311491 net=-68 g=-0.1 g_avg=-0.1 g_iir=-0.1
+raw=311428 net=-131 g=-0.2 g_avg=-0.1 gUSART1 OK, 115200 8N1 fw=scale1kg_20261126
+scale_capacity_kg=1 counts_per_g_x10000=7368698
+tare_offset=311458 samples=16
+raw=311483 net=25 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.06
+raw=311451 net=-7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311470 net=12 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311472 net=14 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311523 net=65 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.06
+raw=311449 net=-9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311439 net=-19 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311526 net=68 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311389 net=-69 g=-0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.06
+raw=311434 net=-24 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311434 net=-24 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311451 net=-7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311505 net=47 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.06
+raw=311517 net=59 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311464 net=6 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311463 net=5 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311447 net=-11 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.06
+raw=311465 net=7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311404 net=-54 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311454 net=-4 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311442 net=-16 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.06
+raw=311440 net=-18 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311441 net=-17 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311484 net=26 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311471 net=13 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311449 net=-9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311387 net=-71 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311457 net=-1 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311412 net=-46 g=-0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311500 net=42 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311439 net=-19 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311467 net=9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311514 net=56 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.06
+raw=311381 net=-77 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311429 net=-29 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311404 net=-54 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311432 net=-26 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311438 net=-20 g=0.0 g_avg=-0.1 g_iir=0.0
+raw=311514 net=56 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311419 net=-39 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311538 net=80 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311528 net=70 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311539 net=81 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311547 net=89 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311523 net=65 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311538 net=80 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311508 net=50 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311504 net=46 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311419 net=-39 g=-0.1 g_avg=0.1 g_iir=0.0
+temp_c=22.12
+raw=311465 net=7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311402 net=-56 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311524 net=66 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311426 net=-32 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311450 net=-8 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311455 net=-3 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311487 net=29 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311444 net=-14 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311435 net=-23 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311547 net=89 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311525 net=67 g=0.1 g_avg=0.0 g_iir=0.1
+raw=311453 net=-5 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311449 net=-9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311383 net=-75 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311491 net=33 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311486 net=28 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311514 net=56 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311485 net=27 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311565 net=107 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311442 net=-16 g=0.0 g_avg=0.1 g_iir=0.0
+temp_c=22.12
+raw=311458 net=0 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311454 net=-4 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311462 net=4 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311519 net=61 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311451 net=-7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311419 net=-39 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311479 net=21 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311568 net=110 g=0.1 g_avg=0.0 g_iir=0.1
+temp_c=22.12
+raw=311493 net=35 g=0.0 g_avg=0.0 g_iir=0.1
+raw=311533 net=75 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311497 net=39 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311484 net=26 g=0.0 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311468 net=10 g=0.0 g_avg=0.1 g_iir=0.0
+raw=311493 net=35 g=0.0 g_avg=0.1 g_iir=0.0
+raw=311434 net=-24 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311434 net=-24 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311488 net=30 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311464 net=6 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311442 net=-16 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311564 net=106 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311504 net=46 g=0.1 g_avg=0.0 g_iir=0.1
+raw=311466 net=8 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311479 net=21 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311527 net=69 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311397 net=-61 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311465 net=7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311417 net=-41 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311433 net=-25 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311417 net=-41 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311473 net=15 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311480 net=22 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311502 net=44 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311472 net=14 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311494 net=36 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311464 net=6 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311466 net=8 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311475 net=17 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311503 net=45 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311510 net=52 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311475 net=17 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311504 net=46 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311500 net=42 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311458 net=0 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311431 net=-27 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311470 net=12 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311485 net=27 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311465 net=7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311496 net=38 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311448 net=-10 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311415 net=-43 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311361 net=-97 g=-0.1 g_avg=0.0 g_iir=-0.1
+raw=311454 net=-4 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311459 net=1 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311390 net=-68 g=-0.1 g_avg=-0.1 g_iir=0.0
+raw=311424 net=-34 g=0.0 g_avg=-0.1 g_iir=0.0
+raw=311574 net=116 g=0.2 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311426 net=-32 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311467 net=9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311442 net=-16 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311475 net=17 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311447 net=-11 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311484 net=26 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311461 net=3 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311473 net=15 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311448 net=-10 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311433 net=-25 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311479 net=21 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311492 net=34 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311443 net=-15 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311446 net=-12 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311456 net=-2 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311515 net=57 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311487 net=29 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311508 net=50 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311478 net=20 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311473 net=15 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311469 net=11 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311550 net=92 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311499 net=41 g=0.1 g_avg=0.0 g_iir=0.1
+raw=311435 net=-23 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311466 net=8 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311482 net=24 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311492 net=34 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311520 net=62 g=0.1 g_avg=0.0 g_iir=0.1
+temp_c=22.12
+raw=311501 net=43 g=0.1 g_avg=0.0 g_iir=0.1
+raw=311495 net=37 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311458 net=0 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311442 net=-16 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311515 net=57 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311492 net=34 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311471 net=13 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311512 net=54 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311435 net=-23 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311411 net=-47 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311442 net=-16 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311408 net=-50 g=-0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311471 net=13 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311548 net=90 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311526 net=68 g=0.1 g_avg=0.0 g_iir=0.1
+raw=311489 net=31 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311431 net=-27 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311536 net=78 g=0.1 g_avg=0.1 g_iir=0.0
+raw=311522 net=64 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311427 net=-31 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311527 net=69 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311485 net=27 g=0.0 g_avg=0.1 g_iir=0.0
+raw=311495 net=37 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311470 net=12 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311459 net=1 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311466 net=8 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311431 net=-27 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311510 net=52 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311518 net=60 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311448 net=-10 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311526 net=68 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311506 net=48 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311462 net=4 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311412 net=-46 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311490 net=32 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311521 net=63 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311558 net=100 g=0.1 g_avg=0.0 g_iir=0.1
+raw=311507 net=49 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311463 net=5 g=0.0 g_avg=0.1 g_iir=0.0
+raw=311454 net=-4 g=0.0 g_avg=0.1 g_iir=0.0
+temp_c=22.12
+raw=311476 net=18 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311428 net=-30 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311487 net=29 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311474 net=16 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311440 net=-18 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311441 net=-17 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311495 net=37 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311520 net=62 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311453 net=-5 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311456 net=-2 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311469 net=11 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311474 net=16 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311457 net=-1 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311453 net=-5 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311507 net=49 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311492 net=34 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311486 net=28 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311495 net=37 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311448 net=-10 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311444 net=-14 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311479 net=21 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311465 net=7 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311459 net=1 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311466 net=8 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311429 net=-29 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311507 net=49 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311467 net=9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311480 net=22 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311408 net=-50 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311508 net=50 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311522 net=64 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311512 net=54 g=0.1 g_avg=0.0 g_iir=0.1
+temp_c=22.12
+raw=311492 net=34 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311385 net=-73 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311432 net=-26 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311438 net=-20 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311446 net=-12 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311438 net=-20 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311456 net=-2 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311459 net=1 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311414 net=-44 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311511 net=53 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311445 net=-13 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311497 net=39 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311519 net=61 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311444 net=-14 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311453 net=-5 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311518 net=60 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311466 net=8 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311493 net=35 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311422 net=-36 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311464 net=6 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311495 net=37 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311488 net=30 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311464 net=6 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311525 net=67 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311492 net=34 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311452 net=-6 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311413 net=-45 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311369 net=-89 g=-0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311524 net=66 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311480 net=22 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311447 net=-11 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311505 net=47 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311479 net=21 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311449 net=-9 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311425 net=-33 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311489 net=31 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311397 net=-61 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311488 net=30 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311472 net=14 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311445 net=-13 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311460 net=2 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311440 net=-18 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311499 net=41 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311411 net=-47 g=-0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311474 net=16 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311454 net=-4 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311476 net=18 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311437 net=-21 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311496 net=38 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311534 net=76 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311475 net=17 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311496 net=38 g=0.1 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311540 net=82 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311518 net=60 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311498 net=40 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311495 net=37 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311536 net=78 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311429 net=-29 g=0.0 g_avg=0.1 g_iir=0.0
+raw=311502 net=44 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311443 net=-15 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311469 net=11 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311524 net=66 g=0.1 g_avg=0.0 g_iir=0.0
+raw=311544 net=86 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311518 net=60 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311464 net=6 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311477 net=19 g=0.0 g_avg=0.1 g_iir=0.0
+raw=311485 net=27 g=0.0 g_avg=0.1 g_iir=0.0
+raw=311542 net=84 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311442 net=-16 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311557 net=99 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311532 net=74 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311504 net=46 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311557 net=99 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311468 net=10 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311481 net=23 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311489 net=31 g=0.0 g_avg=0.1 g_iir=0.1
+temp_c=22.12
+raw=311514 net=56 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311414 net=-44 g=-0.1 g_avg=0.0 g_iir=0.0
+raw=311486 net=28 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311492 net=34 g=0.0 g_avg=0.0 g_iir=0.0
+temp_c=22.12
+raw=311522 net=64 g=0.1 g_avg=0.0 g_iir=0.1
+raw=311463 net=5 g=0.0 g_avg=0.0 g_iir=0.0
+raw=311527 net=69 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311567 net=109 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.06
+raw=311520 net=62 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311489 net=31 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311537 net=79 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311489 net=31 g=0.0 g_avg=0.1 g_iir=0.1
+temp_c=22.06
+raw=311509 net=51 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311537 net=79 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311470 net=12 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311527 net=69 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.06
+raw=311528 net=70 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311456 net=-2 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311533 net=75 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311517 net=59 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.06
+raw=311523 net=65 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311589 net=131 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311519 net=61 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311555 net=97 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.06
+raw=311541 net=83 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311550 net=92 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311566 net=108 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311533 net=75 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.06
+raw=311623 net=165 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311494 net=36 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311596 net=138 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311608 net=150 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.06
+raw=311517 net=59 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311614 net=156 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311518 net=60 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311557 net=99 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.06
+raw=311530 net=72 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311599 net=141 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311535 net=77 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311551 net=93 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.00
+raw=311568 net=110 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311536 net=78 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311602 net=144 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311549 net=91 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.00
+raw=311537 net=79 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311643 net=185 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311519 net=61 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311541 net=83 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=22.00
+raw=311617 net=159 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311609 net=151 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311590 net=132 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311571 net=113 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311632 net=174 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311662 net=204 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311608 net=150 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311554 net=96 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311620 net=162 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311638 net=180 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311675 net=217 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311599 net=141 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311566 net=108 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311547 net=89 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311543 net=85 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311606 net=148 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311535 net=77 g=0.1 g_avg=0.1 g_iir=0.2
+raw=311615 net=157 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311573 net=115 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311554 net=96 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311660 net=202 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311586 net=128 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311583 net=125 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311637 net=179 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311655 net=197 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311572 net=114 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311564 net=106 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311527 net=69 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311635 net=177 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311566 net=108 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311590 net=132 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311604 net=146 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311572 net=114 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311642 net=184 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311634 net=176 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311663 net=205 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311623 net=165 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311523 net=65 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311578 net=120 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311642 net=184 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311563 net=105 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311589 net=131 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311658 net=200 g=0.3 g_avg=0.2 g_iir=0.2
+temp_c=22.00
+raw=311630 net=172 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311609 net=151 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311658 net=200 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311566 net=108 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311556 net=98 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311569 net=111 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311611 net=153 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311573 net=115 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311602 net=144 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311636 net=178 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311570 net=112 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311588 net=130 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311596 net=138 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311558 net=100 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311576 net=118 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311550 net=92 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311599 net=141 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311576 net=118 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311634 net=176 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311609 net=151 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311562 net=104 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311635 net=177 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311543 net=85 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311579 net=121 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311624 net=166 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311685 net=227 g=0.3 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311663 net=205 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311603 net=145 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311585 net=127 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311600 net=142 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311555 net=97 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311610 net=152 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311633 net=175 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311606 net=148 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311583 net=125 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311565 net=107 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311622 net=164 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311645 net=187 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311595 net=137 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311624 net=166 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311587 net=129 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311579 net=121 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311586 net=128 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311599 net=141 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311572 net=114 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311594 net=136 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311589 net=131 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311631 net=173 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311601 net=143 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311549 net=91 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311565 net=107 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311586 net=128 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311597 net=139 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311584 net=126 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311645 net=187 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311597 net=139 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311579 net=121 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311629 net=171 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311617 net=159 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311581 net=123 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311546 net=88 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311626 net=168 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311617 net=159 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311577 net=119 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311565 net=107 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311598 net=140 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311640 net=182 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311593 net=135 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311621 net=163 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311635 net=177 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311553 net=95 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311602 net=144 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311556 net=98 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311639 net=181 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311591 net=133 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311662 net=204 g=0.3 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311549 net=91 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311610 net=152 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311609 net=151 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311582 net=124 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311574 net=116 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311597 net=139 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311609 net=151 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311634 net=176 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311551 net=93 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311603 net=145 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311611 net=153 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311609 net=151 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311585 net=127 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311594 net=136 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311644 net=186 g=0.3 g_avg=0.2 g_iir=0.2
+temp_c=21.87
+raw=311585 net=127 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311554 net=96 g=0.1 g_avg=0.2 g_iir=0.2
+raw=322754 net=11296 g=15.3 g_avg=3.2 g_iir=5.2
+raw=379501 net=68043 g=92.3 g_avg=21.6 g_iir=34.3
+temp_c=21.87
+raw=385232 net=73774 g=100.1 g_avg=41.6 g_iir=56.2
+raw=385239 net=73781 g=100.1 g_avg=61.6 g_iir=70.9
+raw=385293 net=73835 g=100.2 g_avg=81.6 g_iir=80.6
+raw=385291 net=73833 g=100.2 g_avg=98.6 g_iir=87.2
+temp_c=21.87
+raw=385331 net=73873 g=100.3 g_avg=100.2 g_iir=91.5
+raw=385223 net=73765 g=100.1 g_avg=100.2 g_iir=94.4
+raw=385270 net=73812 g=100.2 g_avg=100.2 g_iir=96.3
+raw=385246 net=73788 g=100.1 g_avg=100.2 g_iir=97.6
+temp_c=21.93
+raw=385274 net=73816 g=100.2 g_avg=100.2 g_iir=98.5
+raw=385265 net=73807 g=100.2 g_avg=100.1 g_iir=99.0
+raw=385214 net=73756 g=100.1 g_avg=100.1 g_iir=99.4
+raw=385212 net=73754 g=100.1 g_avg=100.1 g_iir=99.6
+temp_c=21.93
+raw=385298 net=73840 g=100.2 g_avg=100.1 g_iir=99.8
+raw=385296 net=73838 g=100.2 g_avg=100.2 g_iir=99.9
+raw=385256 net=73798 g=100.2 g_avg=100.1 g_iir=100.0
+raw=385260 net=73802 g=100.2 g_avg=100.2 g_iir=100.1
+temp_c=21.87
+raw=385253 net=73795 g=100.1 g_avg=100.2 g_iir=100.1
+raw=385308 net=73850 g=100.2 g_avg=100.2 g_iir=100.1
+raw=385263 net=73805 g=100.2 g_avg=100.2 g_iir=100.1
+raw=385233 net=73775 g=100.1 g_avg=100.2 g_iir=100.1
+temp_c=21.93
+raw=385264 net=73806 g=100.2 g_avg=100.2 g_iir=100.1
+raw=385186 net=73728 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385230 net=73772 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385272 net=73814 g=100.2 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385189 net=73731 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385220 net=73762 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385261 net=73803 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385250 net=73792 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385263 net=73805 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385241 net=73783 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385241 net=73783 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385226 net=73768 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385268 net=73810 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385283 net=73825 g=100.2 g_avg=100.1 g_iir=100.2
+raw=385220 net=73762 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385157 net=73699 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385255 net=73797 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385294 net=73836 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385244 net=73786 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385266 net=73808 g=100.2 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385244 net=73786 g=100.1 g_avg=100.2 g_iir=100.1
+raw=385235 net=73777 g=100.1 g_avg=100.2 g_iir=100.1
+raw=385221 net=73763 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385235 net=73777 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385234 net=73776 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385280 net=73822 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385199 net=73741 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385221 net=73763 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385206 net=73748 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385206 net=73748 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385238 net=73780 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385233 net=73775 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385274 net=73816 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385148 net=73690 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385231 net=73773 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385222 net=73764 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385290 net=73832 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385178 net=73720 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385207 net=73749 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385274 net=73816 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385231 net=73773 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385294 net=73836 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385232 net=73774 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385237 net=73779 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385229 net=73771 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385245 net=73787 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385188 net=73730 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385196 net=73738 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385242 net=73784 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385235 net=73777 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385185 net=73727 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385201 net=73743 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385271 net=73813 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385242 net=73784 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385194 net=73736 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385228 net=73770 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385187 net=73729 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385153 net=73695 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385222 net=73764 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385190 net=73732 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385150 net=73692 g=100.0 g_avg=100.0 g_iir=100.1
+raw=385249 net=73791 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385209 net=73751 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385206 net=73748 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385249 net=73791 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385193 net=73735 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385218 net=73760 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385228 net=73770 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385200 net=73742 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385172 net=73714 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385225 net=73767 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385276 net=73818 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385197 net=73739 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385181 net=73723 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385208 net=73750 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.87
+raw=385165 net=73707 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385204 net=73746 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385200 net=73742 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385223 net=73765 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385265 net=73807 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385233 net=73775 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385137 net=73679 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385236 net=73778 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385215 net=73757 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385233 net=73775 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385210 net=73752 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385169 net=73711 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385223 net=73765 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385176 net=73718 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385152 net=73694 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385192 net=73734 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385237 net=73779 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385211 net=73753 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385211 net=73753 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385160 net=73702 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385170 net=73712 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385212 net=73754 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385202 net=73744 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385246 net=73788 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385179 net=73721 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385200 net=73742 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385162 net=73704 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385249 net=73791 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385114 net=73656 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385142 net=73684 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385210 net=73752 g=100.1 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385197 net=73739 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385184 net=73726 g=100.1 g_avg=100.0 g_iir=100.1
+raw=385217 net=73759 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385230 net=73772 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385228 net=73770 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385205 net=73747 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385168 net=73710 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385210 net=73752 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385190 net=73732 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385216 net=73758 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385171 net=73713 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385180 net=73722 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385188 net=73730 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385201 net=73743 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385168 net=73710 g=100.0 g_avg=100.0 g_iir=100.1
+raw=385213 net=73755 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385189 net=73731 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385212 net=73754 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385218 net=73760 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385237 net=73779 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385211 net=73753 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385219 net=73761 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385243 net=73785 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385184 net=73726 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385252 net=73794 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385161 net=73703 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385265 net=73807 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385157 net=73699 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385192 net=73734 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385103 net=73645 g=99.9 g_avg=100.0 g_iir=100.0
+raw=385197 net=73739 g=100.1 g_avg=100.1 g_iir=100.0
+raw=385141 net=73683 g=100.0 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385113 net=73655 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385168 net=73710 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385201 net=73743 g=100.1 g_avg=100.0 g_iir=100.0
+raw=385152 net=73694 g=100.0 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385231 net=73773 g=100.1 g_avg=100.0 g_iir=100.1
+raw=385190 net=73732 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385180 net=73722 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385201 net=73743 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385264 net=73806 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385192 net=73734 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385222 net=73764 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385164 net=73706 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385146 net=73688 g=100.0 g_avg=100.1 g_iir=100.0
+raw=385232 net=73774 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385206 net=73748 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385170 net=73712 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385243 net=73785 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385230 net=73772 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385162 net=73704 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385265 net=73807 g=100.2 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385228 net=73770 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385180 net=73722 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385251 net=73793 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385215 net=73757 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385201 net=73743 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385191 net=73733 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385174 net=73716 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385236 net=73778 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385174 net=73716 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385208 net=73750 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385155 net=73697 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385207 net=73749 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385205 net=73747 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385191 net=73733 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385228 net=73770 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385263 net=73805 g=100.2 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385209 net=73751 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385219 net=73761 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385207 net=73749 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385161 net=73703 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385173 net=73715 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385190 net=73732 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385237 net=73779 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385180 net=73722 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385241 net=73783 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385158 net=73700 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385182 net=73724 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385231 net=73773 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385169 net=73711 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385213 net=73755 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385225 net=73767 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=22.00
+raw=385226 net=73768 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385230 net=73772 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385181 net=73723 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385207 net=73749 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385145 net=73687 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385178 net=73720 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385280 net=73822 g=100.2 g_avg=100.1 g_iir=100.1
+temp_c=22.00
+raw=385270 net=73812 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385186 net=73728 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385133 net=73675 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385200 net=73742 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385229 net=73771 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385231 net=73773 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385207 net=73749 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385142 net=73684 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=22.00
+raw=385205 net=73747 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385237 net=73779 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385236 net=73778 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385249 net=73791 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385217 net=73759 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385176 net=73718 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385211 net=73753 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385129 net=73671 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385207 net=73749 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385236 net=73778 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385242 net=73784 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385225 net=73767 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385167 net=73709 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385211 net=73753 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385198 net=73740 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385225 net=73767 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385199 net=73741 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385178 net=73720 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385169 net=73711 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385226 net=73768 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385247 net=73789 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385152 net=73694 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385248 net=73790 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385217 net=73759 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385143 net=73685 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385206 net=73748 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385166 net=73708 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385196 net=73738 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385198 net=73740 g=100.1 g_avg=100.0 g_iir=100.1
+raw=385156 net=73698 g=100.0 g_avg=100.1 g_iir=100.0
+raw=385181 net=73723 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385142 net=73684 g=100.0 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385155 net=73697 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385206 net=73748 g=100.1 g_avg=100.0 g_iir=100.0
+raw=385160 net=73702 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385160 net=73702 g=100.0 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385207 net=73749 g=100.1 g_avg=100.0 g_iir=100.0
+raw=385184 net=73726 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385166 net=73708 g=100.0 g_avg=100.1 g_iir=100.0
+temp_c=21.93
+raw=385217 net=73759 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385139 net=73681 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385231 net=73773 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385145 net=73687 g=100.0 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385125 net=73667 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385151 net=73693 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385239 net=73781 g=100.1 g_avg=100.0 g_iir=100.1
+raw=385232 net=73774 g=100.1 g_avg=100.0 g_iir=100.1
+temp_c=21.93
+raw=385216 net=73758 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385198 net=73740 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385264 net=73806 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385190 net=73732 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385186 net=73728 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385160 net=73702 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385216 net=73758 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385170 net=73712 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385145 net=73687 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385205 net=73747 g=100.1 g_avg=100.0 g_iir=100.1
+raw=385152 net=73694 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385206 net=73748 g=100.1 g_avg=100.0 g_iir=100.1
+temp_c=21.93
+raw=385223 net=73765 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385237 net=73779 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385188 net=73730 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385167 net=73709 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385224 net=73766 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385199 net=73741 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385188 net=73730 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385158 net=73700 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385252 net=73794 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385174 net=73716 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385118 net=73660 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385176 net=73718 g=100.0 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385173 net=73715 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385197 net=73739 g=100.1 g_avg=100.0 g_iir=100.0
+raw=385110 net=73652 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385176 net=73718 g=100.0 g_avg=100.0 g_iir=100.0
+temp_c=21.93
+raw=385228 net=73770 g=100.1 g_avg=100.0 g_iir=100.1
+raw=385199 net=73741 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385164 net=73706 g=100.0 g_avg=100.0 g_iir=100.0
+raw=385166 net=73708 g=100.0 g_avg=100.1 g_iir=100.0
+temp_c=21.93
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385222 net=73764 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385224 net=73766 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385255 net=73797 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385274 net=73816 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385208 net=73750 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385185 net=73727 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385192 net=73734 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385194 net=73736 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385249 net=73791 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385235 net=73777 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385189 net=73731 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385195 net=73737 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385206 net=73748 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385213 net=73755 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385239 net=73781 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385183 net=73725 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385220 net=73762 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385163 net=73705 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385250 net=73792 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385202 net=73744 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385240 net=73782 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385230 net=73772 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385175 net=73717 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385162 net=73704 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385248 net=73790 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385184 net=73726 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385198 net=73740 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385209 net=73751 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385134 net=73676 g=100.0 g_avg=100.1 g_iir=100.0
+raw=385204 net=73746 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385240 net=73782 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385251 net=73793 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385266 net=73808 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385272 net=73814 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385158 net=73700 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385252 net=73794 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385177 net=73719 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385163 net=73705 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385249 net=73791 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385255 net=73797 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385189 net=73731 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385194 net=73736 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385181 net=73723 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385159 net=73701 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385234 net=73776 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385205 net=73747 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385223 net=73765 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385164 net=73706 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385204 net=73746 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385253 net=73795 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385163 net=73705 g=100.0 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385204 net=73746 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385216 net=73758 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385250 net=73792 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385186 net=73728 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385218 net=73760 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385212 net=73754 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385224 net=73766 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385233 net=73775 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385160 net=73702 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385161 net=73703 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385265 net=73807 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385208 net=73750 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385182 net=73724 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385221 net=73763 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385178 net=73720 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385192 net=73734 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385173 net=73715 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385195 net=73737 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385224 net=73766 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385236 net=73778 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385212 net=73754 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385194 net=73736 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385194 net=73736 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385197 net=73739 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385261 net=73803 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385216 net=73758 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385177 net=73719 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385289 net=73831 g=100.2 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385153 net=73695 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385276 net=73818 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385260 net=73802 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385174 net=73716 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385249 net=73791 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385225 net=73767 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385196 net=73738 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385231 net=73773 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385255 net=73797 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385203 net=73745 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385204 net=73746 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385200 net=73742 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385201 net=73743 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385289 net=73831 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385221 net=73763 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385184 net=73726 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385230 net=73772 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385251 net=73793 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385248 net=73790 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385264 net=73806 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385283 net=73825 g=100.2 g_avg=100.1 g_iir=100.2
+raw=385196 net=73738 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385285 net=73827 g=100.2 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385175 net=73717 g=100.0 g_avg=100.1 g_iir=100.1
+raw=385190 net=73732 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385245 net=73787 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385232 net=73774 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385213 net=73755 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385233 net=73775 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385243 net=73785 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385221 net=73763 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385229 net=73771 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385201 net=73743 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385274 net=73816 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385240 net=73782 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385190 net=73732 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385229 net=73771 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385199 net=73741 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385220 net=73762 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385267 net=73809 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385236 net=73778 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385207 net=73749 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385226 net=73768 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385229 net=73771 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385260 net=73802 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385274 net=73816 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385246 net=73788 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385232 net=73774 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385239 net=73781 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385272 net=73814 g=100.2 g_avg=100.1 g_iir=100.1
+raw=385227 net=73769 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385305 net=73847 g=100.2 g_avg=100.1 g_iir=100.2
+raw=385293 net=73835 g=100.2 g_avg=100.2 g_iir=100.2
+raw=385225 net=73767 g=100.1 g_avg=100.2 g_iir=100.2
+raw=385266 net=73808 g=100.2 g_avg=100.2 g_iir=100.2
+temp_c=21.93
+raw=385193 net=73735 g=100.1 g_avg=100.2 g_iir=100.1
+raw=385291 net=73833 g=100.2 g_avg=100.1 g_iir=100.2
+raw=385223 net=73765 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385241 net=73783 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385255 net=73797 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385229 net=73771 g=100.1 g_avg=100.1 g_iir=100.1
+raw=385290 net=73832 g=100.2 g_avg=100.1 g_iir=100.2
+raw=385229 net=73771 g=100.1 g_avg=100.1 g_iir=100.1
+temp_c=21.93
+raw=385275 net=73817 g=100.2 g_avg=100.1 g_iir=100.2
+raw=385328 net=73870 g=100.2 g_avg=100.2 g_iir=100.2
+raw=394872 net=83414 g=113.2 g_avg=102.8 g_iir=104.5
+raw=376609 net=65151 g=88.4 g_avg=100.4 g_iir=99.2
+temp_c=21.93
+raw=311547 net=89 g=0.1 g_avg=80.4 g_iir=66.1
+raw=311608 net=150 g=0.2 g_avg=60.4 g_iir=44.2
+raw=311557 net=99 g=0.1 g_avg=40.4 g_iir=29.5
+raw=311537 net=79 g=0.1 g_avg=17.8 g_iir=19.7
+temp_c=21.93
+raw=311657 net=199 g=0.3 g_avg=0.2 g_iir=13.2
+raw=311568 net=110 g=0.1 g_avg=0.2 g_iir=8.9
+raw=311555 net=97 g=0.1 g_avg=0.2 g_iir=6.0
+raw=311562 net=104 g=0.1 g_avg=0.2 g_iir=4.0
+temp_c=21.93
+raw=311513 net=55 g=0.1 g_avg=0.2 g_iir=2.7
+raw=311604 net=146 g=0.2 g_avg=0.1 g_iir=1.9
+raw=311634 net=176 g=0.2 g_avg=0.2 g_iir=1.3
+raw=311600 net=142 g=0.2 g_avg=0.2 g_iir=0.9
+temp_c=21.93
+raw=311563 net=105 g=0.1 g_avg=0.2 g_iir=0.7
+raw=311583 net=125 g=0.2 g_avg=0.2 g_iir=0.5
+raw=311544 net=86 g=0.1 g_avg=0.2 g_iir=0.4
+raw=311516 net=58 g=0.1 g_avg=0.1 g_iir=0.3
+temp_c=21.93
+raw=311514 net=56 g=0.1 g_avg=0.1 g_iir=0.2
+raw=311548 net=90 g=0.1 g_avg=0.1 g_iir=0.2
+raw=311551 net=93 g=0.1 g_avg=0.1 g_iir=0.2
+raw=311532 net=74 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311512 net=54 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311557 net=99 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311618 net=160 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311616 net=158 g=0.2 g_avg=0.1 g_iir=0.2
+temp_c=21.93
+raw=311566 net=108 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311583 net=125 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311520 net=62 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311523 net=65 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311560 net=102 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311514 net=56 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311533 net=75 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311592 net=134 g=0.2 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311621 net=163 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311517 net=59 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311549 net=91 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311520 net=62 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311537 net=79 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311531 net=73 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311541 net=83 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311594 net=136 g=0.2 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311578 net=120 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311541 net=83 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311508 net=50 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311536 net=78 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311540 net=82 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311555 net=97 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311526 net=68 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311542 net=84 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311514 net=56 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311539 net=81 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311592 net=134 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311516 net=58 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311568 net=110 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311573 net=115 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311513 net=55 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311520 net=62 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311585 net=127 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311542 net=84 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311496 net=38 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311526 net=68 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311454 net=-4 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311549 net=91 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311587 net=129 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311551 net=93 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311531 net=73 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311524 net=66 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311545 net=87 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311564 net=106 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.93
+raw=311556 net=98 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311608 net=150 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311557 net=99 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311616 net=158 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.93
+raw=311534 net=76 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311575 net=117 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311526 net=68 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311526 net=68 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311531 net=73 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311569 net=111 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311551 net=93 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311498 net=40 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311605 net=147 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311567 net=109 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311577 net=119 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311527 net=69 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311530 net=72 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311568 net=110 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311551 net=93 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311528 net=70 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311583 net=125 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311536 net=78 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311579 net=121 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311562 net=104 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311458 net=0 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311574 net=116 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311561 net=103 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311596 net=138 g=0.2 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311536 net=78 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311498 net=40 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311527 net=69 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311553 net=95 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311529 net=71 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311577 net=119 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311561 net=103 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311516 net=58 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311520 net=62 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311495 net=37 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311522 net=64 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311583 net=125 g=0.2 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311564 net=106 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311552 net=94 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311564 net=106 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311595 net=137 g=0.2 g_avg=0.2 g_iir=0.1
+temp_c=21.87
+raw=311539 net=81 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311526 net=68 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311544 net=86 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311605 net=147 g=0.2 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311528 net=70 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311486 net=28 g=0.0 g_avg=0.1 g_iir=0.1
+raw=311541 net=83 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311615 net=157 g=0.2 g_avg=0.1 g_iir=0.1
+temp_c=21.87
+raw=311590 net=132 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311541 net=83 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311557 net=99 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311558 net=100 g=0.1 g_avg=0.2 g_iir=0.1
+temp_c=21.87
+raw=311540 net=82 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311565 net=107 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311578 net=120 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311568 net=110 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.81
+raw=311561 net=103 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311543 net=85 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311549 net=91 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311562 net=104 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.81
+raw=311566 net=108 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311574 net=116 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311516 net=58 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311518 net=60 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.81
+raw=311582 net=124 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311583 net=125 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311501 net=43 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311555 net=97 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.81
+raw=311540 net=82 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311574 net=116 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311565 net=107 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311536 net=78 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.81
+raw=311568 net=110 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311532 net=74 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311531 net=73 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311560 net=102 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.81
+raw=311542 net=84 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311574 net=116 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311601 net=143 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311572 net=114 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.81
+raw=311554 net=96 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311539 net=81 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311608 net=150 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311629 net=171 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.81
+raw=311589 net=131 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311591 net=133 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311631 net=173 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311559 net=101 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.81
+raw=311571 net=113 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311604 net=146 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311635 net=177 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311633 net=175 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.81
+raw=311636 net=178 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311607 net=149 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311602 net=144 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311601 net=143 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311572 net=114 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311564 net=106 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311586 net=128 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311569 net=111 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311593 net=135 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311559 net=101 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311563 net=105 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311504 net=46 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.75
+raw=311599 net=141 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311574 net=116 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311579 net=121 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311551 net=93 g=0.1 g_avg=0.1 g_iir=0.1
+temp_c=21.75
+raw=311656 net=198 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311565 net=107 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311589 net=131 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311577 net=119 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311527 net=69 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311592 net=134 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311658 net=200 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311607 net=149 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311564 net=106 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311602 net=144 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311545 net=87 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311596 net=138 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311669 net=211 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311623 net=165 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311586 net=128 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311564 net=106 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311584 net=126 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311601 net=143 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311564 net=106 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311579 net=121 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311561 net=103 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311567 net=109 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311586 net=128 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311534 net=76 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311650 net=192 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311625 net=167 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311559 net=101 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311532 net=74 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311640 net=182 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311616 net=158 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311624 net=166 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311606 net=148 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311612 net=154 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311588 net=130 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311633 net=175 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311564 net=106 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311575 net=117 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311543 net=85 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311613 net=155 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311619 net=161 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311611 net=153 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311628 net=170 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311593 net=135 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311669 net=211 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311657 net=199 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311588 net=130 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311597 net=139 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311598 net=140 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311558 net=100 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311658 net=200 g=0.3 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311620 net=162 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311601 net=143 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311653 net=195 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311582 net=124 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311618 net=160 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311587 net=129 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311632 net=174 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311520 net=62 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311642 net=184 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311627 net=169 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311596 net=138 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311617 net=159 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311614 net=156 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311587 net=129 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311626 net=168 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311630 net=172 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311587 net=129 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311580 net=122 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311575 net=117 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311549 net=91 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311622 net=164 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311579 net=121 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311549 net=91 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311551 net=93 g=0.1 g_avg=0.2 g_iir=0.1
+temp_c=21.75
+raw=311582 net=124 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311605 net=147 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311590 net=132 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311585 net=127 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311558 net=100 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311528 net=70 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311641 net=183 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311660 net=202 g=0.3 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311609 net=151 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311596 net=138 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311564 net=106 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311624 net=166 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311642 net=184 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311632 net=174 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311589 net=131 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311570 net=112 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311549 net=91 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311612 net=154 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311602 net=144 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311603 net=145 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311615 net=157 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311596 net=138 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311587 net=129 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311545 net=87 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311589 net=131 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311551 net=93 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311639 net=181 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311613 net=155 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311603 net=145 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311538 net=80 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311595 net=137 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311602 net=144 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311541 net=83 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311596 net=138 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311578 net=120 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311565 net=107 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311635 net=177 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311576 net=118 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311514 net=56 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311571 net=113 g=0.2 g_avg=0.2 g_iir=0.1
+temp_c=21.75
+raw=311561 net=103 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311586 net=128 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311598 net=140 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311621 net=163 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311615 net=157 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311607 net=149 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311665 net=207 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311550 net=92 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311610 net=152 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311608 net=150 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311556 net=98 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311561 net=103 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311563 net=105 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311561 net=103 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311576 net=118 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311589 net=131 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311565 net=107 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311619 net=161 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311653 net=195 g=0.3 g_avg=0.2 g_iir=0.2
+raw=311550 net=92 g=0.1 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311515 net=57 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311551 net=93 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311564 net=106 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311583 net=125 g=0.2 g_avg=0.1 g_iir=0.2
+temp_c=21.75
+raw=311554 net=96 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311578 net=120 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311551 net=93 g=0.1 g_avg=0.1 g_iir=0.1
+raw=311617 net=159 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311572 net=114 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311579 net=121 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311567 net=109 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311517 net=59 g=0.1 g_avg=0.2 g_iir=0.1
+temp_c=21.75
+raw=311638 net=180 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311581 net=123 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311561 net=103 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311572 net=114 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311533 net=75 g=0.1 g_avg=0.2 g_iir=0.1
+raw=311573 net=115 g=0.2 g_avg=0.1 g_iir=0.1
+raw=311601 net=143 g=0.2 g_avg=0.1 g_iir=0.2
+raw=311573 net=115 g=0.2 g_avg=0.2 g_iir=0.2
+temp_c=21.75
+raw=311593 net=135 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311615 net=157 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311527 net=69 g=0.1 g_avg=0.2 g_iir=0.2
+raw=311551 net=93 g=0.1 g_avg=0.2 g_iir=0.1
+temp_c=21.75
+raw=311593 net=135 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311582 net=124 g=0.2 g_avg=0.2 g_iir=0.2
+raw=311564 net=106 g=0.1 g_avg=0.1 g_iir=0.2

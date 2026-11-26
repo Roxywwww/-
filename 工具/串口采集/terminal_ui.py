@@ -148,10 +148,12 @@ class TerminalPanel:
         status = '需检查：' + '；'.join(warnings) if warnings else '接收正常，持续保存'
         if not log.seq and not warnings:
             status = '等待串口数据，采集器已启动'
+        profile = log.metadata.get('experiment', {}).get('user_metadata', {}).get('capture_profile', '')
+        profile_text = f'{profile}版 | ' if profile in ('1kg', '20kg') else ''
         lines = [
-            f'电子秤采集正在进行 —— {state}',
+            f'{profile_text}电子秤采集正在进行 —— {state}',
             f"{log.metadata['port']}  |  {elapsed}  |  已记录 {log.seq} 行",
-            f'重量：{weight}    梁温：{temp}',
+            f'重量：{weight}    温度：{temp}',
             f'状态：{status}',
             f'保存：{log.path}',
             f'最近提示：{self.notice}',

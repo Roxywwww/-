@@ -25,6 +25,7 @@
 #include "hx711.h"
 #include "oled.h"
 #include "ds18b20.h"
+#include "zero_control.h"
 
 /* USER CODE END Includes */
 
@@ -37,8 +38,9 @@
 /* USER CODE BEGIN PD */
 #define HX711_TARE_SAMPLES 16U
 #define HX711_STARTUP_SETTLE_MS 2000U
-#define TARE_BUTTON_DEBOUNCE_MS 30U
 #define UNIT_BUTTON_DEBOUNCE_MS 30U
+#define ZERO_SAMPLING_TIMEOUT_MS 8000U
+#define ZERO_RESULT_DISPLAY_MS 1200U
 #define RAW_REPORT_INTERVAL_MS 200U
 #define HX711_AVERAGE_SAMPLES 5U
 #define HX711_IIR_DIVISOR 3LL
@@ -60,7 +62,8 @@
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-static const uint8_t startup_message[] = "USART1 OK, 115200 8N1\r\n";
+static const uint8_t startup_message[] =
+  "USART1 OK, 115200 8N1\r\nfirmware=2026-11-24-pa5-hold-zero\r\n";
 static int32_t tare_offset;
 static uint8_t tare_valid;
 static int32_t average_samples[HX711_AVERAGE_SAMPLES];
@@ -73,6 +76,14 @@ static uint32_t last_oled_tick;
 static uint32_t temperature_tick;
 static uint8_t temperature_converting;
 static uint8_t display_unit_kg;
+static ZeroKey zero_key;
+static ZeroSamples zero_samples;
+static uint8_t zero_collecting;
+static uint8_t zero_long_press;
+static uint32_t zero_started_at;
+static uint8_t zero_ui_mode;
+static uint8_t zero_ui_percent = 255U;
+static uint32_t zero_result_at;
 
 /* USER CODE END PV */
 
@@ -129,6 +140,138 @@ static void HX711_FiltersReset(void)
   average_count = 0U;
   average_index = 0U;
   iir_valid = 0U;
+}
+
+static void ZeroUi_Normal(void)
+{
+  OLED_ShowString(1U, 1U, display_unit_kg != 0U ?
+                  "WEIGHT (kg)     " : "WEIGHT (g)      ");
+  OLED_ShowString(4U, 1U, "P5 TARE P3 UNIT  ");
+  zero_ui_mode = 0U;
+  zero_ui_percent = 255U;
+}
+
+/* Only rows 1 and 4 belong to the action UI; weight and temperature stay live. */
+static void ZeroUi_Progress(uint8_t mode, uint8_t percent)
+{
+  if (zero_ui_mode != mode)
+  {
+    OLED_ShowString(1U, 1U, mode == 1U ?
+                    "ZERO: KEEP EMPTY" : "ZERO SAMPLING   ");
+    zero_ui_mode = mode;
+    zero_ui_percent = 255U;
+  }
+  if (zero_ui_percent != percent)
+  {
+    OLED_ShowProgressBar(4U, percent);
+    zero_ui_percent = percent;
+  }
+}
+
+static void ZeroCapture_Fail(const char *reason)
+{
+  char line[96];
+  int length;
+  zero_collecting = 0U;
+  zero_ui_mode = 3U;
+  zero_result_at = HAL_GetTick();
+  OLED_ShowString(1U, 1U, "ZERO NOT CHANGED");
+  OLED_ShowString(4U, 1U, "CHECK AND RETRY ");
+  length = snprintf(line, sizeof(line), "zero_failed=%s keep_offset=%ld\r\n",
+                    reason, (long)tare_offset);
+  if (length > 0 && length < (int)sizeof(line))
+    HAL_UART_Transmit(&huart1, (uint8_t *)line, (uint16_t)length, 100U);
+}
+
+static void ZeroCapture_Start(uint8_t long_press)
+{
+  static const uint8_t long_message[] = "zero_collect_start=long samples=16\r\n";
+  static const uint8_t short_message[] = "zero_collect_start=short samples=16\r\n";
+  const uint8_t *message = long_press != 0U ? long_message : short_message;
+  ZeroSamples_Init(&zero_samples);
+  zero_collecting = 1U;
+  zero_long_press = long_press;
+  zero_started_at = HAL_GetTick();
+  ZeroUi_Progress(2U, 0U);
+  HAL_UART_Transmit(&huart1, (uint8_t *)message,
+                    (uint16_t)(long_press != 0U ? sizeof(long_message) - 1U :
+                                               sizeof(short_message) - 1U), 100U);
+}
+
+/* Reuse report samples so zeroing never blocks the normal 5 Hz data stream. */
+static void ZeroCapture_Add(int32_t raw)
+{
+  int32_t new_offset;
+  int32_t old_offset = tare_offset;
+  int32_t maximum_span = zero_long_press != 0U ?
+    (int32_t)(HX711_COUNTS_PER_GRAM_X10000 / 10000LL) : 0;
+  int result;
+  char line[96];
+  int length;
+  if (zero_collecting == 0U) return;
+  /* The long-press motion guard is a provisional 1 g peak-to-peak bound,
+     not a calibrated stability/accuracy specification. Ordinary tare is unchanged. */
+  result = ZeroSamples_Add(&zero_samples, raw, maximum_span, &new_offset);
+  if (result < 0)
+  {
+    ZeroCapture_Fail("motion_or_saturation");
+    return;
+  }
+  ZeroUi_Progress(2U, (uint8_t)(zero_samples.count * 100U / ZERO_SAMPLE_COUNT));
+  if (result == 0) return;
+  tare_offset = new_offset;
+  tare_valid = 1U;
+  HX711_FiltersReset();
+  zero_collecting = 0U;
+  zero_ui_mode = 3U;
+  zero_result_at = HAL_GetTick();
+  OLED_ShowString(1U, 1U, zero_long_press != 0U ?
+                  "ZERO OK         " : "TARE OK         ");
+  length = snprintf(line, sizeof(line),
+                    "tare_button_offset=%ld samples=16 mode=%s previous_offset=%ld\r\n",
+                    (long)tare_offset, zero_long_press != 0U ? "zero" : "tare",
+                    (long)old_offset);
+  if (length > 0 && length < (int)sizeof(line))
+    HAL_UART_Transmit(&huart1, (uint8_t *)line, (uint16_t)length, 100U);
+}
+
+static void ZeroButton_Service(void)
+{
+  uint32_t now = HAL_GetTick();
+  uint8_t pressed = HAL_GPIO_ReadPin(TARE_BUTTON_GPIO_Port, TARE_BUTTON_Pin) ==
+                    GPIO_PIN_RESET ? 1U : 0U;
+  ZeroKeyEvent event = ZeroKey_Update(&zero_key, pressed, now);
+  if (zero_collecting != 0U)
+  {
+    /* Consume additional key presses during collection, including long holds. */
+    if (zero_key.active != 0U) zero_key.long_fired = 1U;
+    if ((uint32_t)(now - zero_started_at) >= ZERO_SAMPLING_TIMEOUT_MS)
+      ZeroCapture_Fail("timeout");
+    return;
+  }
+  if (event == ZERO_KEY_SHORT || event == ZERO_KEY_LONG)
+  {
+    ZeroCapture_Start(event == ZERO_KEY_LONG ? 1U : 0U);
+  }
+  else if (event == ZERO_KEY_CANCEL)
+  {
+    static const uint8_t message[] = "zero_hold_cancelled\r\n";
+    ZeroUi_Normal();
+    HAL_UART_Transmit(&huart1, (uint8_t *)message, sizeof(message) - 1U, 100U);
+  }
+  else if (zero_key.active != 0U && zero_key.long_fired == 0U &&
+           (uint32_t)(now - zero_key.pressed_at) >= ZERO_KEY_SHORT_MS)
+  {
+    uint32_t duration = now - zero_key.pressed_at;
+    uint8_t percent = (uint8_t)(duration * 100U / ZERO_KEY_HOLD_MS);
+    if (percent > 100U) percent = 100U;
+    ZeroUi_Progress(1U, percent);
+  }
+  else if (zero_ui_mode == 3U &&
+           (uint32_t)(now - zero_result_at) >= ZERO_RESULT_DISPLAY_MS)
+  {
+    ZeroUi_Normal();
+  }
 }
 
 /* Average the newest five net readings, or all available readings at start. */
@@ -285,11 +428,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  GPIO_PinState button_last_sample;
-  GPIO_PinState button_stable_state;
-  uint32_t button_change_tick;
   uint32_t last_report_tick;
-  uint8_t button_armed;
   GPIO_PinState unit_last_sample;
   GPIO_PinState unit_stable_state;
   uint32_t unit_change_tick;
@@ -323,7 +462,7 @@ int main(void)
   OLED_ShowString(1U, 1U, "WEIGHT (g)");
   OLED_ShowString(2U, 1U, "Waiting HX711...");
   OLED_ShowString(3U, 1U, "TEMP WAIT");
-  OLED_ShowString(4U, 1U, "PA5 TARE A3 UNIT");
+  OLED_ShowString(4U, 1U, "P5 TARE P3 UNIT  ");
   DS18B20_Init();
   temperature_converting = (DS18B20_StartConversion() == HAL_OK) ? 1U : 0U;
   temperature_tick = HAL_GetTick();
@@ -355,10 +494,9 @@ int main(void)
     }
   }
 
-  button_last_sample = HAL_GPIO_ReadPin(TARE_BUTTON_GPIO_Port, TARE_BUTTON_Pin);
-  button_stable_state = button_last_sample;
-  button_change_tick = HAL_GetTick();
-  button_armed = (button_stable_state == GPIO_PIN_SET) ? 1U : 0U;
+  ZeroKey_Init(&zero_key,
+    HAL_GPIO_ReadPin(TARE_BUTTON_GPIO_Port, TARE_BUTTON_Pin) == GPIO_PIN_RESET ?
+    1U : 0U, HAL_GetTick());
   unit_last_sample = HAL_GPIO_ReadPin(UNIT_BUTTON_GPIO_Port, UNIT_BUTTON_Pin);
   unit_stable_state = unit_last_sample;
   unit_change_tick = HAL_GetTick();
@@ -378,50 +516,7 @@ int main(void)
     int32_t raw;
     char line[96];
     int length;
-    uint32_t now = HAL_GetTick();
-    GPIO_PinState button_sample = HAL_GPIO_ReadPin(TARE_BUTTON_GPIO_Port,
-                                                    TARE_BUTTON_Pin);
-
-    /* Accept a change only after it remains unchanged for the debounce time. */
-    if (button_sample != button_last_sample)
-    {
-      button_last_sample = button_sample;
-      button_change_tick = now;
-    }
-    if (button_last_sample != button_stable_state &&
-        (now - button_change_tick) >= TARE_BUTTON_DEBOUNCE_MS)
-    {
-      button_stable_state = button_last_sample;
-      if (button_stable_state == GPIO_PIN_SET)
-      {
-        button_armed = 1U;
-      }
-      else if (button_armed != 0U)
-      {
-        int32_t new_offset;
-        /* A held button cannot start a second tare until it is released. */
-        button_armed = 0U;
-
-        if (HX711_Tare(&new_offset) == HAL_OK)
-        {
-          tare_offset = new_offset;
-          tare_valid = 1U;
-          HX711_FiltersReset();
-          length = snprintf(line, sizeof(line), "tare_button_offset=%ld\r\n",
-                            (long)tare_offset);
-        }
-        else
-        {
-          length = snprintf(line, sizeof(line),
-                            "tare button failed; old offset kept\r\n");
-        }
-
-        if (length > 0 && length < (int)sizeof(line))
-        {
-          HAL_UART_Transmit(&huart1, (uint8_t *)line, (uint16_t)length, 100U);
-        }
-      }
-    }
+    ZeroButton_Service();
 
     /* Change display units once per debounced press; tare/calibration stay intact. */
     {
@@ -445,19 +540,21 @@ int main(void)
           static const uint8_t unit_g_message[] = "display_unit=g\r\n";
           static const uint8_t unit_kg_message[] = "display_unit=kg\r\n";
           unit_armed = 0U;
-          display_unit_kg ^= 1U;
-          OLED_ShowString(1U, 1U,
-                          display_unit_kg != 0U ? "WEIGHT (kg)" : "WEIGHT (g) ");
-          last_oled_tick = HAL_GetTick() - OLED_REPORT_INTERVAL_MS;
-          if (display_unit_kg != 0U)
+          if (zero_key.active == 0U && zero_collecting == 0U && zero_ui_mode != 1U)
           {
-            HAL_UART_Transmit(&huart1, (uint8_t *)unit_kg_message,
-                              sizeof(unit_kg_message) - 1U, 100U);
-          }
-          else
-          {
-            HAL_UART_Transmit(&huart1, (uint8_t *)unit_g_message,
-                              sizeof(unit_g_message) - 1U, 100U);
+            display_unit_kg ^= 1U;
+            ZeroUi_Normal();
+            last_oled_tick = HAL_GetTick() - OLED_REPORT_INTERVAL_MS;
+            if (display_unit_kg != 0U)
+            {
+              HAL_UART_Transmit(&huart1, (uint8_t *)unit_kg_message,
+                                sizeof(unit_kg_message) - 1U, 100U);
+            }
+            else
+            {
+              HAL_UART_Transmit(&huart1, (uint8_t *)unit_g_message,
+                                sizeof(unit_g_message) - 1U, 100U);
+            }
           }
         }
       }
@@ -472,6 +569,7 @@ int main(void)
 
       if (status == HAL_OK && (raw == -8388608L || raw == 8388607L))
       {
+        if (zero_collecting != 0U) ZeroCapture_Fail("saturation");
         HX711_FiltersReset();
         OLED_ShowString(2U, 1U, "HX711 SATURATED ");
         length = snprintf(line, sizeof(line), "raw=%ld HX711 saturated\r\n",
@@ -479,6 +577,7 @@ int main(void)
       }
       else if (status == HAL_OK)
       {
+        ZeroCapture_Add(raw);
         if (tare_valid != 0U)
         {
           int32_t net = raw - tare_offset;
@@ -522,6 +621,7 @@ int main(void)
       }
       else
       {
+        if (zero_collecting != 0U) ZeroCapture_Fail("hx711_timeout");
         length = snprintf(line, sizeof(line), "HX711 timeout\r\n");
       }
 

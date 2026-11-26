@@ -172,6 +172,28 @@ void OLED_ShowString(uint8_t Line, uint8_t Column, const char *String)
 	}
 }
 
+/* Draw a bordered 128 x 16 pixel bar within one text row. */
+void OLED_ShowProgressBar(uint8_t Line, uint8_t Percent)
+{
+	uint8_t page, x;
+	uint8_t fill;
+	if (Line < 1U || Line > 4U) return;
+	if (Percent > 100U) Percent = 100U;
+	fill = (uint8_t)((uint16_t)Percent * 122U / 100U);
+	for (page = 0U; page < 2U; ++page)
+	{
+		OLED_SetCursor((uint8_t)((Line - 1U) * 2U + page), 0U);
+		for (x = 0U; x < 128U; ++x)
+		{
+			uint8_t data = (page == 0U) ? 0x01U : 0x80U;
+			if (x == 0U || x == 127U) data = 0xFFU;
+			else if (x >= 3U && x < (uint8_t)(3U + fill))
+				data |= (page == 0U) ? 0xFCU : 0x3FU;
+			OLED_WriteData(data);
+		}
+	}
+}
+
 /**
   * @brief  OLED次方函数
   * @retval 返回值等于X的Y次方

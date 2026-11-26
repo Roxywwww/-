@@ -1,0 +1,116 @@
+{
+  "session_id": "2026-11-26_12-31-44_518120",
+  "sensor_capacity_kg": 1,
+  "counts_per_g": 736.8698,
+  "coefficient_frozen_before_validation": true,
+  "comparisons": [
+    {
+      "tag": "02_200g标定加载",
+      "mass_g": 200.0,
+      "role": "标定",
+      "average_temperature_c": 21.25,
+      "before_tag": "01_空载基线",
+      "after_tag": "03_200g卸载空载",
+      "baseline_raw_interpolated": 311391.10312192916,
+      "delta_raw": 147372.26644328824,
+      "local_counts_per_g": 736.8613322164413,
+      "raw_sd_counts": 34.261995307298164,
+      "mass_fitted_k_g": 199.99770168798915,
+      "error_fitted_k_g": -0.0022983120108506228,
+      "raw_sd_g": 0.04649667459203534
+    },
+    {
+      "tag": "04_500g标定加载",
+      "mass_g": 500.0,
+      "role": "标定",
+      "average_temperature_c": 21.28253623188406,
+      "before_tag": "03_200g卸载空载",
+      "after_tag": "05_500g卸载空载",
+      "baseline_raw_interpolated": 311398.83048922534,
+      "delta_raw": 368435.56081512244,
+      "local_counts_per_g": 736.8711216302449,
+      "raw_sd_counts": 37.26222618787073,
+      "mass_fitted_k_g": 500.0008967868169,
+      "error_fitted_k_g": 0.0008967868168952009,
+      "raw_sd_g": 0.05056826346780765
+    },
+    {
+      "tag": "06_100g独立核验加载",
+      "mass_g": 100.0,
+      "role": "独立核验",
+      "average_temperature_c": 21.405036496350366,
+      "before_tag": "05_500g卸载空载",
+      "after_tag": "07_100g卸载空载",
+      "baseline_raw_interpolated": 311390.3452584879,
+      "delta_raw": 73635.31167581864,
+      "local_counts_per_g": 736.3531167581864,
+      "raw_sd_counts": 35.21309874017563,
+      "mass_fitted_k_g": 99.9298813383567,
+      "error_fitted_k_g": -0.07011866164330627,
+      "raw_sd_g": 0.047787409309182745
+    },
+    {
+      "tag": "08_50g独立核验加载",
+      "mass_g": 50.0,
+      "role": "独立核验",
+      "average_temperature_c": 21.391739130434782,
+      "before_tag": "07_100g卸载空载",
+      "after_tag": "09_50g卸载空载",
+      "baseline_raw_interpolated": 311358.7514190668,
+      "delta_raw": 36884.48046499118,
+      "local_counts_per_g": 737.6896092998236,
+      "raw_sd_counts": 35.519767264122216,
+      "mass_fitted_k_g": 50.05562782596217,
+      "error_fitted_k_g": 0.0556278259621692,
+      "raw_sd_g": 0.04820358666364426
+    },
+    {
+      "tag": "10_20g独立核验加载",
+      "mass_g": 20.0,
+      "role": "独立核验",
+      "average_temperature_c": 21.31,
+      "before_tag": "09_50g卸载空载",
+      "after_tag": "11_20g卸载空载",
+      "baseline_raw_interpolated": 311397.8621503931,
+      "delta_raw": 14711.884226418508,
+      "local_counts_per_g": 735.5942113209254,
+      "raw_sd_counts": 39.474108967112706,
+      "mass_fitted_k_g": 19.965378179996666,
+      "error_fitted_k_g": -0.034621820003334136,
+      "raw_sd_g": 0.05356999156039873
+    }
+  ],
+  "zero_return_counts": [
+    {
+      "before": "01_空载基线",
+      "after": "03_200g卸载空载",
+      "delta_raw": -69.09044747700682,
+      "delta_g": -0.09376208317535448
+    },
+    {
+      "before": "03_200g卸载空载",
+      "after": "05_500g卸载空载",
+      "delta_raw": 76.0434782608645,
+      "delta_g": 0.10319798458406695
+    },
+    {
+      "before": "05_500g卸载空载",
+      "after": "07_100g卸载空载",
+      "delta_raw": -88.83333333331393,
+      "delta_g": -0.12055499266398749
+    },
+    {
+      "before": "07_100g卸载空载",
+      "after": "09_50g卸载空载",
+      "delta_raw": 16.23913043475477,
+      "delta_g": 0.02203799156208433
+    },
+    {
+      "before": "09_50g卸载空载",
+      "after": "11_20g卸载空载",
+      "delta_raw": 95.92753623187309,
+      "delta_g": 0.13018247759899115
+    }
+  ],
+  "warning": "相邻空载扣基线的离线加载增量，不等于固定开机零点下的在线显示准确度；质量以标称砝码为参考"
+}

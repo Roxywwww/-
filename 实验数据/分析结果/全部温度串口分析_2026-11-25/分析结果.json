@@ -1,0 +1,2129 @@
+{
+  "analysis_date": "2026-11-25",
+  "sources_scanned": 24,
+  "temperature_sources": 21,
+  "total_valid_temperatures": 22596,
+  "total_valid_weights": 90410,
+  "total_paired_weights": 90317,
+  "total_temperature_errors": 12,
+  "first_temperature": "2026-10-18T17:57:24.445000+08:00",
+  "last_temperature": "2026-11-24T18:23:26.020000+08:00",
+  "temperature_min_c": 21.12,
+  "temperature_max_c": 36.06,
+  "captured_minutes": 330.3105166666667,
+  "sessions": [
+    {
+      "session": "2026-10-18_DS18B20",
+      "purpose": "温度驱动初测",
+      "category": "功能验证",
+      "source": "实验数据/原始数据/2026-10-18_DS18B20_串口原始数据.csv",
+      "original_status": "legacy_csv",
+      "first_time": "2026-10-18T17:57:24.194000+08:00",
+      "last_time": "2026-10-18T17:57:39.155000+08:00",
+      "duration_s": 14.961,
+      "source_record_count": 87,
+      "valid_weights": 70,
+      "valid_temperatures": 17,
+      "paired_weights": 68,
+      "confirmed_empty_weights": 9,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 26.68,
+      "temp_max_c": 27.68,
+      "temp_span_c": 1.0,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "",
+      "stage_reference": "2026-10-18_DS18B20单总线温度读取开发与验证记录.md",
+      "empty_mean_g": 0.044444444444444446,
+      "empty_sd_g": 0.052704627669472995
+    },
+    {
+      "session": "2026-10-31_19-33-12_425856",
+      "purpose": "2026-10-31_19-33-12_425856",
+      "category": "未分类",
+      "source": "实验数据/原始数据/串口采集/2026-10-31_19-33-12_425856/records.csv",
+      "original_status": "stopped",
+      "first_time": "",
+      "last_time": "",
+      "duration_s": 0,
+      "source_record_count": 0,
+      "valid_weights": 0,
+      "valid_temperatures": 0,
+      "paired_weights": 0,
+      "confirmed_empty_weights": 0,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": null,
+      "temp_max_c": null,
+      "temp_span_c": null,
+      "tare_events": 0,
+      "tare_base_count": 0,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "",
+      "stage_reference": ""
+    },
+    {
+      "session": "2026-11-01_14-22-52_065726",
+      "purpose": "HX711故障排查_冒烟后",
+      "category": "未分类",
+      "source": "实验数据/原始数据/串口采集/2026-11-01_14-22-52_065726/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-01T14:22:52.209000+08:00",
+      "last_time": "2026-11-01T14:23:04.099000+08:00",
+      "duration_s": 12.033375,
+      "source_record_count": 65,
+      "valid_weights": 0,
+      "valid_temperatures": 0,
+      "paired_weights": 0,
+      "confirmed_empty_weights": 0,
+      "temperature_errors": 11,
+      "weight_errors": 0,
+      "device_errors": 54,
+      "partial_rows": 0,
+      "temp_min_c": null,
+      "temp_max_c": null,
+      "temp_span_c": null,
+      "tare_events": 0,
+      "tare_base_count": 0,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "只读诊断；OLED停在Waiting HX711；当前模块是否为冒烟件待用户确认；数据不得用于正常性能评价",
+      "stage_reference": ""
+    },
+    {
+      "session": "2026-11-09_16-53-14_710702",
+      "purpose": "2026-11-09_16-53-14_710702",
+      "category": "未分类",
+      "source": "实验数据/原始数据/串口采集/2026-11-09_16-53-14_710702/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-09T16:53:14.767000+08:00",
+      "last_time": "2026-11-09T16:53:25.795000+08:00",
+      "duration_s": 11.079,
+      "source_record_count": 66,
+      "valid_weights": 55,
+      "valid_temperatures": 0,
+      "paired_weights": 0,
+      "confirmed_empty_weights": 0,
+      "temperature_errors": 11,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": null,
+      "temp_max_c": null,
+      "temp_span_c": null,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "",
+      "stage_reference": ""
+    },
+    {
+      "session": "2026-11-12_13-11-49_098586",
+      "purpose": "断线重连检查",
+      "category": "连接检查",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-12T13:11:49.218000+08:00",
+      "last_time": "2026-11-12T13:12:49.203000+08:00",
+      "duration_s": 60.109,
+      "source_record_count": 344,
+      "valid_weights": 275,
+      "valid_temperatures": 69,
+      "paired_weights": 272,
+      "confirmed_empty_weights": 0,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 26.43,
+      "temp_max_c": 26.56,
+      "temp_span_c": 0.129999999999999,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "用户确认串口曾断开并恢复；仅验证连接，不作为温漂数据",
+      "stage_reference": ""
+    },
+    {
+      "session": "2026-11-12_13-13-10_084101",
+      "purpose": "室温空载10分钟",
+      "category": "室温空载",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-12T13:13:10.183000+08:00",
+      "last_time": "2026-11-12T13:23:10.201000+08:00",
+      "duration_s": 600.125,
+      "source_record_count": 3433,
+      "valid_weights": 2745,
+      "valid_temperatures": 687,
+      "paired_weights": 2745,
+      "confirmed_empty_weights": 2686,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 1,
+      "temp_min_c": 26.37,
+      "temp_max_c": 26.56,
+      "temp_span_c": 0.18999999999999773,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "10分钟基线；不触摸、不复位、不去皮；用于连接和短期漂移评估",
+      "stage_reference": "2026-11-12_桌面空载连接检查与稳定性测试记录.md",
+      "empty_mean_g": -2.014184661206255,
+      "empty_sd_g": 0.3904395481350141
+    },
+    {
+      "session": "2026-11-12_13-23-34_053313",
+      "purpose": "室温空载接续",
+      "category": "室温空载",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_13-23-34_053313/records.csv",
+      "original_status": "running",
+      "first_time": "2026-11-12T13:23:34.150000+08:00",
+      "last_time": "2026-11-12T13:25:00.072000+08:00",
+      "duration_s": 86.031,
+      "source_record_count": 493,
+      "valid_weights": 394,
+      "valid_temperatures": 99,
+      "paired_weights": 393,
+      "confirmed_empty_weights": 334,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 26.43,
+      "temp_max_c": 26.56,
+      "temp_span_c": 0.129999999999999,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "接续前一段10分钟检查；不触摸、不复位、不去皮；仍非温漂实验",
+      "stage_reference": "2026-11-12_桌面空载连接检查与稳定性测试记录.md",
+      "empty_mean_g": -2.2104790419161677,
+      "empty_sd_g": 0.11616136846389004
+    },
+    {
+      "session": "2026-11-12_13-31-07_051218",
+      "purpose": "确认开始前试录",
+      "category": "试录",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-12T13:31:07.132000+08:00",
+      "last_time": "2026-11-12T13:33:14.551000+08:00",
+      "duration_s": 127.5,
+      "source_record_count": 720,
+      "valid_weights": 574,
+      "valid_temperatures": 144,
+      "paired_weights": 570,
+      "confirmed_empty_weights": 93,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 26.93,
+      "temp_max_c": 29.68,
+      "temp_span_c": 2.75,
+      "tare_events": 1,
+      "tare_base_count": 2,
+      "gaps_over_2s": 1,
+      "max_gap_s": 2.25,
+      "unexpected_load_rows": 480,
+      "note": "从室温开始连续采集。以操作者事件确认最终摆放、冷源放入和封袋时刻。",
+      "stage_reference": "2026-11-12_空载冰杯预实验_常温起录.md",
+      "empty_mean_g": 13.96774193548387,
+      "empty_sd_g": 64.19711012270406
+    },
+    {
+      "session": "2026-11-12_13-38-07_988301",
+      "purpose": "放冰前室温空载",
+      "category": "室温空载",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/records.csv",
+      "original_status": "error",
+      "first_time": "2026-11-12T13:38:08.101000+08:00",
+      "last_time": "2026-11-12T13:46:48.737000+08:00",
+      "duration_s": 520.75,
+      "source_record_count": 2979,
+      "valid_weights": 2383,
+      "valid_temperatures": 596,
+      "paired_weights": 2380,
+      "confirmed_empty_weights": 2323,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 27.06,
+      "temp_max_c": 27.37,
+      "temp_span_c": 0.3100000000000023,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "用户明确确认开始。冰杯放入及碰触时刻由现场确认。",
+      "stage_reference": "2026-11-12_空载冰杯预实验_确认开始.md",
+      "empty_mean_g": -1.811708996986655,
+      "empty_sd_g": 0.8899480564548434
+    },
+    {
+      "session": "2026-11-12_13-56-43_455079",
+      "purpose": "冰杯空载降温",
+      "category": "降温预实验",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/records.csv",
+      "original_status": "error",
+      "first_time": "2026-11-12T13:56:43.599000+08:00",
+      "last_time": "2026-11-12T14:55:21.408000+08:00",
+      "duration_s": 3517.954,
+      "source_record_count": 20133,
+      "valid_weights": 16106,
+      "valid_temperatures": 4021,
+      "paired_weights": 16080,
+      "confirmed_empty_weights": 16022,
+      "temperature_errors": 6,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 21.37,
+      "temp_max_c": 26.18,
+      "temp_span_c": 4.809999999999999,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "冰杯约13:56放入。常温会话于13:46:48因状态文件写入错误停止，本会话从冷源放入后续采，两个会话之间有数据缺口。",
+      "stage_reference": "2026-11-12_空载冰杯预实验_确认开始.md",
+      "empty_mean_g": -0.7054362751217077,
+      "empty_sd_g": 0.7352577701339472
+    },
+    {
+      "session": "2026-11-12_15-54-05_320998",
+      "purpose": "缺口后低温抽检",
+      "category": "功能验证",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-12T15:54:05.325000+08:00",
+      "last_time": "2026-11-12T15:54:25.327000+08:00",
+      "duration_s": 20.015,
+      "source_record_count": 116,
+      "valid_weights": 92,
+      "valid_temperatures": 22,
+      "paired_weights": 86,
+      "confirmed_empty_weights": 32,
+      "temperature_errors": 1,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 1,
+      "temp_min_c": 21.18,
+      "temp_max_c": 21.18,
+      "temp_span_c": 0.0,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "前一会话14:55因元数据文件写失败停止；本场只抽检当前状态，不补造缺口",
+      "stage_reference": "2026-11-12_空载冰杯预实验_确认开始.md",
+      "empty_mean_g": 2.715625,
+      "empty_sd_g": 0.057414031105139464
+    },
+    {
+      "session": "2026-11-12_15-54-43_101987",
+      "purpose": "移杯后部分回温",
+      "category": "机械扰动回温",
+      "source": "实验数据/原始数据/串口采集/2026-11-12_15-54-43_101987/records.csv",
+      "original_status": "running",
+      "first_time": "2026-11-12T15:54:43.173000+08:00",
+      "last_time": "2026-11-12T16:00:21.408000+08:00",
+      "duration_s": 338.313,
+      "source_record_count": 1939,
+      "valid_weights": 1551,
+      "valid_temperatures": 387,
+      "paired_weights": 1547,
+      "confirmed_empty_weights": 0,
+      "temperature_errors": 1,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 21.12,
+      "temp_max_c": 23.25,
+      "temp_span_c": 2.129999999999999,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 3,
+      "note": "前一会话14:55异常停止；14:55-15:54数据缺口保留；不复位不去皮不碰秤",
+      "stage_reference": "2026-11-12_空载冰杯预实验_确认开始.md"
+    },
+    {
+      "session": "2026-11-13_13-35-29_690685",
+      "purpose": "500g降温与回温",
+      "category": "混合载荷预实验",
+      "source": "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-13T13:35:29.850000+08:00",
+      "last_time": "2026-11-13T14:23:33.295000+08:00",
+      "duration_s": 2883.609,
+      "source_record_count": 16290,
+      "valid_weights": 13029,
+      "valid_temperatures": 3258,
+      "paired_weights": 13027,
+      "confirmed_empty_weights": 1686,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 21.31,
+      "temp_max_c": 26.81,
+      "temp_span_c": 5.5,
+      "tare_events": 2,
+      "tare_base_count": 3,
+      "gaps_over_2s": 2,
+      "max_gap_s": 33.71900000000005,
+      "unexpected_load_rows": 3,
+      "note": "13:35:20收到操作者报告冰袋和砝码已放入。此会话自报告后起录。",
+      "stage_reference": "2026-11-13_500g双冰袋降温记录.md",
+      "empty_mean_g": -1.4044483985765124,
+      "empty_sd_g": 0.1315884173437628
+    },
+    {
+      "session": "2026-11-13_14-24-25_963270",
+      "purpose": "去皮固件空载检查",
+      "category": "功能验证",
+      "source": "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-13T14:24:26.208000+08:00",
+      "last_time": "2026-11-13T14:25:20.965000+08:00",
+      "duration_s": 55.0,
+      "source_record_count": 286,
+      "valid_weights": 226,
+      "valid_temperatures": 57,
+      "paired_weights": 224,
+      "confirmed_empty_weights": 191,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 1,
+      "temp_min_c": 26.43,
+      "temp_max_c": 26.5,
+      "temp_span_c": 0.07000000000000028,
+      "tare_events": 1,
+      "tare_base_count": 2,
+      "gaps_over_2s": 1,
+      "max_gap_s": 3.7650000000000006,
+      "unexpected_load_rows": 0,
+      "note": "",
+      "stage_reference": "2026-11-13_开机去皮与零点显示优化验证.md",
+      "empty_mean_g": 0.19424083769633507,
+      "empty_sd_g": 0.23867688929052147
+    },
+    {
+      "session": "2026-11-13_14-27-10_136669",
+      "purpose": "标定与100g验证",
+      "category": "混合载荷标定",
+      "source": "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-13T14:27:11.289000+08:00",
+      "last_time": "2026-11-13T14:39:56.459000+08:00",
+      "duration_s": 766.312,
+      "source_record_count": 4333,
+      "valid_weights": 3462,
+      "valid_temperatures": 866,
+      "paired_weights": 3459,
+      "confirmed_empty_weights": 957,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 26.68,
+      "temp_max_c": 28.06,
+      "temp_span_c": 1.379999999999999,
+      "tare_events": 3,
+      "tare_base_count": 3,
+      "gaps_over_2s": 2,
+      "max_gap_s": 3.7969999999999686,
+      "unexpected_load_rows": 460,
+      "note": "操作者确认起录空载，随后按指令换载，保持装配不动。",
+      "stage_reference": "2026-11-13_新版桌面标定复核.md",
+      "empty_mean_g": 0.2180773249738767,
+      "empty_sd_g": 0.4475611062250484
+    },
+    {
+      "session": "2026-11-16_15-19-37_540060",
+      "purpose": "IIR短时空载验证",
+      "category": "功能验证",
+      "source": "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-16T15:19:37.683000+08:00",
+      "last_time": "2026-11-16T15:20:09.586000+08:00",
+      "duration_s": 32.046,
+      "source_record_count": 154,
+      "valid_weights": 120,
+      "valid_temperatures": 31,
+      "paired_weights": 116,
+      "confirmed_empty_weights": 81,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 1,
+      "temp_min_c": 28.5,
+      "temp_max_c": 28.56,
+      "temp_span_c": 0.05999999999999872,
+      "tare_events": 1,
+      "tare_base_count": 2,
+      "gaps_over_2s": 1,
+      "max_gap_s": 3.7970000000000006,
+      "unexpected_load_rows": 0,
+      "note": "",
+      "stage_reference": "2026-11-16_IIR滤波离线对照与采集接口.md",
+      "empty_mean_g": -0.06790123456790124,
+      "empty_sd_g": 0.07554329965957796
+    },
+    {
+      "session": "2026-11-16_15-22-34_441048",
+      "purpose": "吹风加热与200g",
+      "category": "加热动态预实验",
+      "source": "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-16T15:22:34.530000+08:00",
+      "last_time": "2026-11-16T15:41:48.356000+08:00",
+      "duration_s": 1150.203,
+      "source_record_count": 6575,
+      "valid_weights": 5260,
+      "valid_temperatures": 1313,
+      "paired_weights": 5250,
+      "confirmed_empty_weights": 763,
+      "temperature_errors": 2,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 27.5,
+      "temp_max_c": 36.06,
+      "temp_span_c": 8.560000000000002,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 70,
+      "note": "IIR固件，178.20计数/g。按操作者事件划分加热与载荷。起录先空载。",
+      "stage_reference": "2026-11-16_升温实验与室温基线.md",
+      "empty_mean_g": 0.2237221494102228,
+      "empty_sd_g": 0.14427222143863502
+    },
+    {
+      "session": "2026-11-20_13-25-14_773133",
+      "purpose": "约21℃载荷复核",
+      "category": "载荷对照",
+      "source": "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-20T13:25:14.964000+08:00",
+      "last_time": "2026-11-20T13:38:27.538000+08:00",
+      "duration_s": 792.766,
+      "source_record_count": 4511,
+      "valid_weights": 3607,
+      "valid_temperatures": 902,
+      "paired_weights": 3603,
+      "confirmed_empty_weights": 1132,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 21.18,
+      "temp_max_c": 21.81,
+      "temp_span_c": 0.629999999999999,
+      "tare_events": 1,
+      "tare_base_count": 2,
+      "gaps_over_2s": 1,
+      "max_gap_s": 3.765999999999991,
+      "unexpected_load_rows": 8,
+      "note": "开始时载荷未确认；用户报告撕掉秤盘膜，不能据此统一修改旧数据",
+      "stage_reference": "2026-11-20_去膜后标定与资料整理.md",
+      "empty_mean_g": 0.008127208480565373,
+      "empty_sd_g": 0.3007582955250368
+    },
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "purpose": "约25℃载荷复核",
+      "category": "载荷对照",
+      "source": "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-21T14:55:40.599000+08:00",
+      "last_time": "2026-11-21T15:08:59.391000+08:00",
+      "duration_s": 798.891,
+      "source_record_count": 4566,
+      "valid_weights": 3653,
+      "valid_temperatures": 913,
+      "paired_weights": 3651,
+      "confirmed_empty_weights": 1703,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 24.43,
+      "temp_max_c": 25.18,
+      "temp_span_c": 0.75,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 4,
+      "note": "与2026-11-20约21.4-21.8度记录比较；当前载荷及期间重启去皮状态待确认；不自动归因温度、不更改固件系数",
+      "stage_reference": "2026-11-21_约25度同序载荷对照.md",
+      "empty_mean_g": -1.0015854374633,
+      "empty_sd_g": 0.19331622522965866
+    },
+    {
+      "session": "2026-11-21_15-11-23_513038",
+      "purpose": "近两小时自然降温",
+      "category": "连续降温对照",
+      "source": "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/records.csv",
+      "original_status": "stopped",
+      "first_time": "2026-11-21T15:11:23.616000+08:00",
+      "last_time": "2026-11-21T17:08:17.017000+08:00",
+      "duration_s": 7013.5,
+      "source_record_count": 40121,
+      "valid_weights": 32097,
+      "valid_temperatures": 8024,
+      "paired_weights": 32095,
+      "confirmed_empty_weights": 30100,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 22.12,
+      "temp_max_c": 24.18,
+      "temp_span_c": 2.0599999999999987,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 3,
+      "note": "接续室温会话_独立PowerShell入口因执行策略失败造成停采_未操作MCU_开门时间待确认",
+      "stage_reference": "2026-11-21_约25度同序载荷对照.md",
+      "empty_mean_g": -0.5789302325581396,
+      "empty_sd_g": 0.5910480272141307
+    },
+    {
+      "session": "2026-11-21_17-44-25_738006",
+      "purpose": "下载连接检查1",
+      "category": "下载连接检查",
+      "source": "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-21T17:44:25.862000+08:00",
+      "last_time": "2026-11-21T17:45:00.627000+08:00",
+      "duration_s": 34.89,
+      "source_record_count": 200,
+      "valid_weights": 160,
+      "valid_temperatures": 40,
+      "paired_weights": 159,
+      "confirmed_empty_weights": 101,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 22.5,
+      "temp_max_c": 22.56,
+      "temp_span_c": 0.05999999999999872,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "本会话在Keil下载过程中开始，可能包含旧版到新版过渡；实际版本切换以下载校验及启动输出确认。下载重启后自动取零，不接续先前33022基准。CH340本次枚举为COM4，非之前COM13。",
+      "stage_reference": "2026-11-21_约25度同序载荷对照.md",
+      "empty_mean_g": 0.198019801980198,
+      "empty_sd_g": 2.2322177401866425
+    },
+    {
+      "session": "2026-11-21_17-47-03_059749",
+      "purpose": "下载连接检查2",
+      "category": "下载连接检查",
+      "source": "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-21T17:47:03.072000+08:00",
+      "last_time": "2026-11-21T17:47:37.986000+08:00",
+      "duration_s": 34.922,
+      "source_record_count": 201,
+      "valid_weights": 161,
+      "valid_temperatures": 40,
+      "paired_weights": 159,
+      "confirmed_empty_weights": 101,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 22.56,
+      "temp_max_c": 22.62,
+      "temp_span_c": 0.060000000000002274,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "操作者已确认ST-Link接好，核心板通电空载。本会话包含重试下载前后数据，以启动输出及下载校验确认版本切换；不接续历史零点基准。",
+      "stage_reference": "2026-11-21_约25度同序载荷对照.md",
+      "empty_mean_g": -0.6297029702970297,
+      "empty_sd_g": 0.15397698169235918
+    },
+    {
+      "session": "2026-11-24_14-21-58_420975",
+      "purpose": "未另确认的静置观察",
+      "category": "未确认载荷",
+      "source": "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/records.csv",
+      "original_status": "error",
+      "first_time": "2026-11-24T14:21:58.573000+08:00",
+      "last_time": "2026-11-24T14:35:09.169000+08:00",
+      "duration_s": 790.75,
+      "source_record_count": 4527,
+      "valid_weights": 3621,
+      "valid_temperatures": 904,
+      "paired_weights": 3613,
+      "confirmed_empty_weights": 0,
+      "temperature_errors": 2,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 24.18,
+      "temp_max_c": 24.93,
+      "temp_span_c": 0.75,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 0,
+      "note": "按当前对话拟空载；位置供电预热时长待确认；未发送串口指令且未更改固件",
+      "stage_reference": "2026-11-24_室内静置零点观察.md"
+    },
+    {
+      "session": "2026-11-24_18-20-26_028147",
+      "purpose": "手动去皮后空载",
+      "category": "室温空载",
+      "source": "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/records.csv",
+      "original_status": "completed",
+      "first_time": "2026-11-24T18:20:26.047000+08:00",
+      "last_time": "2026-11-24T18:23:26.020000+08:00",
+      "duration_s": 179.984,
+      "source_record_count": 1030,
+      "valid_weights": 824,
+      "valid_temperatures": 206,
+      "paired_weights": 820,
+      "confirmed_empty_weights": 667,
+      "temperature_errors": 0,
+      "weight_errors": 0,
+      "device_errors": 0,
+      "partial_rows": 0,
+      "temp_min_c": 22.93,
+      "temp_max_c": 23.06,
+      "temp_span_c": 0.129999999999999,
+      "tare_events": 0,
+      "tare_base_count": 1,
+      "gaps_over_2s": 0,
+      "max_gap_s": 0,
+      "unexpected_load_rows": 10,
+      "note": "用户报告开机后等数秒再手动去皮，空载和带载感觉明显稳定。本段按用户确认空载记录；不进行烧录、复位或去皮，启动及去皮的准确时刻未记录。",
+      "stage_reference": "2026-11-24_开机后手动去皮静置观察.md",
+      "empty_mean_g": -0.14227886056971514,
+      "empty_sd_g": 0.19562687461586922
+    }
+  ],
+  "zero_fits": [
+    {
+      "session": "2026-11-12_13-13-10_084101",
+      "epoch": 0,
+      "minute_count": 10,
+      "temp_span_c": 0.11225454545454383,
+      "temperature_model": null,
+      "time_model": {
+        "n": 10,
+        "slope": -6.883237396672556,
+        "intercept": -1.431720764685914,
+        "r_squared": 0.8400716663891636,
+        "residual_rmse": 0.14293506846876508
+      },
+      "fit_status": "温差不足0.5℃，不估算温漂斜率"
+    },
+    {
+      "session": "2026-11-12_13-38-07_988301",
+      "epoch": 0,
+      "minute_count": 8,
+      "temp_span_c": 0.21969432314410398,
+      "temperature_model": null,
+      "time_model": {
+        "n": 8,
+        "slope": -22.131907716249174,
+        "intercept": -0.24249989824089435,
+        "r_squared": 0.8841020802998807,
+        "residual_rmse": 0.3038355235184848
+      },
+      "fit_status": "温差不足0.5℃，不估算温漂斜率"
+    },
+    {
+      "session": "2026-11-12_13-56-43_455079",
+      "epoch": 0,
+      "minute_count": 58,
+      "temp_span_c": 4.406711111111111,
+      "temperature_model": {
+        "n": 58,
+        "slope": -0.5915722569454341,
+        "intercept": 12.713793851178687,
+        "r_squared": 0.8643378838475088,
+        "residual_rmse": 0.2631412391929086
+      },
+      "time_model": {
+        "n": 58,
+        "slope": 2.418230549047815,
+        "intercept": -1.8913342402060251,
+        "r_squared": 0.8916446704772804,
+        "residual_rmse": 0.23517153861457638
+      },
+      "fit_status": "仅描述性拟合"
+    },
+    {
+      "session": "2026-11-13_13-35-29_690685",
+      "epoch": 0,
+      "minute_count": 5,
+      "temp_span_c": 0.05999999999999872,
+      "temperature_model": null,
+      "time_model": {
+        "n": 5,
+        "slope": -2.99091343687187,
+        "intercept": -0.19622427355846495,
+        "r_squared": 0.8623077382227149,
+        "residual_rmse": 0.028174262468379663
+      },
+      "fit_status": "温差不足0.5℃，不估算温漂斜率"
+    },
+    {
+      "session": "2026-11-21_15-11-23_513038",
+      "epoch": 0,
+      "minute_count": 109,
+      "temp_span_c": 2.009565550239234,
+      "temperature_model": {
+        "n": 109,
+        "slope": -0.5484196595372172,
+        "intercept": 11.836606435317563,
+        "r_squared": 0.25979109994088956,
+        "residual_rmse": 0.49665699462237123
+      },
+      "time_model": {
+        "n": 109,
+        "slope": 0.9241206594757825,
+        "intercept": -1.4636818316185254,
+        "r_squared": 0.7406549023755498,
+        "residual_rmse": 0.2939804337738832
+      },
+      "fit_status": "仅描述性拟合"
+    }
+  ],
+  "tare_segments": [
+    {
+      "session": "2026-10-18_DS18B20",
+      "epoch": 0,
+      "time": "2026-10-18T17:57:24.194000+08:00",
+      "tare_base": 33269,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-09_16-53-14_710702",
+      "epoch": 0,
+      "time": "2026-11-09T16:53:14.767000+08:00",
+      "tare_base": 32446,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_13-11-49_098586",
+      "epoch": 0,
+      "time": "2026-11-12T13:11:49.218000+08:00",
+      "tare_base": 33505,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_13-13-10_084101",
+      "epoch": 0,
+      "time": "2026-11-12T13:13:10.322000+08:00",
+      "tare_base": 33505,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_13-23-34_053313",
+      "epoch": 0,
+      "time": "2026-11-12T13:23:34.150000+08:00",
+      "tare_base": 33505,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_13-31-07_051218",
+      "epoch": 0,
+      "time": "2026-11-12T13:31:07.132000+08:00",
+      "tare_base": 33140,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_13-31-07_051218",
+      "epoch": 1,
+      "time": "2026-11-12T13:32:05.494000+08:00",
+      "tare_base": 33093,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 33140
+    },
+    {
+      "session": "2026-11-12_13-38-07_988301",
+      "epoch": 0,
+      "time": "2026-11-12T13:38:08.101000+08:00",
+      "tare_base": 33019,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_13-56-43_455079",
+      "epoch": 0,
+      "time": "2026-11-12T13:56:43.599000+08:00",
+      "tare_base": 33019,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_15-54-05_320998",
+      "epoch": 0,
+      "time": "2026-11-12T15:54:05.325000+08:00",
+      "tare_base": 33019,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-12_15-54-43_101987",
+      "epoch": 0,
+      "time": "2026-11-12T15:54:43.314000+08:00",
+      "tare_base": 33019,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-13_13-35-29_690685",
+      "epoch": 0,
+      "time": "2026-11-13T13:35:29.850000+08:00",
+      "tare_base": 33423,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-13_13-35-29_690685",
+      "epoch": 1,
+      "time": "2026-11-13T14:13:05.035000+08:00",
+      "tare_base": 32777,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 33423
+    },
+    {
+      "session": "2026-11-13_13-35-29_690685",
+      "epoch": 2,
+      "time": "2026-11-13T14:22:22.262000+08:00",
+      "tare_base": 32701,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 32777
+    },
+    {
+      "session": "2026-11-13_14-24-25_963270",
+      "epoch": 0,
+      "time": "2026-11-13T14:24:26.208000+08:00",
+      "tare_base": 32701,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-13_14-24-25_963270",
+      "epoch": 1,
+      "time": "2026-11-13T14:24:36.148000+08:00",
+      "tare_base": 32558,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 32701
+    },
+    {
+      "session": "2026-11-13_14-27-10_136669",
+      "epoch": 0,
+      "time": "2026-11-13T14:27:11.439000+08:00",
+      "tare_base": 31343,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-13_14-27-10_136669",
+      "epoch": 1,
+      "time": "2026-11-13T14:30:06.822000+08:00",
+      "tare_base": 32623,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 31343
+    },
+    {
+      "session": "2026-11-13_14-27-10_136669",
+      "epoch": 2,
+      "time": "2026-11-13T14:34:43.137000+08:00",
+      "tare_base": 32546,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 32623
+    },
+    {
+      "session": "2026-11-16_15-19-37_540060",
+      "epoch": 0,
+      "time": "2026-11-16T15:19:37.683000+08:00",
+      "tare_base": 32454,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-16_15-19-37_540060",
+      "epoch": 1,
+      "time": "2026-11-16T15:19:48.456000+08:00",
+      "tare_base": 32439,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 32454
+    },
+    {
+      "session": "2026-11-16_15-22-34_441048",
+      "epoch": 0,
+      "time": "2026-11-16T15:22:34.608000+08:00",
+      "tare_base": 32439,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-20_13-25-14_773133",
+      "epoch": 0,
+      "time": "2026-11-20T13:25:14.964000+08:00",
+      "tare_base": 33011,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-20_13-25-14_773133",
+      "epoch": 1,
+      "time": "2026-11-20T13:27:46.471000+08:00",
+      "tare_base": 32940,
+      "reason": "去皮/启动/基准变化",
+      "previous_base": 33011
+    },
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "epoch": 0,
+      "time": "2026-11-21T14:55:40.599000+08:00",
+      "tare_base": 33022,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-21_15-11-23_513038",
+      "epoch": 0,
+      "time": "2026-11-21T15:11:23.616000+08:00",
+      "tare_base": 33022,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-21_17-44-25_738006",
+      "epoch": 0,
+      "time": "2026-11-21T17:44:25.862000+08:00",
+      "tare_base": 33349,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-21_17-47-03_059749",
+      "epoch": 0,
+      "time": "2026-11-21T17:47:03.072000+08:00",
+      "tare_base": 33349,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-24_14-21-58_420975",
+      "epoch": 0,
+      "time": "2026-11-24T14:21:58.712000+08:00",
+      "tare_base": 32223,
+      "reason": "首个基准",
+      "previous_base": null
+    },
+    {
+      "session": "2026-11-24_18-20-26_028147",
+      "epoch": 0,
+      "time": "2026-11-24T18:20:26.047000+08:00",
+      "tare_base": 32814,
+      "reason": "首个基准",
+      "previous_base": null
+    }
+  ],
+  "gaps": [
+    {
+      "session": "2026-11-12_13-31-07_051218",
+      "start": "2026-11-12T13:32:03.087000+08:00",
+      "end": "2026-11-12T13:32:05.339000+08:00",
+      "seconds": 2.25
+    },
+    {
+      "session": "2026-11-13_13-35-29_690685",
+      "start": "2026-11-13T14:21:46.134000+08:00",
+      "end": "2026-11-13T14:22:19.853000+08:00",
+      "seconds": 33.71900000000005
+    },
+    {
+      "session": "2026-11-13_13-35-29_690685",
+      "start": "2026-11-13T14:22:19.853000+08:00",
+      "end": "2026-11-13T14:22:22.112000+08:00",
+      "seconds": 2.25
+    },
+    {
+      "session": "2026-11-13_14-24-25_963270",
+      "start": "2026-11-13T14:24:32.227000+08:00",
+      "end": "2026-11-13T14:24:35.998000+08:00",
+      "seconds": 3.7650000000000006
+    },
+    {
+      "session": "2026-11-13_14-27-10_136669",
+      "start": "2026-11-13T14:30:02.945000+08:00",
+      "end": "2026-11-13T14:30:06.673000+08:00",
+      "seconds": 3.734000000000009
+    },
+    {
+      "session": "2026-11-13_14-27-10_136669",
+      "start": "2026-11-13T14:34:39.182000+08:00",
+      "end": "2026-11-13T14:34:42.987000+08:00",
+      "seconds": 3.7969999999999686
+    },
+    {
+      "session": "2026-11-16_15-19-37_540060",
+      "start": "2026-11-16T15:19:44.505000+08:00",
+      "end": "2026-11-16T15:19:48.303000+08:00",
+      "seconds": 3.7970000000000006
+    },
+    {
+      "session": "2026-11-20_13-25-14_773133",
+      "start": "2026-11-20T13:27:42.546000+08:00",
+      "end": "2026-11-20T13:27:46.318000+08:00",
+      "seconds": 3.765999999999991
+    }
+  ],
+  "paired_loads": [
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "reference_mass_g": 200.0,
+      "temperature_c": 25.053430656934307,
+      "increment_g": 199.90568034771988,
+      "error_g": -0.09431965228012018,
+      "method": "紧邻空载、带载末段、卸载后首段，60秒上限窗口",
+      "category": "同轮加载对照",
+      "role": "描述载荷响应，非温补验证"
+    },
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "reference_mass_g": 500.0,
+      "temperature_c": 24.87087591240876,
+      "increment_g": 500.0792083934614,
+      "error_g": 0.07920839346138564,
+      "method": "紧邻空载、带载末段、卸载后首段，60秒上限窗口",
+      "category": "同轮加载对照",
+      "role": "描述载荷响应，非温补验证"
+    },
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "reference_mass_g": 100.0,
+      "temperature_c": 24.63357664233577,
+      "increment_g": 100.18801026588245,
+      "error_g": 0.18801026588245406,
+      "method": "紧邻空载、带载末段、卸载后首段，60秒上限窗口",
+      "category": "同轮加载对照",
+      "role": "描述载荷响应，非温补验证"
+    },
+    {
+      "session": "2026-11-21_15-11-23_513038",
+      "reference_mass_g": 200.0,
+      "temperature_c": 23.78956043956044,
+      "increment_g": 199.8607000371888,
+      "error_g": -0.13929996281120793,
+      "method": "紧邻空载、带载末段、卸载后首段，60秒上限窗口",
+      "category": "同轮加载对照",
+      "role": "描述载荷响应，非温补验证"
+    },
+    {
+      "session": "2026-11-21_15-11-23_513038",
+      "reference_mass_g": 200.0,
+      "temperature_c": 22.42912408759124,
+      "increment_g": 199.83827018721894,
+      "error_g": -0.16172981278106136,
+      "method": "紧邻空载、带载末段、卸载后首段，60秒上限窗口",
+      "category": "同轮加载对照",
+      "role": "描述载荷响应，非温补验证"
+    },
+    {
+      "session": "2026-11-20_13-25-14_773133",
+      "reference_mass_g": 200.0,
+      "temperature_c": 21.389411764705883,
+      "increment_g": 200.46611431443225,
+      "error_g": 0.4661143144322466,
+      "method": "既有固定段尾窗口，前后空载时间插值，30秒上限",
+      "category": "室温载荷复核",
+      "role": "标称砝码响应；跨日差异不直接归因温度"
+    },
+    {
+      "session": "2026-11-20_13-25-14_773133",
+      "reference_mass_g": 500.0,
+      "temperature_c": 21.627445255474452,
+      "increment_g": 499.5770004275812,
+      "error_g": -0.4229995724188029,
+      "method": "既有固定段尾窗口，前后空载时间插值，30秒上限",
+      "category": "室温载荷复核",
+      "role": "标称砝码响应；跨日差异不直接归因温度"
+    },
+    {
+      "session": "2026-11-20_13-25-14_773133",
+      "reference_mass_g": 100.0,
+      "temperature_c": 21.807372262773722,
+      "increment_g": 100.11279790588793,
+      "error_g": 0.11279790588793048,
+      "method": "既有固定段尾窗口，前后空载时间插值，30秒上限",
+      "category": "室温载荷复核",
+      "role": "标称砝码响应；跨日差异不直接归因温度"
+    },
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "reference_mass_g": 200.0,
+      "temperature_c": 25.04686131386861,
+      "increment_g": 199.6580286112415,
+      "error_g": -0.34197138875850897,
+      "method": "既有固定段尾窗口，前后空载时间插值，30秒上限",
+      "category": "室温载荷复核",
+      "role": "标称砝码响应；跨日差异不直接归因温度"
+    },
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "reference_mass_g": 500.0,
+      "temperature_c": 24.87,
+      "increment_g": 500.06530264297857,
+      "error_g": 0.06530264297856547,
+      "method": "既有固定段尾窗口，前后空载时间插值，30秒上限",
+      "category": "室温载荷复核",
+      "role": "标称砝码响应；跨日差异不直接归因温度"
+    },
+    {
+      "session": "2026-11-21_14-55-40_499922",
+      "reference_mass_g": 100.0,
+      "temperature_c": 24.614705882352943,
+      "increment_g": 99.99204680179324,
+      "error_g": -0.007953198206763545,
+      "method": "既有固定段尾窗口，前后空载时间插值，30秒上限",
+      "category": "室温载荷复核",
+      "role": "标称砝码响应；跨日差异不直接归因温度"
+    }
+  ],
+  "historical_compensation": {
+    "training_session": "2026-11-12_13-56-43_455079",
+    "test_session": "2026-11-13_13-35-29_690685",
+    "reference_temp_c": 26.0164598540146,
+    "training_minute_windows": 58,
+    "model": {
+      "n": 58,
+      "slope": -0.5885496565408417,
+      "intercept": 198.54479816616072,
+      "r_squared": 0.8623333939208979,
+      "residual_rmse": 0.264576467713258
+    },
+    "validation_rows": 3412,
+    "warning": "跨日500g迁移预实验；完整保留改善或恶化结果，不启用固件补偿",
+    "before": {
+      "mae_g": 0.6587161985092225,
+      "rmse_g": 0.7467844505378155,
+      "max_abs_error_g": 1.614697576377182
+    },
+    "after": {
+      "mae_g": 1.8023022545186573,
+      "rmse_g": 1.8155473773224613,
+      "max_abs_error_g": 2.5443970798498894
+    }
+  },
+  "parameters": {
+    "temp_age_limit_s": 2.0,
+    "minute_min_samples": 180,
+    "minute_min_coverage_s": 45,
+    "descriptive_fit_min_temp_span_c": 0.5,
+    "transition_skip_s": 10,
+    "transition_end_guard_s": 3,
+    "old_counts_per_g": 177.6184,
+    "new_counts_per_g": 178.2
+  },
+  "source_files": {
+    "实验数据/原始数据/2026-10-18_DS18B20_串口原始数据.csv": {
+      "bytes": 5121,
+      "sha256": "83d9b2ff44c1f31bae86ed0d0cf9c4970e89ae9ccea9159f045bbfb92ae9002a"
+    },
+    "实验数据/原始数据/串口采集/2026-10-31_19-33-12_425856/received.bin": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "实验数据/原始数据/串口采集/2026-10-31_19-33-12_425856/records.csv": {
+      "bytes": 230,
+      "sha256": "29001115acb7ade9fe8051cb3815f5574e1c5566fb86d819e8e3ace74ed4a8b8"
+    },
+    "实验数据/原始数据/串口采集/2026-10-31_19-33-12_425856/serial.txt": {
+      "bytes": 196,
+      "sha256": "56480bd5b1063f6756a82483f53e597da946394ed67f05bffd9f016e6b0a473e"
+    },
+    "实验数据/原始数据/串口采集/2026-10-31_19-33-12_425856/session.json": {
+      "bytes": 1028,
+      "sha256": "5495e15246011b339b05ba1fb5fb86122b648e9f872409ae2225354ac7b9fa86"
+    },
+    "实验数据/原始数据/串口采集/2026-11-01_14-22-52_065726/received.bin": {
+      "bytes": 1074,
+      "sha256": "bf95f30387fef94d48461c8d511d1a864ee8f15eab3725a6c1e7e2471fcc9612"
+    },
+    "实验数据/原始数据/串口采集/2026-11-01_14-22-52_065726/records.csv": {
+      "bytes": 6429,
+      "sha256": "f3284ce9fc4ff03197b1c1349e35471000474afba8ff633ac31d2d4411c87f10"
+    },
+    "实验数据/原始数据/串口采集/2026-11-01_14-22-52_065726/serial.txt": {
+      "bytes": 3602,
+      "sha256": "821ecffe0df1b4a83406840bfeacb5886c56da8a95010663a2cc9ea88cd33dd5"
+    },
+    "实验数据/原始数据/串口采集/2026-11-01_14-22-52_065726/session.json": {
+      "bytes": 1120,
+      "sha256": "cf307ff459c97a1b7746f7cfcd7c33bfca8fe3af1999d0c1e927a02b44c522c4"
+    },
+    "实验数据/原始数据/串口采集/2026-11-09_16-53-14_710702/received.bin": {
+      "bytes": 2372,
+      "sha256": "af29c99c7010df10499c9bdb0269472f34eb6dae1eebc674b3420fec15484fc3"
+    },
+    "实验数据/原始数据/串口采集/2026-11-09_16-53-14_710702/records.csv": {
+      "bytes": 8421,
+      "sha256": "f1eeda36d5f8c6a76ce045f4852358d05d2631cc1ace013c6b29dc244f83b6a4"
+    },
+    "实验数据/原始数据/串口采集/2026-11-09_16-53-14_710702/serial.txt": {
+      "bytes": 4939,
+      "sha256": "d5724ca02130af4718ef34d7d9f4ab811a91fc384064485ec39053d4b9a2f388"
+    },
+    "实验数据/原始数据/串口采集/2026-11-09_16-53-14_710702/session.json": {
+      "bytes": 961,
+      "sha256": "6311502bbf5db4e356b1883c76ef8547ef53d28375a4764a2671c68fdfcb5d9e"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/local_quality_check_60s.json": {
+      "bytes": 1287,
+      "sha256": "78228f7f624a665afdd3cb978579902c3a3e28d3598481388cf3d7e3436b9d36"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/received.bin": {
+      "bytes": 10765,
+      "sha256": "ee8ceafb2474cb79cedfb620b3655c97433b559fc2753be8823857cfdec9073c"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/records.csv": {
+      "bytes": 54530,
+      "sha256": "5a4bd9a941775102559898a16273f36f04f485dd524483f3bcd23921167b55aa"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/serial.txt": {
+      "bytes": 23584,
+      "sha256": "548f213bd4340cae7f9f8a6ae23b792ea92a7d29e17330162de51721d54f5c72"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/session.json": {
+      "bytes": 3851,
+      "sha256": "8c9274679f0e788dd043ba016263996d91df23f6e0b6ea0703986cbb4abe338b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/summary.json": {
+      "bytes": 1407,
+      "sha256": "d6be0af33d2416a4313c3bb661e2a8ebdcbcd865ac5d42821b77c20e1a321b17"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-11-49_098586/summary.md": {
+      "bytes": 970,
+      "sha256": "1a3a1bf8a564bf56fef4f2fb0fbc00fb7d0145eea43735fb9685c42eee89cf2b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/received.bin": {
+      "bytes": 113947,
+      "sha256": "b84625097175e5a61419da997232a52c97acfacf17b2cedb0e1d71a72eda5675"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/records.csv": {
+      "bytes": 566517,
+      "sha256": "fb0a5aab7ae4470755e20274954951a3f92d98664dfc5662f5ec9f551da84cdd"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/serial.txt": {
+      "bytes": 243515,
+      "sha256": "1433f46f3d8d8cab8d2717bf51be378d8cc1ac93560c579fef3ce39afabed589"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/session.json": {
+      "bytes": 3882,
+      "sha256": "b320d062a3f39f7b89539f31aec52e16020650e0c02fce6e0a89d48af9ff7761"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/summary.json": {
+      "bytes": 1412,
+      "sha256": "bd8bf876f2759babfd358b33244587b047828c0775abf1a1819079ab05dd75c4"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-13-10_084101/summary.md": {
+      "bytes": 975,
+      "sha256": "32dfcd9b91a5d49725f3e0da7eff0846d3eeb8a4a77a052878aea8d0706a1491"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-23-34_053313/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-23-34_053313/received.bin": {
+      "bytes": 16320,
+      "sha256": "fbb5ed330c40fe9ce6617466ac90543b596a94ac30310bc56e84e820db7c7fd8"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-23-34_053313/records.csv": {
+      "bytes": 80162,
+      "sha256": "a46f11055fcaabf98c0a99507e8d8c24b1e91844c2aed075d2a3fef4bf598b5f"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-23-34_053313/serial.txt": {
+      "bytes": 34582,
+      "sha256": "e62515267a461783076be7d056e488593b5a1a012d1c2820e6291966b882a6ac"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-23-34_053313/session.json": {
+      "bytes": 2289,
+      "sha256": "4f4ca9313a4cdad3ffa71942f8ff628ed554dc10eddd7c3a22a2dd58fef9923d"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/received.bin": {
+      "bytes": 25412,
+      "sha256": "67ae2f24b239632b431dd6683024c7206b879a1c1063e9cb26193302e6bc719b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/records.csv": {
+      "bytes": 120220,
+      "sha256": "aa9b53c642636622ec4940423c5772d53ef049c222a7d9b54decb214cb1af746"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/serial.txt": {
+      "bytes": 52146,
+      "sha256": "c98f4d8195f424e04dbfcb553041a48ddfd79ad3c473aa7a8578a1a12cde76c1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/session.json": {
+      "bytes": 3874,
+      "sha256": "5b32d2b9f165ec53de9ca0be360ecc3b27c6bb3e8f12febaf637d20aa96f4cd3"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/summary.json": {
+      "bytes": 1409,
+      "sha256": "ca6b9da01babd1a5b026e75cfe5e7616c9ba123220b87755259993457e3f3f38"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-31-07_051218/summary.md": {
+      "bytes": 972,
+      "sha256": "49a818c732198abd795b02643332b8c646ef427fb25406c9ab33dd99b92fb328"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/received.bin": {
+      "bytes": 98384,
+      "sha256": "40ba3b4cb3c497967ceeb4bfed4e27f57e3e07f7c44f1c94c9958db461718cb2"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/records.csv": {
+      "bytes": 490145,
+      "sha256": "7e982602a2cc4d47535bbbabc4730c569d049282c80c9b5007dc0b3c4e66ac30"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/serial.txt": {
+      "bytes": 210958,
+      "sha256": "ac2e3aea5c1d8abf4a64ef7a229da2ea65d5d1830d239f1601fbd0ce684e3355"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/session.json": {
+      "bytes": 4162,
+      "sha256": "eb0513b6feee7363790508bb34cd78d1ef121c60aa38f3f40f5d1144bd5dab37"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/summary.json": {
+      "bytes": 1411,
+      "sha256": "8d32ae6f7f3825d86cf853128375b39c4e92ddb5c840c1d11527ae01e5ed5a8e"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-38-07_988301/summary.md": {
+      "bytes": 1249,
+      "sha256": "80b02a67751d2fa2abe74e001cd3db4c3b4a04516b243f94d122b756c2c0c184"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/received.bin": {
+      "bytes": 649997,
+      "sha256": "005e382d9d34b02790e61f45f3a8fbe5da14efd51a6f4c4ba417f6e3dd156601"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/records.csv": {
+      "bytes": 3333302,
+      "sha256": "3552e83d47388fe5ea039f9520a9865f61fbbc0be16230fd6d90553456406494"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/serial.txt": {
+      "bytes": 1424559,
+      "sha256": "1f96f3043227138a12ec3c459c8888dc6cd867d0f7669a794f8f95d9581a68b8"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/session.json": {
+      "bytes": 4258,
+      "sha256": "64d53bdd667be3d086fa7c1f3316d9e431e00b6ed6c3fe345078ddb51abedacc"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/summary.json": {
+      "bytes": 1419,
+      "sha256": "60c064ca3c9a3fbd3e29a2e1ecf7dafdd881656afb8164a55959451daf97679b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_13-56-43_455079/summary.md": {
+      "bytes": 1254,
+      "sha256": "931074b2396c502685987ac173bbf819abd78040e4c54cf4ec9e61c4f75e4281"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/received.bin": {
+      "bytes": 3584,
+      "sha256": "047c37e7d940690da9dc4ddc8fcd8790b27dce134ae971b43f89ace0193edc2b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/records.csv": {
+      "bytes": 18230,
+      "sha256": "ff549777c4bac062b318b04e08cdc8e532d4e57ad60629f1f6208ca0599b282f"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/serial.txt": {
+      "bytes": 7986,
+      "sha256": "3385585f28374dcb2441c9499a13ec3d00a9ea7e82cc22befb20ee1b047f3545"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/session.json": {
+      "bytes": 3963,
+      "sha256": "cf6425b642f5f8e873a13acd43807d1da1e34699ba744ce3ea1b0f7cf09898aa"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/summary.json": {
+      "bytes": 1408,
+      "sha256": "8142cbf8b3be467acbb49c2381ec22aa692712a656cb2bae9ac7f6b5e4d58533"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-05_320998/summary.md": {
+      "bytes": 967,
+      "sha256": "35e92d793441e493b2c4c221de69a9be2bc4e440ebc5be03ce30d581e919d7dd"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-43_101987/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-43_101987/operator_reports.md": {
+      "bytes": 1096,
+      "sha256": "e29b035c7dd542502fa9f09a18b1c505d39a2a6ec4e8d9d70bf6d4cc1648eb88"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-43_101987/received.bin": {
+      "bytes": 59647,
+      "sha256": "a296ebd60d02ac879c5af0b397b4b181256db3ce3af1739caa46fe342ca3c8c3"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-43_101987/records.csv": {
+      "bytes": 309748,
+      "sha256": "fabde7db0a0010f87ebfc5ba22d7ba5d3ec4d7e2cc8287b0d22fd85264603d33"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-43_101987/serial.txt": {
+      "bytes": 132470,
+      "sha256": "d90af3cf9b2e9b90a79f57fe539f2d3845e8f0e40e8853bc3cefb3f48354709b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-12_15-54-43_101987/session.json": {
+      "bytes": 2405,
+      "sha256": "cb681a19878a03ecf9718350717b4bde046cef0bdcf847424e4a83b5c5332b22"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/events.csv": {
+      "bytes": 717,
+      "sha256": "1580fd45a6d07dc181d5c2de0a0f0ff8974d76bfa5d7cdb0334f2b8024444003"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/received.bin": {
+      "bytes": 567770,
+      "sha256": "a0fa7d2d20aa7312436595ea0d61e50ab9a2b51e5ab0c59f49ec9d8ba6a9bce0"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/records.csv": {
+      "bytes": 2775255,
+      "sha256": "0d34cf4e4527c984eb4e9dd74de244a9fe098e307be62503afbcdab272d3fe02"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/serial.txt": {
+      "bytes": 1193964,
+      "sha256": "46456dfa01b546e036d5c28e889f917f820177c1e5bb23c401cc3bf5483a60c7"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/session.json": {
+      "bytes": 3920,
+      "sha256": "39c93fbe099fcedc8294c155b5ff6089e8cba93f0c4a3da85506a803a076df28"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/summary.json": {
+      "bytes": 1418,
+      "sha256": "412ef9dd1db724e67f81a2761d51f7a63c079abb8799fa6c1422e31f2f452761"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_13-35-29_690685/summary.md": {
+      "bytes": 980,
+      "sha256": "838bed6277c31d8f116b527c42a102362c950f5a4bf77b1838e0b021b1473789"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/received.bin": {
+      "bytes": 8800,
+      "sha256": "a68fea12f10f6da7aa052f1993a8f60cb8bdc894ae947db92f296b9ee99ba97a"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/records.csv": {
+      "bytes": 45098,
+      "sha256": "5d2754bb85a0f8c352e165180b58d6401f96e1719f065d7c81d90280167133ef"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/serial.txt": {
+      "bytes": 19492,
+      "sha256": "929c3176c259b5971dae50cc98508c0603bb39c11d93cf4ed2f02dc07e6ec3ae"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/session.json": {
+      "bytes": 3816,
+      "sha256": "409cddeb983e13bcfd6d96feed99a9d52feaeb9fbcf36dc1bc8314394e0c17b9"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/summary.json": {
+      "bytes": 1404,
+      "sha256": "1fbf29b052687da9a7da4cc3def43f029369328e69d6c61e4261c96c4ed41a9e"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-24-25_963270/summary.md": {
+      "bytes": 968,
+      "sha256": "6660e49f216f7d917eeb89d493cd03adf6fe2a35bbce2487c65957f01337b01c"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/events.csv": {
+      "bytes": 98,
+      "sha256": "5f9be90842d2dbca3bdea18c7ed22d2c5fb286adcbfa09ed7ad8376e06ce8cd1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/received.bin": {
+      "bytes": 143819,
+      "sha256": "d416af4bad05900e7097a0a67305adf53cf1b70aafb36534614efdeda13cb722"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/records.csv": {
+      "bytes": 715623,
+      "sha256": "d2bb8b084465f8f84515b333bbeeb2742911cc1d56f381202fed222330069bb5"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/serial.txt": {
+      "bytes": 307570,
+      "sha256": "c9a32ccb72f11c193736edb675d27d2a58c730d0c7ee23be5c9c4e5fa91ac5aa"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/session.json": {
+      "bytes": 3891,
+      "sha256": "2daa73677a974881e86b8be56161b1604fc20d4083b56e5decc24b3f107b51f6"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/summary.json": {
+      "bytes": 1413,
+      "sha256": "3164cd5dfd8fcc06725118eb927c5d5b1f41cca9e65dcff741405429a8212f84"
+    },
+    "实验数据/原始数据/串口采集/2026-11-13_14-27-10_136669/summary.md": {
+      "bytes": 977,
+      "sha256": "484cd8016fa0db0f509257bb2c45867bb120b1b2545b9ac23816aea0167121ac"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/events.csv": {
+      "bytes": 420,
+      "sha256": "aa33e66a40196e711652eaab0d12c2de94e6d89bba259975ea4783eed5c1b30b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/received.bin": {
+      "bytes": 5830,
+      "sha256": "9ec3324ce878f6ec2c8786db5288f8bcfeda3ed35d6ebec1ab8747cdafc65f6a"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/records.csv": {
+      "bytes": 25840,
+      "sha256": "3cf0e0617dac5803f325d3741fda02a1de98222bcfff5b39f04fb2418017ce11"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/serial.txt": {
+      "bytes": 12026,
+      "sha256": "8ae1eed36eb56b853b1728fe416c6b970cce561353f0caad23a1e2b3d96fb23c"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/session.json": {
+      "bytes": 3791,
+      "sha256": "a9c1364bbfc7910cb434c6e54bddd719de5a8f6fdba2c84ebd5723a815b702b8"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/summary.json": {
+      "bytes": 1406,
+      "sha256": "3f837b1bcfab46abc67d735084122b46da33d57f32394eccfbdd9cc82555f6da"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-19-37_540060/summary.md": {
+      "bytes": 968,
+      "sha256": "f94a0d17223c70e75c3a4c9063e19e13dc3a89c315e39b75f29fe90bf6c0860c"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/events.csv": {
+      "bytes": 1058,
+      "sha256": "95847fa0886e9bbc12840f3fb8d32d0c4798fa471ee5ceb471c9fcc895cc0f8f"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/received.bin": {
+      "bytes": 272470,
+      "sha256": "c18bc0c4375c568cde7613deafc4d14de9e9ae1e2b2133bfd3e6b87e5272b4b4"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/records.csv": {
+      "bytes": 1166531,
+      "sha256": "903a47d4c50b85e61642340f1818cb4c7bc93a7bd284780cdedc364da2c205c0"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/serial.txt": {
+      "bytes": 522699,
+      "sha256": "0bf38ae1d61f508097b8ea98f3faad0e5559dab7ccded941dab304a2c2a67bfd"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/session.json": {
+      "bytes": 3962,
+      "sha256": "a40fed8be6e78a3fa50d3f66dcbae8355639d654b07180acec1acec8fb126649"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/summary.json": {
+      "bytes": 1414,
+      "sha256": "91ac00dea8310b939a5546bde526fd0486afcf1af51a0f4d669c4e03a7ebd7e6"
+    },
+    "实验数据/原始数据/串口采集/2026-11-16_15-22-34_441048/summary.md": {
+      "bytes": 978,
+      "sha256": "0082e6d1080306796fd3db2333b203536a0f11dc723225e27b33291a4ff60a86"
+    },
+    "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/events.csv": {
+      "bytes": 2851,
+      "sha256": "91f125fbc42c570363e9d458f443208ca8123de859a998568b1bcc652e98a899"
+    },
+    "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/received.bin": {
+      "bytes": 188278,
+      "sha256": "8e3e27ce3c4b1447b5a36fde9a54b14603d0a9dacdc183fcce4271962ea3462f"
+    },
+    "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/records.csv": {
+      "bytes": 860836,
+      "sha256": "79b48fa7eff747c560182afb7f7b59a61752199a36e9c1146e5bb463cca0819c"
+    },
+    "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/serial.txt": {
+      "bytes": 362194,
+      "sha256": "dbeffe836af1f685dc4136a5c00858e181099e99f076c8894cc7da4c360b329c"
+    },
+    "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/session.json": {
+      "bytes": 4061,
+      "sha256": "7d4449e1469cf288717875ca966c5c57d61065b9c63c3f42371ecdee4090d471"
+    },
+    "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/summary.json": {
+      "bytes": 1414,
+      "sha256": "a010c0be102bb5069c63cffdb64c3dcdb63d938ab2e6ed51929c97d3ec1a904b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-20_13-25-14_773133/summary.md": {
+      "bytes": 982,
+      "sha256": "a7611bf38b7340e21b519df5301fe85a0b7cc55be0dc167f06242bc4aa27589b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/events.csv": {
+      "bytes": 2808,
+      "sha256": "2cb5872e8611d615d0c415b2045c377341b0c7bb46e740eeb2b802be243c06d9"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/received.bin": {
+      "bytes": 196917,
+      "sha256": "fbd257e7804f5d7cd3eb90b3e82ec7bfa8303088bf3425f190efb0d35e2ac0e1"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/records.csv": {
+      "bytes": 885854,
+      "sha256": "519a99ee0160c326ad16fa66fb8220c8e32cef17bbfb57c991ab89f2651762e7"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/serial.txt": {
+      "bytes": 372832,
+      "sha256": "c04ea357a01930970f9fd51562b92b3a91d4548a3b0da2be5f543ea12f4fa6fb"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/session.json": {
+      "bytes": 4146,
+      "sha256": "5e2b84e80379234145bac93e99243889ffe8f22adbcb45c69006e25bfde07678"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/summary.json": {
+      "bytes": 1413,
+      "sha256": "ee9e5713440a9e45e261a3e71cbe759efe5b9f164dc26992f3a1663bb04562a0"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_14-55-40_499922/summary.md": {
+      "bytes": 982,
+      "sha256": "6789a416cba7e9224dae4d9425f5e1683eead08b398c79ca4b98073bbf104c4a"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/events.csv": {
+      "bytes": 1446,
+      "sha256": "c4051400ee6d1fc7597127d3c23c2bb2f0393aa911f9530fa7b581a7fb41ed13"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/received.bin": {
+      "bytes": 1649368,
+      "sha256": "6fec3107bf54f340cb7b3011401442a6de2a0c958310f7b2ad8dccad7e8029fa"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/records.csv": {
+      "bytes": 7717552,
+      "sha256": "3c5ff4f4286aa3074e59ef0e599cae31470dba0f3b96f381bef80cb35f4da618"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/serial.txt": {
+      "bytes": 3204889,
+      "sha256": "0157a0cd01a6525324288998576ebf81d0d960c06f284e83b5ebb065aff8e476"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/session.json": {
+      "bytes": 4218,
+      "sha256": "e051bc07a217b9a9a6bb08353d7dc032a9bbe2d03820f315e85d90d5b128f25e"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/summary.json": {
+      "bytes": 1419,
+      "sha256": "45312ac58ab831a9a5a22bdc52ffb4a422df00e9b8d42decd0b68bf27e92a577"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_15-11-23_513038/summary.md": {
+      "bytes": 989,
+      "sha256": "2b2c3dbb3554c0bdfe93fab251fd26903f7c7b42336293f514dd9c6ab077c309"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/events.csv": {
+      "bytes": 436,
+      "sha256": "aae738dbca71a537e60250c0cc17c5083d0c8210b1391f7c60bcee0ffe3ca27c"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/received.bin": {
+      "bytes": 8296,
+      "sha256": "3f349ccae3d946267bd1944edf9cfc4ff5441d9ed3604d34f163654e99dec131"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/records.csv": {
+      "bytes": 37122,
+      "sha256": "643e56d6efa3833d555f7d6affc48ea8a25df31847831cee477cb0d98f333f17"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/serial.txt": {
+      "bytes": 16194,
+      "sha256": "69f6b300846a0ea3e73bf4bc1c776cc616ea32455107d934185c32c0d2d3408e"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/session.json": {
+      "bytes": 4437,
+      "sha256": "178fb679f7645f202da16a7903c647ee252438aed9682fd5e18a96cd8b7773f7"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/summary.json": {
+      "bytes": 1404,
+      "sha256": "c542504663c14f8ee3d011ec12d8208e64f40f538fd44fee40e6ac352b8dea37"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-44-25_738006/summary.md": {
+      "bytes": 968,
+      "sha256": "0d6780a5f5eef27343a4dbfaff7aea871acb30ee4468a40a99a0d4211c41421b"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/events.csv": {
+      "bytes": 436,
+      "sha256": "fb888faa1060122b66338bcdff069060dec316e8822a0e78bc9b17ac7b9a3f8f"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/received.bin": {
+      "bytes": 8384,
+      "sha256": "83484fe744725432c07aed72f0b1e16043e170365e529779681f65b0a0c5b360"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/records.csv": {
+      "bytes": 37355,
+      "sha256": "0ca44b018f1246f30fc573815bd0eb1e553ba0dd2e26ea3590a5c6f518605940"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/serial.txt": {
+      "bytes": 16319,
+      "sha256": "b915cd86c1dec9dec7785e356aca979df5208463cfa3c84669f8f6db6f32f796"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/session.json": {
+      "bytes": 4368,
+      "sha256": "9ae75c98a953b11561b3922ecac7013abc037a689e9d9a7912688b97522f9e9a"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/summary.json": {
+      "bytes": 1407,
+      "sha256": "41452c1e37135f4a0ef0dc3aec23c7e8ddc674b9655dc0127dc229cdd071e445"
+    },
+    "实验数据/原始数据/串口采集/2026-11-21_17-47-03_059749/summary.md": {
+      "bytes": 968,
+      "sha256": "f7d540a4d6ac57ddc9a62517ae1d698a1cbe4962d398a6125f79bcaacc7aaafa"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/events.csv": {
+      "bytes": 972,
+      "sha256": "54f209d8a912d4760fa60c121f265300cf7d77884e81169b942d3a80b0d990df"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/received.bin": {
+      "bytes": 173862,
+      "sha256": "ba4f670aab246df736f8e15a63838cf66a7124a20b7f59472dc43696f86f4d14"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/records.csv": {
+      "bytes": 824168,
+      "sha256": "3ac35dec1e66b220c623caf7565ff2d22efe10658c7f7da036177d3164555bb5"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/serial.txt": {
+      "bytes": 346088,
+      "sha256": "217b9bf7505ba3068c7d2a1f9a2c4587aab401e1af4bcac4be664f980bc22e11"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/session.json": {
+      "bytes": 4352,
+      "sha256": "3b0cf13a8f7518d7ab4f616835cd7b97962ae7aaa65f453725d0838e70fb806a"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/summary.json": {
+      "bytes": 1413,
+      "sha256": "0d4882688a8598e45ced4d8f95ed3ab26a2ae466da7f40b0efceac2a62df52f6"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_14-21-58_420975/summary.md": {
+      "bytes": 1054,
+      "sha256": "e8bbae4078cbadb4ff7808060414cf4807895c4aaabaf708d8538b5129862fc2"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/events.csv": {
+      "bytes": 886,
+      "sha256": "097e49a0fc8c82ecfdad025bd498683069a92736c336ee6d5c43149c2715ee45"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/received.bin": {
+      "bytes": 41409,
+      "sha256": "27ad70e146c012d1bf8f6c1a4d8295fbabe0da0b204d452ec7b1158ae30ccece"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/records.csv": {
+      "bytes": 191142,
+      "sha256": "3875e684e66f95a9bff2c3f98a16a9a74bec82aa8e829cd85a5ed82482cbbd2f"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/serial.txt": {
+      "bytes": 80572,
+      "sha256": "02009a674ad2bf4468d0012202558db0362fb9a1edc8cad5deae52e21db77859"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/session.json": {
+      "bytes": 4414,
+      "sha256": "fadae235086dd2debfa5b89a89d7d969957892df0267f48874eb2f378a53b5bb"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/summary.json": {
+      "bytes": 1411,
+      "sha256": "5ebe3606887e3d3c1092c19b2723d34d6520a382d316fcf72e07330095eb02c4"
+    },
+    "实验数据/原始数据/串口采集/2026-11-24_18-20-26_028147/summary.md": {
+      "bytes": 972,
+      "sha256": "1121af52c9793a8d356e55c00795ff6d7668861bead4b5eee45fec0cfe3a04ec"
+    },
+    "实验数据/原始数据/10.1 hx711实验.txt": {
+      "bytes": 1318,
+      "sha256": "b40bf8d97de2446779e28d339fbb6e30762ef4d7261578f0d941f5728d5386e1"
+    },
+    "实验数据/原始数据/10.1 hx711手机放置检测实验.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "实验数据/原始数据/10.1 手机放置数据异常.txt": {
+      "bytes": 921,
+      "sha256": "75a6d8ea07f04dfb4fbcce58ebc17e353d9804ddce12d5d0972c187e5d77f412"
+    },
+    "实验数据/原始数据/2026-10-13_20kg传感器接线修正后raw记录.txt": {
+      "bytes": 720,
+      "sha256": "de8aee0fb4c50ca52536ba53fd67ed58bd849718cdaae8d115492c9ef2e10bdf"
+    },
+    "实验数据/原始数据/2026-10-13_开机去皮后串口实测.txt": {
+      "bytes": 898,
+      "sha256": "c3bc6b7f81f04b3d8f8fc936113125f561dc726656994340f203575ef3d41354"
+    },
+    "实验数据/原始数据/2026-10-13_空载raw现场采集.txt": {
+      "bytes": 1517,
+      "sha256": "23df8b950b184ba0434f1fe0b15e8a991c904f9343be7e59581b4bcab8d82732"
+    },
+    "实验数据/原始数据/2026-10-15_5点滑动平均_500g卸载动态实测.csv": {
+      "bytes": 7640,
+      "sha256": "697820d7be24f31db5fcfa9aa492092913d29dc607242cc2e8aff16e7d66eab6"
+    },
+    "实验数据/原始数据/2026-10-15_5点滑动平均_500g稳定实测.csv": {
+      "bytes": 5633,
+      "sha256": "0e56847a357e761e9bfb2dc757618fb330a8358fb3adf44fa2217afa071aa06e"
+    },
+    "实验数据/原始数据/2026-10-15_5点滑动平均_按键去皮动态串口原文.txt": {
+      "bytes": 5592,
+      "sha256": "cf501f1254c8ce17f77c718d13b655e97849b5d92c9d47532e900e2b2af078b4"
+    },
+    "实验数据/原始数据/2026-10-15_5点滑动平均_空载实测.csv": {
+      "bytes": 4848,
+      "sha256": "35f137bc0181a38ab91af2c8962305b3153bd0f752c6647b242a9bc4425c1cb0"
+    },
+    "实验数据/原始数据/2026-10-15_OLED阶段_500g串口实测原文.txt": {
+      "bytes": 1682,
+      "sha256": "d975bb2313bb11918bc016d21e32ce03f5652d86ad2567dd08e2a391737020e2"
+    },
+    "实验数据/原始数据/2026-10-15_OLED阶段_卸载后延时空载串口实测原文.txt": {
+      "bytes": 1379,
+      "sha256": "8d45d10fed6665f4add12d5cf7620e1a2746ff763f4036b3740a5a99f9e90aa9"
+    },
+    "实验数据/原始数据/2026-10-15_OLED阶段_卸载空载串口实测原文.txt": {
+      "bytes": 1332,
+      "sha256": "152d5651cbe67dfdc3f936f1144bcf62e9ccb5f66ef563a7b630f5384ad72ccf"
+    },
+    "实验数据/原始数据/2026-10-15_OLED阶段_按键去皮后空载串口实测原文.txt": {
+      "bytes": 1400,
+      "sha256": "1c1f273cdbdf7bf0805c64d1c9970a247fce777f26ade81295c78ef3a01715c8"
+    },
+    "实验数据/原始数据/2026-10-15_PA5按键去皮串口实测原文.txt": {
+      "bytes": 986,
+      "sha256": "854a1c56eebd86d34e77d8e4b4a0f6328762c438ac8fadd92e0656d10b02411f"
+    },
+    "实验数据/原始数据/2026-10-15_克数固件_100g实测.csv": {
+      "bytes": 2950,
+      "sha256": "86f5cd6d734b88b4155bc06b84d97bcd634f5d79127d8ce2ec32a53c603a34d5"
+    },
+    "实验数据/原始数据/2026-10-15_克数固件_500g实测.csv": {
+      "bytes": 3027,
+      "sha256": "1693cce7966745447faf28d13b21641117d9e9d903008508edece554ff476917"
+    },
+    "实验数据/原始数据/2026-10-15_克数固件_800g实测.csv": {
+      "bytes": 3087,
+      "sha256": "25efc825357afc42f29184a288a8b9c94ea8648a10dcf5d65819cd8138300271"
+    },
+    "实验数据/原始数据/2026-10-15_克数固件_按键去皮后空载实测.csv": {
+      "bytes": 2698,
+      "sha256": "819c0b36ccd3cb72e12efa5220c105e2a81d40fe623a0c8eeb1258483cdeb21f"
+    },
+    "实验数据/原始数据/2026-10-15_克数固件_空载实测.csv": {
+      "bytes": 3563,
+      "sha256": "2a0fd4215415f492b5188475576240ee5377e5ca8a54915031977554524edffb"
+    },
+    "实验数据/原始数据/2026-10-15_克数固件_终点空载实测.csv": {
+      "bytes": 2744,
+      "sha256": "619f27c4139ff7ba616ed2f831323f3b9556e2e933c49a436ae91e1782d246fe"
+    },
+    "实验数据/原始数据/2026-10-15_多点试验_终点空载实测.csv": {
+      "bytes": 3385,
+      "sha256": "2667dae3ba42f71b8d6c5226e9977a1ee8e048087f61a0128802d73f13c18729"
+    },
+    "实验数据/原始数据/2026-10-15_标称100g砝码_加载实测.csv": {
+      "bytes": 3465,
+      "sha256": "c4fe22511aa75289da15a1813ae50856ccced9fa50f76d86bd7624fc8b43f503"
+    },
+    "实验数据/原始数据/2026-10-15_标称200g砝码_卸载实测.csv": {
+      "bytes": 3465,
+      "sha256": "d612567fde9fb442529e5170a5470491a787ad363a9233b6967e6fd1c016a9cb"
+    },
+    "实验数据/原始数据/2026-10-15_标称300g砝码_卸载实测.csv": {
+      "bytes": 3465,
+      "sha256": "1fb80cccc85cf5062f0e4c68ff1bf1ec495a7cbd93785aa800fa96e9eac5e7bc"
+    },
+    "实验数据/原始数据/2026-10-15_标称500g砝码_加载实测.csv": {
+      "bytes": 3545,
+      "sha256": "2aeb54012fb4c81d7834c567fbec75b1710c6df56c304296f8041b20cfb2c356"
+    },
+    "实验数据/原始数据/2026-10-15_标称500g砝码_卸载空载实测.csv": {
+      "bytes": 3385,
+      "sha256": "1fa1fd4314a01593550d2dfe58cbcdd785c7be4f449aebfbdac2b603878eae2a"
+    },
+    "实验数据/原始数据/2026-10-15_标称500g砝码_重复加载实测.csv": {
+      "bytes": 3545,
+      "sha256": "1ebd0dbddc8e325f14e88dcb5338f280e7d308754e4201419ed0c2ec11ef216c"
+    },
+    "实验数据/原始数据/2026-10-15_标称700g砝码_加载实测.csv": {
+      "bytes": 3625,
+      "sha256": "3ca59313a3e0202777cc54010438bc526c2a6c862f4af506687b1b4585a5d32e"
+    },
+    "实验数据/原始数据/2026-10-15_标称800g砝码_加载实测.csv": {
+      "bytes": 3625,
+      "sha256": "b12e124aab1336f1336c2472cfeb4986dd7d450c6a488c6866d06e79d5d71a51"
+    }
+  },
+  "same_temperature_example": {
+    "session": "2026-11-21_15-11-23_513038",
+    "windows": [
+      {
+        "n": 274,
+        "start": "2026-11-21T15:51:23.687000+08:00",
+        "end": "2026-11-21T15:52:23.383000+08:00",
+        "coverage_s": 59.6869999999999,
+        "raw_mean": 32714.700729927008,
+        "raw_sd": 34.195487345212825,
+        "raw_min": 32623.0,
+        "raw_max": 32814.0,
+        "net_mean": -307.2992700729927,
+        "net_sd": 34.195487345212825,
+        "net_min": -399.0,
+        "net_max": -208.0,
+        "g_avg_mean": -1.7251824817518249,
+        "g_avg_sd": 0.15778040189808862,
+        "g_avg_min": -2.1,
+        "g_avg_max": -1.5,
+        "g_iir_mean": -1.724817518248175,
+        "g_iir_sd": 0.15887932707280616,
+        "g_iir_min": -2.1,
+        "g_iir_max": -1.5,
+        "net_mass_g_mean": -1.7244627950224058,
+        "net_mass_g_sd": 0.19189386837942102,
+        "net_mass_g_min": -2.239057239057239,
+        "net_mass_g_max": -1.1672278338945006,
+        "paired_temp_c_mean": 22.31722627737226,
+        "paired_temp_c_sd": 0.022096356652174635,
+        "paired_temp_c_min": 22.25,
+        "paired_temp_c_max": 22.37,
+        "center_s": 2429.977113138686
+      },
+      {
+        "n": 274,
+        "start": "2026-11-21T16:21:23.725000+08:00",
+        "end": "2026-11-21T16:22:23.365000+08:00",
+        "coverage_s": 59.64099999999962,
+        "raw_mean": 32966.66058394161,
+        "raw_sd": 29.027045258419257,
+        "raw_min": 32877.0,
+        "raw_max": 33041.0,
+        "net_mean": -55.339416058394164,
+        "net_sd": 29.027045258419257,
+        "net_min": -145.0,
+        "net_max": 19.0,
+        "g_avg_mean": -0.3091240875912409,
+        "g_avg_sd": 0.11138800911755173,
+        "g_avg_min": -0.6,
+        "g_avg_max": 0.0,
+        "g_iir_mean": -0.31496350364963505,
+        "g_iir_sd": 0.10975580011769012,
+        "g_iir_min": -0.6,
+        "g_iir_max": -0.1,
+        "net_mass_g_mean": -0.31054666699435557,
+        "net_mass_g_sd": 0.1628902651987613,
+        "net_mass_g_min": -0.8136924803591471,
+        "net_mass_g_max": 0.10662177328843996,
+        "paired_temp_c_mean": 22.322262773722628,
+        "paired_temp_c_sd": 0.024239123182256947,
+        "paired_temp_c_min": 22.31,
+        "paired_temp_c_max": 22.37,
+        "center_s": 4230.03600729927
+      }
+    ],
+    "temperature_difference_c": 0.005036496350367514,
+    "empty_mean_difference_g": 1.4139161280280503
+  },
+  "room_temperature_example": {
+    "session": "2026-11-12_13-13-10_084101",
+    "first": {
+      "n": 276,
+      "start": "2026-11-12T13:13:10.322000+08:00",
+      "end": "2026-11-12T13:14:10.317000+08:00",
+      "coverage_s": 59.985,
+      "raw_mean": 33309.32246376811,
+      "raw_sd": 61.78167721095537,
+      "raw_min": 32936.0,
+      "raw_max": 33434.0,
+      "net_mean": -195.67753623188406,
+      "net_sd": 61.78167721095537,
+      "net_min": -569.0,
+      "net_max": -71.0,
+      "g_avg_mean": -1.0945652173913043,
+      "g_avg_sd": 0.3011604696146193,
+      "g_avg_min": -2.2,
+      "g_avg_max": -0.5,
+      "net_mass_g_mean": -1.1016737918587491,
+      "net_mass_g_sd": 0.34783376728399407,
+      "net_mass_g_min": -3.2034969350022293,
+      "net_mass_g_max": -0.3997333609580989,
+      "paired_temp_c_mean": 26.445217391304347,
+      "paired_temp_c_sd": 0.028925418612307758,
+      "paired_temp_c_min": 26.43,
+      "paired_temp_c_max": 26.5,
+      "center_s": 30.23185144927536
+    },
+    "last": {
+      "n": 275,
+      "start": "2026-11-12T13:22:10.038000+08:00",
+      "end": "2026-11-12T13:23:09.940000+08:00",
+      "coverage_s": 59.90600000000006,
+      "raw_mean": 33086.74545454545,
+      "raw_sd": 35.00209492261094,
+      "raw_min": 32959.0,
+      "raw_max": 33229.0,
+      "net_mean": -418.25454545454545,
+      "net_sd": 35.00209492261094,
+      "net_min": -546.0,
+      "net_max": -276.0,
+      "g_avg_mean": -2.353090909090909,
+      "g_avg_sd": 0.12822301408254064,
+      "g_avg_min": -2.8,
+      "g_avg_max": -2.0,
+      "net_mass_g_mean": -2.35479289000771,
+      "net_mass_g_sd": 0.1970634513237983,
+      "net_mass_g_min": -3.074005846241155,
+      "net_mass_g_max": -1.5538930651328915,
+      "paired_temp_c_mean": 26.509163636363635,
+      "paired_temp_c_sd": 0.040781939091608085,
+      "paired_temp_c_min": 26.43,
+      "paired_temp_c_max": 26.56,
+      "center_s": 569.9223709090909
+    },
+    "raw_mean_difference_g": -1.2531190981489495
+  }
+}

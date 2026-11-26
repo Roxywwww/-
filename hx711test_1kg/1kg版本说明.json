@@ -1,0 +1,18 @@
+{
+  "created_local_date": "2026-11-26",
+  "sensor_capacity_kg": 1,
+  "base_archive": "20kg_已确认烧录对应源码_14cef64.zip",
+  "base_commit": "14cef64e726d15738c70c1a0f36d1312c16ea9c5",
+  "base_main_sha256": "6564c32d98e0dda1e3792e6e8f6ce5b43deac1bcd584601078033dadfce4f369",
+  "calibration_state": "200/500g标定、20/50/100g独立核验及烧录后100g核对均已完成",
+  "board_firmware_state": "2026-11-26 12:50 Keil下载Verify OK，操作者复位后串口启动版本与7368698系数均已核对",
+  "excluded_feature": "未带入PA5长按取零待实测改动，保持已确认运行版行为",
+  "counts_per_g": 736.8698,
+  "counts_per_g_x10000": 7368698,
+  "firmware_id": "scale1kg_20261126",
+  "calibration_source": "实验数据/1kg称重梁/分析结果/2026-11-26_首次标定/calibration_frozen_200_500.json",
+  "current_main_sha256": "adf858734987933275db65a65d2597d9dd31f7c3bc5591311eb85e3aa5bd0ae0",
+  "built_hex_sha256": "9869d66a62395f4b912c51ac412676160512c0eb4d1b1f680f17b5caf2e246d5",
+  "startup_proof_session": "实验数据/1kg称重梁/原始数据/串口采集/2026-11-26_12-50-44_025410",
+  "post_flash_results": "实验数据/1kg称重梁/分析结果/2026-11-26_烧录后核对/烧录后板上输出核对.json"
+}
